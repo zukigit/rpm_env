@@ -78,7 +78,7 @@ mv src/jobarg_server/jobarg_server src/jobarg_server/jobarg_server_mysql
 mv src/jobarg_monitor/jobarg_monitor src/jobarg_monitor/jobarg_monitor_mysql
 mv src/jobarg_session/jobarg_session src/jobarg_session/jobarg_session_mysql
 
-%configure --enable-agent --enable-server --with-postgresql=/usr/pgsql-14/bin/pg_config
+%configure --enable-agent --enable-server --with-postgresql
 make clean all
 make %{?_smp_mflags}
 mv src/jobarg_server/jobarg_server src/jobarg_server/jobarg_server_postgresql
@@ -327,5 +327,5 @@ fi
 %attr(0644,root,root) %{_sysconfdir}/tmpfiles.d/jobarranger.conf
 
 %changelog
-* Sat Aug 16 2023 Copyright Daiwa Institute of Research Ltd. All Rights Reserved. <https://www.jobarranger.info/jaz/jaz_release_note.html> 6.0.3
+* Mon Aug 18 2023 Copyright Daiwa Institute of Research Ltd. All Rights Reserved. <https://www.jobarranger.info/jaz/jaz_release_note.html> 6.0.3
 - Lastest RPM relese
