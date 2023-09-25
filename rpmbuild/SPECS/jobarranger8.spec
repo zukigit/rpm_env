@@ -15,7 +15,7 @@ Buildroot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 %define is_el7 %(grep -i "release 7" /etc/redhat-release > /dev/null 2>&1 && echo 1 || echo 0)
 
-BuildRequires:   mysql-devel
+BuildRequires:   mariadb-devel
 BuildRequires:   postgresql-devel
 BuildRequires:   libssh2-devel >= 1.0.0
 
