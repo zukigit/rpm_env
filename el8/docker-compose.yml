@@ -2,7 +2,7 @@ version: '3'
 
 services:
 
-  rpm_env:
+  rhel8:
     image: zukidocker/oss:rpm_env
     container_name: rpm_env
     volumes:
