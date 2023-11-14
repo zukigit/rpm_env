@@ -1,4 +1,0 @@
-.basic-table .ant-table-tbody > tr > td.ant-table-cell{
-  padding-top:3px;
-  padding-bottom: 3px;
-}

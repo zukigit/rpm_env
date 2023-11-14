@@ -1,2 +1,0 @@
-# jobarranger runtime directory
-d /run/jobarranger 0755 zabbix zabbix -

@@ -1,4 +1,0 @@
-LIBRARY Installer
-EXPORTS
-	InstallerCommit @1
-	UnInstall		@2
