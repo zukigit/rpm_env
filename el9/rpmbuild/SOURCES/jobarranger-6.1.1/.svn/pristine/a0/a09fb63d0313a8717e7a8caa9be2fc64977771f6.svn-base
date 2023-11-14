@@ -1,0 +1,237 @@
+let usernames = ["Admin"];
+let passwords = ["zabbix"];
+
+const url = "http://10.1.9.30/jobarranger/";
+
+describe("Jobnet Execution", () => {
+  beforeEach(() => {
+    cy.visit(url);
+    cy.url().should("include", "/jobarranger"); //check url
+  });
+
+  it("Jobnet immediate run should be finished successfully.", () => {
+    cy.get("#username").type(usernames[0]);
+    cy.get("#password").type(passwords[0]);
+    cy.get('button:has(span:contains("Submit"))').click();
+
+    cy.url().should("eq", url + "home", { timeout: 20000 });
+
+    //go to public jobnet list
+    cy.get(".ant-menu-submenu")
+      .first()
+      .trigger("mouseover")
+      .wait(500)
+      .trigger("mouseover")
+      .get(
+        ':nth-child(3) > .ant-menu-submenu-title > .ant-menu-title-content:contains("Jobnet")'
+      )
+      .trigger("mouseover")
+      .get(
+        'li:nth-child(1) > span.ant-menu-title-content > a:contains("Public jobnet")'
+      )
+      .click();
+
+    cy.get("div.ant-dropdown-trigger")
+      .filter((index, element) => {
+        return element.innerText === "AG_T_JOB_1";
+      })
+      .rightclick();
+    cy.get("#btnObjImrun").click();
+    cy.get('.ant-btn-primary:contains("OK")').click();
+
+    cy.wait(8000);
+    cy.get(".geDiagramContainer > svg > :nth-child(1) > :nth-child(2)")
+      .find('div:contains("JOB-1")')
+      .rightclick({ force: true, multiple: true });
+    cy.get('td.mxPopupMenuItem:contains("View variable value")').click();
+    cy.get(
+      "#control-hooks > div:nth-child(4) > div > div > div > div > div > div.ant-table-body > table > tbody > tr:nth-child(8) > td:nth-child(2)"
+    ).should("contain", "0");
+    cy.get(
+      "body > div:nth-child(10) > div > div > div > div.react-draggable > div > button"
+    ).click();
+    cy.get(
+      "body > div:nth-child(9) > div > div > div > div.react-draggable > div > button"
+    ).click();
+  });
+
+  it("Jobnet immediate run and hold should be finished successfully.", () => {
+    cy.get("#username").type(usernames[0]);
+    cy.get("#password").type(passwords[0]);
+    cy.get('button:has(span:contains("Submit"))').click();
+
+    cy.url().should("eq", url + "home", { timeout: 20000 });
+
+    //go to public jobnet list
+    cy.get(".ant-menu-submenu")
+      .first()
+      .trigger("mouseover")
+      .wait(500)
+      .trigger("mouseover")
+      .get(
+        ':nth-child(3) > .ant-menu-submenu-title > .ant-menu-title-content:contains("Jobnet")'
+      )
+      .trigger("mouseover")
+      .get(
+        'li:nth-child(1) > span.ant-menu-title-content > a:contains("Public jobnet")'
+      )
+      .click();
+
+    cy.get("div.ant-dropdown-trigger")
+      .filter((index, element) => {
+        return element.innerText === "AG_T_JOB_1";
+      })
+      .rightclick();
+    cy.get("#btnObjImrunHold").click();
+    cy.get('.ant-btn-primary:contains("OK")').click();
+
+    cy.wait(3000);
+    cy.get(".geDiagramContainer > svg > :nth-child(1) > :nth-child(2)")
+      .find('div:contains("START")')
+      .rightclick({ force: true, multiple: true });
+    cy.get('td.mxPopupMenuItem:contains("Unhold")').click();
+
+    cy.wait(5000);
+    cy.get(".geDiagramContainer > svg > :nth-child(1) > :nth-child(2)")
+      .find('div:contains("JOB-1")')
+      .rightclick({ force: true, multiple: true });
+    cy.get('td.mxPopupMenuItem:contains("View variable value")').click();
+    cy.get(
+      "#control-hooks > div:nth-child(4) > div > div > div > div > div > div.ant-table-body > table > tbody > tr:nth-child(8) > td:nth-child(2)"
+    ).should("contain", "0");
+    cy.get(
+      "body > div:nth-child(10) > div > div > div > div.react-draggable > div > button"
+    ).click();
+    cy.get(
+      "body > div:nth-child(9) > div > div > div > div.react-draggable > div > button"
+    ).click();
+  });
+
+  it.only("Jobnet test run should be finished successfully.", () => {
+    cy.get("#username").type(usernames[0]);
+    cy.get("#password").type(passwords[0]);
+    cy.get('button:has(span:contains("Submit"))').click();
+
+    cy.url().should("eq", url + "home", { timeout: 20000 });
+
+    //go to public jobnet list
+    cy.get(".ant-menu-submenu")
+      .first()
+      .trigger("mouseover")
+      .wait(500)
+      .trigger("mouseover")
+      .get(
+        ':nth-child(3) > .ant-menu-submenu-title > .ant-menu-title-content:contains("Jobnet")'
+      )
+      .trigger("mouseover")
+      .get(
+        'li:nth-child(1) > span.ant-menu-title-content > a:contains("Public jobnet")'
+      )
+      .click();
+
+    cy.get("div.ant-dropdown-trigger")
+      .filter((index, element) => {
+        return element.innerText === "AG_T_JOB_1";
+      })
+      .rightclick();
+
+    cy.get("#btnObjTestRun").click();
+    cy.get('.ant-btn-primary:contains("OK")').click();
+
+    cy.wait(8000);
+    cy.get(".geDiagramContainer > svg > :nth-child(1) > :nth-child(2)")
+      .find('div:contains("JOB-1")')
+      .rightclick({ force: true, multiple: true });
+    cy.get('td.mxPopupMenuItem:contains("View variable value")').click();
+    cy.get(
+      "#control-hooks > div:nth-child(4) > div > div > div > div > div > div.ant-table-body > table > tbody > tr:nth-child(8) > td:nth-child(2)"
+    ).should("contain", "0");
+    cy.get(
+      "body > div:nth-child(10) > div > div > div > div.react-draggable > div > button"
+    ).click();
+    cy.get(
+      "body > div:nth-child(9) > div > div > div > div.react-draggable > div > button"
+    ).click();
+  });
+});
+
+// it's still not work
+describe("Job Draw", () => {
+  beforeEach(() => {
+    cy.visit(url);
+    cy.url().should("include", "/jobarranger"); //check url
+  });
+
+  it("New jobnet register", () => {
+    cy.get("#username").type(usernames[0]);
+    cy.get("#password").type(passwords[0]);
+    cy.get('button:has(span:contains("Submit"))').click();
+
+    cy.url().should("eq", url + "home", { timeout: 20000 });
+
+    //go to public jobnet list
+    cy.get(".ant-menu-submenu")
+      .first()
+      .trigger("mouseover")
+      .wait(500)
+      .trigger("mouseover")
+      .get(
+        ':nth-child(3) > .ant-menu-submenu-title > .ant-menu-title-content:contains("Jobnet")'
+      )
+      .trigger("mouseover")
+      .get(
+        'li:nth-child(1) > span.ant-menu-title-content > a:contains("Public jobnet")'
+      )
+      .click();
+
+    cy.get(":nth-child(5) > .ant-btn").click();
+
+    cy.get(".geSidebar > .geItem").first().click();
+
+    cy.get(
+      ".geDiagramContainer > svg > :nth-child(1) > :nth-child(2) > :nth-child(1)"
+    ).as("job1");
+
+    cy.get("@job1").dblclick({ force: true });
+
+    cy.get(
+      ".ant-col-16 > :nth-child(1) > .ant-row > .ant-col > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-select > .ant-select-selector > .ant-select-selection-item"
+    ).as("hostnameCombo");
+    cy.get("@hostnameCombo").click();
+    cy.get('.ant-select-item-option[title="OSS_COMPILATION_ENV"]').click();
+    cy.get("#control-hooks_exec").type("hostname");
+    cy.get(
+      '.ant-modal-footer > .ant-btn-primary > span:contains("Apply")'
+    ).click();
+    cy.get("@job1").trigger("mouseover", { force: true }).wait(500);
+
+    // cy.get('.ant-modal-footer > .ant-btn-default:contains("Cancel")').dblclick()
+
+    // Select the element you want to drag
+    cy.get(".geSidebar > .geItem").first().as("draggedItem");
+
+    // Select the drop target element
+    cy.get(".geDiagramContainer").as("dropTarget");
+
+    // Use Cypress commands to perform the drag and drop
+    // cy.get('@job1').trigger('mousedown', { which: 1, force: true })
+    // .trigger('mousemove', { clientX: 300, clientY: 600, force: true })
+    // .trigger('mouseup', { force: true });
+
+    // Specify the target selector (where to drop) and the x, y coordinates
+    // const targetSelector = '.geDiagramContainer'; // Change this to the actual target selector
+    // const xCoordinate = 10; // Change to the desired x-coordinate
+    // const yCoordinate = 10; // Change to the desired y-coordinate
+
+    // Perform the drag-and-drop operation
+    // cy.get('@draggedItem').dragAndDrop(targetSelector, xCoordinate, yCoordinate);
+  });
+});
+
+function movePiece(draggedItem, x, y) {
+  cy.get(draggedItem)
+    .trigger("mousedown", { which: 1, force: true })
+    .wait(1000)
+    .trigger("mousemove", { clientX: x, clientY: y, force: true })
+    .trigger("mouseup", { force: true });
+}

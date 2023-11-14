@@ -1,0 +1,39 @@
+.header-col-label {
+    background-color: #fafafa !important;
+    border-right: 1px solid rgba(0,0,0,.06);
+}
+
+.header-col-value {
+    border-right: 1px solid rgba(0,0,0,.06);
+}
+
+.header-label {
+    font-size: 12px;
+    float: left;
+    background-color: #f5f5f5 !important;
+    border-right: 1px solid rgba(0,0,0,.06);
+    padding: 6px;
+}
+
+.header-value {
+    border-right: 1px solid rgba(0,0,0,.06);
+    float: left;
+    flex: 1;
+    font-size: 12px;
+    line-height: 1.5715;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    padding: 6px;
+}
+
+.exec-description {
+    padding: 1px;
+    width: 955px;
+    overflow: hidden;
+}
+
+.desc-item {
+    display: inline-flex;
+    height: 32px;
+    padding: 1px;
+}

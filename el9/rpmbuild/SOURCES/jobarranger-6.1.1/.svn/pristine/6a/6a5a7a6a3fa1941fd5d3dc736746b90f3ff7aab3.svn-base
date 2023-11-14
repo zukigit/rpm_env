@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\compat">
+      <UniqueIdentifier>{5410b40a-5fb7-410c-868c-2e35915b4fa5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\lib">
+      <UniqueIdentifier>{48830559-9e07-40cb-9e8d-ef602c006583}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\listhash">
+      <UniqueIdentifier>{d263688b-185d-4625-ba34-05ac04556163}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\win32">
+      <UniqueIdentifier>{0dae543d-aadc-4f3a-88c5-283f2c373e68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\win32\sys">
+      <UniqueIdentifier>{e520357a-8d27-49a0-9785-974ac75d7634}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\win32\win32">
+      <UniqueIdentifier>{51b0ae31-4c46-48fd-98ca-86b67844a08e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\tools\libtar\libtar\compat\strsep.c">
+      <Filter>ソース ファイル\compat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\tools\libtar\libtar\compat\basename.c">
+      <Filter>ソース ファイル\compat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\tools\libtar\libtar\compat\dirname.c">
+      <Filter>ソース ファイル\compat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\tools\libtar\libtar\compat\fnmatch.c">
+      <Filter>ソース ファイル\compat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\tools\libtar\libtar\compat\glob.c">
+      <Filter>ソース ファイル\compat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\tools\libtar\libtar\compat\strlcpy.c">
+      <Filter>ソース ファイル\compat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\tools\libtar\libtar\compat\strmode.c">
+      <Filter>ソース ファイル\compat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\tools\libtar\libtar\lib\wrapper.c">
+      <Filter>ソース ファイル\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\tools\libtar\libtar\lib\append.c">
+      <Filter>ソース ファイル\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\tools\libtar\libtar\lib\block.c">
+      <Filter>ソース ファイル\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\tools\libtar\libtar\lib\decode.c">
+      <Filter>ソース ファイル\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\tools\libtar\libtar\lib\encode.c">
+      <Filter>ソース ファイル\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\tools\libtar\libtar\lib\extract.c">
+      <Filter>ソース ファイル\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\tools\libtar\libtar\lib\handle.c">
+      <Filter>ソース ファイル\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\tools\libtar\libtar\lib\output.c">
+      <Filter>ソース ファイル\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\tools\libtar\libtar\lib\util.c">
+      <Filter>ソース ファイル\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\tools\libtar\libtar\listhash\libtar_hash.c">
+      <Filter>ソース ファイル\listhash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\tools\libtar\libtar\listhash\libtar_list.c">
+      <Filter>ソース ファイル\listhash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\tools\libtar\libtar\win32\dirent.c">
+      <Filter>ソース ファイル\win32</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\tools\libtar\libtar\compat\compat.h">
+      <Filter>ソース ファイル\compat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\tools\libtar\libtar\lib\internal.h">
+      <Filter>ソース ファイル\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\tools\libtar\libtar\lib\libtar.h">
+      <Filter>ソース ファイル\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\tools\libtar\libtar\listhash\libtar_listhash.h">
+      <Filter>ソース ファイル\listhash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\tools\libtar\libtar\win32\utime.h">
+      <Filter>ソース ファイル\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\tools\libtar\libtar\win32\dirent.h">
+      <Filter>ソース ファイル\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\tools\libtar\libtar\win32\grp.h">
+      <Filter>ソース ファイル\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\tools\libtar\libtar\win32\pwd.h">
+      <Filter>ソース ファイル\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\tools\libtar\libtar\win32\tar.h">
+      <Filter>ソース ファイル\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\tools\libtar\libtar\win32\win32\types.h">
+      <Filter>ソース ファイル\win32\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\tools\libtar\libtar\win32\sys\param.h">
+      <Filter>ソース ファイル\win32\sys</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

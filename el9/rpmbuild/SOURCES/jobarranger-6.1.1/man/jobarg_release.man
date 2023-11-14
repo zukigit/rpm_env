@@ -1,0 +1,37 @@
+.TH JOBARG_RELEASE 1 "17 March 2014"
+.if n .ad l
+.SH NAME
+jobarg_release \- Jobarranger Job hold release utility.
+.SH SYNOPSIS
+.B jobarg_release [-hV] -z <server> [-p <port>] -U <user-name> -P <password> -j <jobnet-id/job-id> [-t <YYYYMMDD>|<YYYYMMDDHHMM>] [-r <registry-number>]
+.SH DESCRIPTION
+.B jobarg_release
+is a command line utility for release the hold job to a remote Jobarranger server.
+.SS Options
+.IP "-z \fI<server>\fR"
+Hostname or IP address of Jobarranger server.
+.IP "-p \fI<port>\fR"
+Specify port number of server trapper running on the server. Default is 10061.
+.IP "-U \fI<user-name>\fR"
+Specify a user with authority to operate the jobnet.
+.IP "-P \fI<password>\fR"
+The user password.
+.IP "-j \fI<jobnet-id/job-id>\fR"
+Specify target job id. Format is "jobnet-id/job-id/job-id/..." in the sub jobnet.
+.IP "-t \fI<YYYYMMDD>|<YYYYMMDDHHMM>\fR"
+Specify jobnet start time.
+.IP "-r \fI<registry-number>\fR"
+Specify the jobnet registration number that contains the hold release job.
+.IP "-h\fR"
+Display this help and exit.
+.SH "EXIT STATUS"
+The exit status is 0 if the pending release of the job was successful.
+Exit status is 255 if it fails to register a jobnet or parameter error.
+.SH "SEE ALSO"
+.BR jobarg_server (8),
+.BR jobarg_agentd (8),
+.BR jobarg_exec (1),
+.BR jobarg_get (1),
+.BR jobarg_joblogput (1)
+.SH AUTHOR
+Komatus Yuji <komatsu@fitechforce.co.jp>

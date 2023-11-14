@@ -1,0 +1,67 @@
+#!/bin/bash
+#
+# jobarg-monitor Startup script for the Job Arranger Server
+#
+# chkconfig: - 90 15
+# description:  Job Arranger Monitor
+# processname: jobarg_monitor
+# config: /etc/jobarranger/jobarg_monitor.conf
+# pidfile: /var/run/jobarranger/jobarg_monitor.pid
+
+# jobarg details
+JOBARG=/usr/sbin/jobarg_monitor
+CONF=/etc/jobarranger/jobarg_monitor.conf
+PIDFILE=/var/run/jobarranger/jobarg_monitor.pid
+
+# Source function library.
+. /etc/rc.d/init.d/functions
+
+# Source networking configuration.
+. /etc/sysconfig/network
+
+# Check that networking is up.
+[ ${NETWORKING} = "no" ] && exit 0
+
+[ -e $CONF ] || exit 6
+
+RETVAL=0
+
+case "$1" in
+    start)
+        echo -n "Starting Job Arranger Monitor: "
+        daemon $JOBARG -c $CONF
+        RETVAL=$?
+        echo
+        [ $RETVAL -eq 0 ] && touch /var/lock/subsys/jobarg_monitor
+        ;;
+    stop)
+        echo -n "Shutting down Job Arranger Monitor: "
+        killproc -p $PIDFILE
+        RETVAL=$?
+        echo
+        [ $RETVAL -eq 0 ] && rm -f /var/lock/subsys/jobarg_monitor
+        ;;
+    restart)
+        $0 stop
+        sleep 3
+        $0 start
+        RETVAL=$?
+        ;;
+    condrestart)
+        if [ -f /var/lock/subsys/jobarg_monitor ]; then
+            $0 stop
+            $0 start
+        fi
+        RETVAL=$?
+        ;;
+    status)
+        status $JOBARG
+        RETVAL=$?
+        ;;
+    *)
+        echo "Usage: $0 {start|stop|restart|condrestart|status}"
+        exit 1
+        ;;
+esac
+
+exit $RETVAL

@@ -1,0 +1,14 @@
+.calendar{
+    min-height: 500px !important;
+}
+.calendar .calendar-header table th:is(.year-title,.prev,.next) {
+    font-size: 15px;
+    padding: 0px 10px;
+    height: 25px;
+}
+.calendar .months-container .month-container.month-2{
+    height: 225px;
+}
+.calendar .calendar-header table th:is(.year-title):not(.year-neighbor,.year-neighbor2){
+    background-color: rgb(245, 187, 0);
+}

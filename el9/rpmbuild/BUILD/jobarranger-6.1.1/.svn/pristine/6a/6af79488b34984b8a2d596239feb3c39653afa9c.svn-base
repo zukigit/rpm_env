@@ -1,0 +1,136 @@
+@import './assets/scss/variables';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  display: flex;
+  background-color: #F4F5F7;
+  height: 100%;
+}
+
+.title {
+  font-size: 3rem;
+  display: grid;
+  place-items: center;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #0a466a;
+  color: white;
+  overflow-y: auto;
+}
+
+.top_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+.logo {
+  font-size: 18px;
+  line-height: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.routes {
+  margin-top: 15px;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.link {
+  text-decoration: none;
+  display: flex;
+  color: white;
+  gap: 10px;
+  padding: 5px 10px;
+  border-right: 4px solid transparent;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.link:hover {
+  background: #184c6d;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.link_text {
+  white-space: nowrap;
+  font-size: 15px;
+}
+
+.menu {
+  display: flex;
+  color: white;
+  padding: 5px 10px;
+  border-right: 4px solid transparent;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  justify-content: space-between;
+}
+
+.menu_item {
+  display: flex;
+  gap: 10px;
+}
+
+.menu_container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.menu_container .link {
+  padding-left: 20px;
+  border-bottom: #fff 0.5px solid;
+}
+
+.main-panel {
+  transition: width 0.25s ease, margin 0.25s ease;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.footer-div {
+  text-align: center;
+  color: #768d99;
+  line-height: 15px;
+}
+
+.logo {
+  color:white;
+}
+
+.ant-input[disabled] {
+  color: $disabled-font-color !important;
+}
+
+.ant-radio-disabled span {
+  color: $disabled-font-color !important;
+}
+
+.ant-radio-wrapper-disabled span {
+  color: $disabled-font-color !important;
+}
+
+.ant-checkbox-wrapper-disabled span {
+  color: $disabled-font-color !important;
+}
+
+.ant-select-disabled span {
+  color: $disabled-font-color !important;
+}
+
+.ant-radio-disabled .ant-radio-inner::after {
+  background-color: #717070 !important;
+}

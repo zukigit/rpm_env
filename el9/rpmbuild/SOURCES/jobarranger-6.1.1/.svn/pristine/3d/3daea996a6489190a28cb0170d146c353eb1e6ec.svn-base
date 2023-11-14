@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\jobarg_joblogput">
+      <UniqueIdentifier>{b8a5da18-3784-48e4-b4bf-86273cc1ac62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\zbxlog">
+      <UniqueIdentifier>{cc144975-c573-4d5b-887a-dcfe289f7a71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\zbxsys">
+      <UniqueIdentifier>{62363c9d-5f5a-4a20-a6e0-448915c437c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\zbxcommon">
+      <UniqueIdentifier>{02ec684b-30a0-4586-afbd-296313444eb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\zbxconf">
+      <UniqueIdentifier>{e47e0a1c-c274-423f-a07a-914dfc781523}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\jainclude">
+      <UniqueIdentifier>{bb9a4c9d-a10c-4f82-80ff-3d53d80c9eb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\jalibs">
+      <UniqueIdentifier>{dc097e54-5b29-49ab-991b-274c73de33d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\zbxcrypto">
+      <UniqueIdentifier>{a697296e-351a-434d-b91b-ad022d865b98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\zbxcomms">
+      <UniqueIdentifier>{e15d668b-fd61-4a27-8a58-335d79c56691}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\zbxjson">
+      <UniqueIdentifier>{01b3a403-ebcd-4d80-8a48-3dd8bbd5c8b1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\jobarg_joblogput\jobarg_joblogput.c">
+      <Filter>ソース ファイル\jobarg_joblogput</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libs\zbxlog\log.c">
+      <Filter>ソース ファイル\zbxlog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libs\zbxsys\mutexs.c">
+      <Filter>ソース ファイル\zbxsys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libs\zbxcommon\str.c">
+      <Filter>ソース ファイル\zbxcommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libs\zbxconf\cfg.c">
+      <Filter>ソース ファイル\zbxconf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libs\zbxcommon\misc.c">
+      <Filter>ソース ファイル\zbxcommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libs\zbxcommon\file.c">
+      <Filter>ソース ファイル\zbxcommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\jalibs\jastr.c">
+      <Filter>ソース ファイル\jalibs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\jalibs\jatcp.c">
+      <Filter>ソース ファイル\jalibs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\jalibs\jatelegram.c">
+      <Filter>ソース ファイル\jalibs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libs\zbxcrypto\md5.c">
+      <Filter>ソース ファイル\zbxcrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libs\zbxcommon\gnuregex.c">
+      <Filter>ソース ファイル\zbxcommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libs\zbxcommon\regexp.c">
+      <Filter>ソース ファイル\zbxcommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libs\zbxcrypto\base64.c">
+      <Filter>ソース ファイル\zbxcrypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libs\zbxcommon\xml.c">
+      <Filter>ソース ファイル\zbxcommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libs\zbxsys\threads.c">
+      <Filter>ソース ファイル\zbxsys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libs\zbxcommon\zbxgetopt.c">
+      <Filter>ソース ファイル\zbxcommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libs\zbxcomms\comms.c">
+      <Filter>ソース ファイル\zbxcomms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\libs\zbxcommon\comms.c">
+      <Filter>ソース ファイル\zbxcommon</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\jainclude\jatcp.h">
+      <Filter>ヘッダー ファイル\jainclude</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\jainclude\jatelegram.h">
+      <Filter>ヘッダー ファイル\jainclude</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\jainclude\jastr.h">
+      <Filter>ヘッダー ファイル\jainclude</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

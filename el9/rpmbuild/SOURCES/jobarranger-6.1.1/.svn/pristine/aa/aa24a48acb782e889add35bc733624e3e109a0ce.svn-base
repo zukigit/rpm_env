@@ -1,0 +1,133 @@
+.steps-content {
+  min-height: 380px;
+  // margin-top: 16px;
+  /* padding-top: 80px; */
+  /* text-align: center; */
+  background-color: #fafafa;
+  border: 1px dashed #e9e9e9;
+  border-radius: 2px;
+}
+
+.steps-action {
+  margin-top: 24px;
+}
+
+[data-theme="dark"] .steps-content {
+  margin-top: 16px;
+  border: 1px dashed #303030;
+  background-color: rgba(255, 255, 255, 0.04);
+  color: rgba(255, 255, 255, 0.65);
+  padding-top: 20px;
+}
+
+html, body {
+  height: 94%;
+}
+
+div.parent {
+  /* height: 200px; */
+  /* background: #cccccc; */
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+}
+
+div.setupBody {
+  background-color: #f1f1f1;
+  border-style: solid;
+  border-color: #303030;
+  margin: 100px auto;
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
+  padding: 40px;
+  width: 900px;
+  min-width: 300px;
+  min-height: 550px;
+}
+
+.setupBody {
+  background-color: #ffff00;
+  width: 900px;
+  height: 100px;
+}
+
+div.leftContent {
+  float: left;
+  height: 400px;
+  margin-right: 10px;
+  width: 200px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+div.rightContent {
+  /* width: 600px; */
+  overflow: hidden;
+}
+
+div.title {
+  font-size: 50px;
+  text-align: left;
+}
+
+div.final {
+  font-size: 30px;
+  text-align: left;
+}
+
+div.inner_div {
+  height: 100%;
+}
+
+.errDiv {
+  border-style: solid;
+  border-color: #fafafa;
+  padding: 5px;
+  text-align: center;
+}
+
+.errDivReq {
+  border-style: solid;
+  border-color: #fafafa;
+  text-align: left;
+}
+
+.setupSummary {
+  line-height: 30px;
+  height: 100;
+  display: grid;
+}
+
+.result {
+  display: inline-block;
+  width: 170px;
+  height: 30px;
+  text-align: right;
+  color: gray;
+}
+
+.resultDisplay {
+  display: inline-block;
+  width: 300px;
+  height: 30px;
+  text-align: right;
+}
+
+.block {
+  height: 30px;
+}
+
+.ant-form-item {
+  margin-bottom: 10px !important;
+}
+
+.divScroll {
+  width: 100%;
+  height: 65px;
+  overflow-y: auto;
+}
+
+.errorMsg {
+  margin-bottom: 0em;
+}

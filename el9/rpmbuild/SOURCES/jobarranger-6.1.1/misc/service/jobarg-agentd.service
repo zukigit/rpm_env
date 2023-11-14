@@ -1,0 +1,18 @@
+[Unit]
+Description=Jobarranger Agent
+After=syslog.target
+After=network.target
+
+[Service]
+Environment="CONFFILE=/etc/jobarranger/jobarg_agentd.conf"
+EnvironmentFile=-/etc/sysconfig/jobarg-agent
+Type=forking
+Restart=on-failure
+PIDFile=/run/jobarranger/jobarg_agentd.pid
+KillMode=control-group
+ExecStart=/usr/sbin/jobarg_agentd -c $CONFFILE
+ExecStop=/bin/kill -SIGTERM $MAINPID
+RestartSec=10s
+
+[Install]
+WantedBy=multi-user.target

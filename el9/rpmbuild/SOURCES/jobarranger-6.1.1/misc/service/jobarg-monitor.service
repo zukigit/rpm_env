@@ -1,0 +1,23 @@
+[Unit]
+Description=Jobarranger Monitor
+After=syslog.target
+After=network.target
+After=mysql.service
+After=mysqld.service
+After=mariadb.service
+After=postgresql.service
+
+[Service]
+Environment="CONFFILE=/etc/jobarranger/jobarg_monitor.conf"
+EnvironmentFile=-/etc/sysconfig/jobarg-monitor
+Type=forking
+Restart=on-failure
+PIDFile=/run/jobarranger/jobarg_monitor.pid
+KillMode=control-group
+ExecStart=/usr/sbin/jobarg_monitor -c $CONFFILE
+ExecStop=/bin/kill -SIGTERM $MAINPID
+RestartSec=10s
+TimeoutSec=0
+
+[Install]
+WantedBy=multi-user.target

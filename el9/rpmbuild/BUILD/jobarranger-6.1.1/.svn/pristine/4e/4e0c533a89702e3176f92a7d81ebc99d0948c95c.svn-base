@@ -1,0 +1,44 @@
+@import '../../assets/scss/variables';
+.ant-collapse-header {
+  background-color: #3baae3;
+  padding: 0px 16px !important;
+  height: 25px;
+}
+
+.object-info-layout {
+  padding: 4px 4px;
+}
+
+#jobnet_table > .ant-table-container,
+#boottime_table > .ant-table-container {
+  border: 1px solid #000000;
+  height: 500px;
+  max-width: 100%;
+}
+
+.ant-table-thead > tr > th,
+.ant-table-tbody > tr > td,
+.ant-table tfoot > tr > th,
+.ant-table tfoot > tr > td {
+  position: relative;
+  padding: 3px 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* .ant-btn {
+  color: #40a9ff;
+  border-color: #40a9ff;
+  background: #fff;
+}
+
+.ant-btn:hover,
+.ant-btn:focus {
+  background-color: #40a9ff;
+  border-color: #fff;
+  color: #fff;
+} */
+.ant-table{
+  font-size: $sm-font-size;
+}

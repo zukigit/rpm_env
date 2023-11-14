@@ -1,0 +1,14 @@
+
+@import '../../assets/scss/variables';
+.ant-modal-header .ant-modal-title{
+    font-size: $md-font-size;
+}
+.ant-form{
+    font-size: $sm-font-size;
+}
+.ant-table-row{
+    font-size: $sm-font-size;
+}
+.ant-form-item-explain, .ant-form-item-extra{
+    font-size: $sm-font-size;
+}

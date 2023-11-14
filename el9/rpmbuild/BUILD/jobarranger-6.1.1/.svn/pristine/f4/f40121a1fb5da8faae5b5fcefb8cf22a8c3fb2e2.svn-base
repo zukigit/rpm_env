@@ -1,0 +1,14 @@
+#
+# Jobarranger manager system react web frontend
+#
+
+Alias /jobarranger /usr/share/jobarranger/ui
+
+ProxyTimeout 300
+
+<Directory "/usr/share/jobarranger/ui">
+    Options Indexes FollowSymLinks
+    AllowOverride All
+    Require all granted
+</Directory>
+

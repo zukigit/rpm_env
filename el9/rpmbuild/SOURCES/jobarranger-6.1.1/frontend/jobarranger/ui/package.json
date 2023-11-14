@@ -1,0 +1,67 @@
+{
+  "name": "jobarranger",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "./",
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@reduxjs/toolkit": "^1.8.2",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.2.0",
+    "@testing-library/user-event": "^13.5.0",
+    "ant-design-draggable-modal": "^1.0.0",
+    "antd": "^4.20.4",
+    "axios": "^0.27.2",
+    "i18next": "^21.8.0",
+    "i18next-browser-languagedetector": "^6.1.4",
+    "i18next-http-backend": "^1.4.0",
+    "jquery": "^3.6.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.3",
+    "moment-timezone": "^0.5.37",
+    "node-sass": "^7.0.1",
+    "query-string": "^7.1.1",
+    "rc-year-calendar": "^1.0.2",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-draggable": "^4.4.5",
+    "react-flatpickr": "^3.10.12",
+    "react-highlight-words": "^0.18.0",
+    "react-i18next": "^11.16.9",
+    "react-redux": "^8.0.2",
+    "react-resizable": "^3.0.4",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "react-uuid": "^1.0.2",
+    "redux": "^4.2.0",
+    "virtuallist-antd": "^0.7.4-beta.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}

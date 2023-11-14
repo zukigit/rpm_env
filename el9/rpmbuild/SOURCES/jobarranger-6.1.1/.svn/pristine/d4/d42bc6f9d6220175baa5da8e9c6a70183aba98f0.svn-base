@@ -1,0 +1,7 @@
+@import '../../assets/scss/variables';
+j.ant-modal-header{
+    font-size: $dialog-header-font;
+  }
+  .ant-modal-body{
+    font-size: $sm-font-size;
+  }

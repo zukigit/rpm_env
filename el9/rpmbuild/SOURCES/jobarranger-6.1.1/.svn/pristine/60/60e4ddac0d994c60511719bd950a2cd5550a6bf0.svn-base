@@ -1,0 +1,14 @@
+@import "../../../../assets/scss/variables";
+
+.value-change-form .ant-table .ant-table-tbody > tr > td.ant-table-cell {
+    white-space: break-spaces;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 7px;
+    color: #292929d9;
+}
+
+.value-change-form .ant-table .ant-table-thead > tr > th {
+    font-size: $th-font;
+    padding: 2px 8px;
+}

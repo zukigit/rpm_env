@@ -1,0 +1,17 @@
+@import '../../../assets/scss/variables';
+ 
+  .ant-checkbox-wrapper{
+    font-size: $sm-font-size;
+  }
+  .ant-card-head{
+    font-size: $md-font-size;
+  }
+  .every-month{
+    font-size: $md-font-size;
+  }
+  .ant-select{
+    font-size: $sm-font-size;
+  }
+  .file-read{
+    font-size: $sm-font-size;
+  }

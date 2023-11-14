@@ -1,0 +1,12 @@
+.mb-10x {
+    margin-bottom: 10px;
+}
+
+.light-blue {
+    background-color: rgb(187, 232, 255);
+}
+
+.ant-table-tbody > tr.ant-table-row:hover > td ,.ant-table-tbody > tr > td.ant-table-cell-row-hover {
+    background: unset !important;
+    box-shadow:inset 0 0 0 2000px rgba(151, 166, 163, 0.3);
+}

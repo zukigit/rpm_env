@@ -1,0 +1,29 @@
+.TH JOBARG_AGENTD 8 "17 March 2014"
+.SH NAME
+jobarg_agentd \- Job Arranger agent daemon.
+.SH SYNOPSIS
+.B jobarg_agentd [-hV] [-c \fI<config-file>\fB]
+.SH DESCRIPTION
+.B jobarg_agentd
+is a daemon for Job Arranger server parameters.
+.SS Options
+.IP "-c, --config \fI<config-file>\fR"
+Use the alternate \fIconfig-file\fR instead of the default one.
+Absolute path should be specified.
+.
+.IP "-h, --help"
+Display this help and exit.
+.IP "-V, --version"
+Output version information and exit.
+.SH FILES
+.TP
+.I /usr/local/etc/jobarranger/jobarg_agentd.conf
+Default location of Job Arranger agent configuration file (if not modified during compile time).
+.SH "SEE ALSO"
+.BR jobarg_server (8),
+.BR jobarg_exec (1),
+.BR jobarg_get (1),
+.BR jobarg_joblogput (1),
+.BR jobarg_release (1)
+.SH AUTHOR
+Komatsu Yuji <komatsu@fitechforce.jp>

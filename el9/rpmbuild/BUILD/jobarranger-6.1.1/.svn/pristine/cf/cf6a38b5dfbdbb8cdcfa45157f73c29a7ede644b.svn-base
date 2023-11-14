@@ -1,0 +1,47 @@
+{
+    "name": "ellipsesynergie/api-response",
+    "description": "Simple package to handle response properly in your API",
+    "keywords": [
+        "api",
+        "json",
+        "fractal"
+    ],
+    "homepage": "https://github.com/ellipsesynergie/api-response",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maxime Beaudoin",
+            "email": "maxime.beaudoin@ellipse-synergie.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Phil Sturgeon",
+            "email": "email@philsturgeon.co.uk",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0",
+        "league/fractal": "~0.17"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.0",
+        "mockery/mockery": "~0.9",
+        "illuminate/contracts": "~5.0",
+        "illuminate/http": "~5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "EllipseSynergie\\ApiResponse\\": "src",
+            "EllipseSynergie\\ApiResponse\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+          "dev-master": "0.17-dev"
+        }
+    },
+    "scripts": {
+        "test": "@php vendor/bin/phpunit --colors=always"
+    }
+}

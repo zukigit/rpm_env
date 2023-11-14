@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\jalibs\jafile.c" />
+    <ClCompile Include="..\..\..\src\jalibs\jahostname.c" />
+    <ClCompile Include="..\..\..\src\jalibs\jajobfile.c" />
+    <ClCompile Include="..\..\..\src\jalibs\jajobobject.c" />
+    <ClCompile Include="..\..\..\src\jalibs\jakill.c" />
+    <ClCompile Include="..\..\..\src\jalibs\jastr.c" />
+    <ClCompile Include="..\..\..\src\jalibs\jatar.c" />
+    <ClCompile Include="..\..\..\src\jalibs\jatcp.c" />
+    <ClCompile Include="..\..\..\src\jalibs\jatelegram.c" />
+    <ClCompile Include="..\..\..\src\jobarg_agent\executive.c" />
+    <ClCompile Include="..\..\..\src\jobarg_agent\jaagent.c" />
+    <ClCompile Include="..\..\..\src\jobarg_agent\jadbbackup.c" />
+    <ClCompile Include="..\..\..\src\jobarg_agent\jaextjob.c" />
+    <ClCompile Include="..\..\..\src\jobarg_agent\jafcopy.c" />
+    <ClCompile Include="..\..\..\src\jobarg_agent\jajournal.c" />
+    <ClCompile Include="..\..\..\src\jobarg_agent\jareboot.c" />
+    <ClCompile Include="..\..\..\src\jobarg_agent\jobarg_agentd.c" />
+    <ClCompile Include="..\..\..\src\jobarg_agent\listener.c" />
+    <ClCompile Include="..\..\..\src\jobarg_agent\perfstat.c" />
+    <ClCompile Include="..\..\..\src\libs\zbxcommon\alias.c" />
+    <ClCompile Include="..\..\..\src\libs\zbxcommon\comms.c" />
+    <ClCompile Include="..\..\..\src\libs\zbxcommon\file.c" />
+    <ClCompile Include="..\..\..\src\libs\zbxcommon\gnuregex.c" />
+    <ClCompile Include="..\..\..\src\libs\zbxcommon\misc.c" />
+    <ClCompile Include="..\..\..\src\libs\zbxcommon\regexp.c" />
+    <ClCompile Include="..\..\..\src\libs\zbxcommon\str.c" />
+    <ClCompile Include="..\..\..\src\libs\zbxcommon\xml.c" />
+    <ClCompile Include="..\..\..\src\libs\zbxcommon\zbxgetopt.c" />
+    <ClCompile Include="..\..\..\src\libs\zbxcommshigh\comms.c" />
+    <ClCompile Include="..\..\..\src\libs\zbxcomms\comms.c" />
+    <ClCompile Include="..\..\..\src\libs\zbxconf\cfg.c" />
+    <ClCompile Include="..\..\..\src\libs\zbxcrypto\base64.c" />
+    <ClCompile Include="..\..\..\src\libs\zbxcrypto\md5.c" />
+    <ClCompile Include="..\..\..\src\libs\zbxexec\execute.c" />
+    <ClCompile Include="..\..\..\src\libs\zbxjson\json.c" />
+    <ClCompile Include="..\..\..\src\libs\zbxlog\log.c" />
+    <ClCompile Include="..\..\..\src\libs\zbxsysinfo\common\common.c" />
+    <ClCompile Include="..\..\..\src\libs\zbxsysinfo\common\file.c" />
+    <ClCompile Include="..\..\..\src\libs\zbxsysinfo\common\http.c" />
+    <ClCompile Include="..\..\..\src\libs\zbxsysinfo\common\net.c" />
+    <ClCompile Include="..\..\..\src\libs\zbxsysinfo\common\system.c" />
+    <ClCompile Include="..\..\..\src\libs\zbxsysinfo\sysinfo.c" />
+    <ClCompile Include="..\..\..\src\libs\zbxsysinfo\win32\pdhmon.c" />
+    <ClCompile Include="..\..\..\src\libs\zbxsys\mutexs.c" />
+    <ClCompile Include="..\..\..\src\libs\zbxsys\threads.c" />
+    <ClCompile Include="..\..\..\src\libs\zbxwin32\perfmon.c" />
+    <ClCompile Include="..\..\..\src\libs\zbxwin32\service.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\jainclude\jacommon.h" />
+    <ClInclude Include="..\..\..\jainclude\jahostname.h" />
+    <ClInclude Include="..\..\..\jainclude\jajobobject.h" />
+    <ClInclude Include="..\..\..\jainclude\jastr.h" />
+    <ClInclude Include="..\..\..\jainclude\jatar.h" />
+    <ClInclude Include="..\..\..\jainclude\jatcp.h" />
+    <ClInclude Include="..\..\..\jainclude\jatelegram.h" />
+    <ClInclude Include="..\..\..\src\jobarg_agent\cpustat.h" />
+    <ClInclude Include="..\..\..\src\jobarg_agent\diskdevices.h" />
+    <ClInclude Include="..\..\..\src\jobarg_agent\executive.h" />
+    <ClInclude Include="..\..\..\src\jobarg_agent\jaagent.h" />
+    <ClInclude Include="..\..\..\src\jobarg_agent\jadbbackup.h" />
+    <ClInclude Include="..\..\..\src\jobarg_agent\jafcopy.h" />
+    <ClInclude Include="..\..\..\src\jobarg_agent\jajournal.h" />
+    <ClInclude Include="..\..\..\src\jobarg_agent\jobarg_agentd.h" />
+    <ClInclude Include="..\..\..\src\jobarg_agent\listener.h" />
+    <ClInclude Include="..\..\..\src\jobarg_agent\perfstat.h" />
+    <ClInclude Include="..\..\..\src\jobarg_agent\stats.h" />
+    <ClInclude Include="..\..\..\src\jobarg_agent\zbxconf.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="jobarg_agent.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="jobarg_agent.ico" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C58805FF-8919-4838-B390-45877DE2150F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>jobarg_agent</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>
+    </LinkIncremental>
+    <TargetName>$(ProjectName)d</TargetName>
+    <IntDir>$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental />
+    <TargetName>$(ProjectName)d</TargetName>
+    <IntDir>$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>$(ProjectName)d</TargetName>
+    <OutDir>$(SolutionDir)..\..\bin\jobarg_agent\$(Platform)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>$(ProjectName)d</TargetName>
+    <OutDir>$(SolutionDir)..\..\bin\jobarg_agent\$(Platform)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;ZABBIX_SERVICE;_WINDOWS;WITH_COMMON_METRICS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\tools;$(SolutionDir)..\..\tools\json;$(SolutionDir)..\..\tools\libtar\libtar\lib;$(SolutionDir)..\..\tools\libtar\libtar\listhash;$(SolutionDir)..\..\tools\libtar\libtar\win32;$(SolutionDir)..\win32\include;$(SolutionDir)..\..\include;$(SolutionDir)..\..\jainclude;$(SolutionDir)..\..\src\jobarg_agent;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>%(Directory)</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Ws2_32.lib;IPHLPAPI.lib;Pdh.lib;psapi.lib;$(SolutionDir)$(Configuration)\sqlite3.lib;$(SolutionDir)$(Configuration)\json.lib;$(SolutionDir)$(Configuration)\libtar.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;ZABBIX_SERVICE;_WINDOWS;WITH_COMMON_METRICS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\tools;$(SolutionDir)..\..\tools\json;$(SolutionDir)..\..\tools\libtar\libtar\lib;$(SolutionDir)..\..\tools\libtar\libtar\listhash;$(SolutionDir)..\..\tools\libtar\libtar\win32;$(SolutionDir)..\win32\include;$(SolutionDir)..\..\include;$(SolutionDir)..\..\jainclude;$(SolutionDir)..\..\src\jobarg_agent;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>%(Directory)</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Ws2_32.lib;IPHLPAPI.lib;Pdh.lib;psapi.lib;$(SolutionDir)$(Configuration)\sqlite3.lib;$(SolutionDir)$(Configuration)\json.lib;$(SolutionDir)$(Configuration)\libtar.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;ZABBIX_SERVICE;_WINDOWS;WITH_COMMON_METRICS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\tools;$(SolutionDir)..\..\tools\libtar\libtar\lib;$(SolutionDir)..\..\tools\libtar\libtar\listhash;$(SolutionDir)..\..\tools\libtar\libtar\win32;$(SolutionDir)..\win32\include;$(SolutionDir)..\..\include;$(SolutionDir)..\..\jainclude;$(SolutionDir)..\..\src\jobarg_agent;$(SolutionDir)..\..\tools\json;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>%(Directory)</ObjectFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Ws2_32.lib;IPHLPAPI.lib;Pdh.lib;psapi.lib;$(SolutionDir)..\..\bin\jobarg_agent\$(Platform)\json.lib;$(SolutionDir)..\..\bin\jobarg_agent\$(Platform)\libtar.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;ZABBIX_SERVICE;_WINDOWS;WITH_COMMON_METRICS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\tools;$(SolutionDir)..\..\tools\libtar\libtar\lib;$(SolutionDir)..\..\tools\libtar\libtar\listhash;$(SolutionDir)..\..\tools\libtar\libtar\win32;$(SolutionDir)..\win32\include;$(SolutionDir)..\..\include;$(SolutionDir)..\..\jainclude;$(SolutionDir)..\..\src\jobarg_agent;$(SolutionDir)..\..\tools\json;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>%(Directory)</ObjectFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Ws2_32.lib;IPHLPAPI.lib;Pdh.lib;psapi.lib;$(SolutionDir)..\..\bin\jobarg_agent\$(Platform)\json.lib;$(SolutionDir)..\..\bin\jobarg_agent\$(Platform)\libtar.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

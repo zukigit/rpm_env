@@ -1,0 +1,148 @@
+# Job Arranger for ZABBIX
+# This is a configuration file for Job Arranger Monitor process
+
+############ JOB ARRANGER SERVER PARAMETERS INCLUDE #################
+
+#        You may include ONLY individual file in the configuration file.
+#        Do NOT include 'all files in a directory' nor wildcard like /*.conf even in included files.
+#
+# Mandatory: no
+# Default:
+# Include=
+Include=/etc/jobarranger/jobarg_server.conf
+
+### Option: DBHost
+#        Database host name.
+#        If set to localhost, socket is used for MySQL.
+#        If set to empty string, socket is used for PostgreSQL.
+#
+# Mandatory: no
+# Default:
+# DBHost=localhost
+
+### Option: DBName
+#        Database name.
+#
+# Mandatory: yes
+# Default:
+# DBName=
+
+### Option: DBUser
+#        Database user.
+#
+# Mandatory: yes
+# Default:
+# DBUser=
+
+### Option: DBPassword
+#        Database password.
+#        Comment this line if no password is used.
+#
+# Mandatory: no
+# Default:
+# DBPassword=
+
+### Option: DBSocket
+#        Path to MySQL socket.
+#
+# Mandatory: no
+# Default:
+# DBSocket=/tmp/mysql.sock
+
+### Option: DBPort
+#        Database port when not using local socket.
+#
+# Mandatory: no
+# Range: 1024-65535
+# Default: 3306 (for MySQL)
+# DBPort=3306
+
+### Option: DebugLevel
+#        Specifies debug level
+#        0 - no debug
+#        1 - critical information
+#        2 - error information
+#        3 - warnings
+#        4 - for debugging (produces lots of information)
+#
+# Mandatory: no
+# Range: 0-4
+# Default: 3
+# DebugLevel=3
+DebugLevel=3
+
+### Option: LogFileSize
+#        Maximum size of log file in MB.
+#        0 - disable automatic log rotation.
+#
+# Mandatory: no
+# Range: 0-1024
+# Default: 1 (MB)
+# LogFileSize=1
+LogFileSize=10
+
+### Option: LogType
+#	Specifies where log messages are written to:
+#		file    - file specified with LogFile parameter
+#		console - standard output
+#		system  - syslog file.
+#
+# Mandatory: no
+# Default:file
+
+############ JOB ARRANGER SPECIFIC PARAMETERS ################
+
+### Option: JaLogFile
+#        Name of Job Arranger log file.
+#        If not set, syslog is used.
+#
+# Mandatory: no
+# Default:
+# JaLogFile=
+JaLogFile=/var/log/jobarranger/jobarg_monitor.log
+
+### Option: JaPidFile
+#        Name of PID file.
+#
+# Mandatory: no
+# Default:
+# JaPidFile=/var/run/jobarranger/jobarg_monitor.pid
+
+### Option: JaLoadShiftTime 
+#        For pre-deployment time of job net,
+#        you can specify the number of minute time shift of the monitored time.
+#
+# Mandatory: no
+# Default: 0 (minute)
+# JaLoadShiftTime=0
+
+### Option: JaRunShiftTime
+#        Against the scheduled execution time of the jobnet,
+#        specify the number of minute time shift of the monitored time.
+#
+# Mandatory: no
+# Default: 0 (minute)
+# JaRunShiftTime=0
+
+### Option: JaMonitorInterval
+#        Job Arranger Monitor interval.
+#
+# Mandatory: no
+# Default: 60 (second)
+# JaMonitorInterval=60
+
+### Option: JaSenderScript
+#        Specifies the shell script to error notification to Zabbix.
+#        If you omit this parameter it does not notify the error to Zabbix.
+#
+# Mandatory: no
+# Default:
+# JaSenderScript=
+JaSenderScript=/etc/jobarranger/monitor/jasender_monitor.sh
+
+### Option: JaExecutionUser
+#        Specify the execution user of job Arranger Monitor.
+#
+# Mandatory: no
+# Default: zabbix
+# JaExecutionUser=zabbix

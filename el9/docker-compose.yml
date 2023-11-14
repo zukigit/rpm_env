@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+
+  rhel8:
+    image: zukidocker/oss:rpm_env_9
+    container_name: rpm_env_9
+    volumes:
+      - ./rpmbuild:/home/moon/rpmbuild

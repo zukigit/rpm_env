@@ -1,0 +1,11 @@
+<IfModule mod_headers.c>
+  Header set Access-Control-Allow-Origin '*'
+  Header set Access-Control-Allow-Methods "GET,PUT,POST,DELETE"
+  Header set Access-Control-Allow-Headers "Content-Type, Authorization"
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  RewriteRule ^(.*)$ app/$1 [L]
+</IfModule>
+

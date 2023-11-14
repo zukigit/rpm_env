@@ -1,0 +1,82 @@
+.react-resizable {
+    position: relative;
+    background-clip: padding-box;
+  }
+  
+  .vtb-react-resizable-handle {
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    //background-color: aqua;
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2IDYiIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiNmZmZmZmYwMCIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI2cHgiIGhlaWdodD0iNnB4Ij48ZyBvcGFjaXR5PSIwLjMwMiI+PHBhdGggZD0iTSA2IDYgTCAwIDYgTCAwIDQuMiBMIDQgNC4yIEwgNC4yIDQuMiBMIDQuMiAwIEwgNiAwIEwgNiA2IEwgNiA2IFoiIGZpbGw9IiMwMDAwMDAiLz48L2c+PC9zdmc+");
+    background-position: bottom right;
+    padding: 0 0 0 0;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    box-sizing: border-box;
+    cursor: se-resize;
+  }
+
+  .show {
+    color: #918888;
+    display: block;
+  }
+
+  .hide {
+    display: none;
+  }
+  tr.valid-row > td.ant-table-cell {
+    background-color: #84e2cee7;
+  }
+  // .ant-table-tbody > tr.ant-table-row-selected > td.ant-table-cell{
+  //   background-color: #6998ab;
+  // }
+  .ant-table-tbody > tr.ant-table-row:hover > td.antd-table-cell{
+    background-color: #a7d1e1;
+  }
+  .related-data-box > div{
+    border: black;
+    border-style: double;
+    padding: 5px;
+    margin: 10px 5px;
+  }
+  .related-data-box > div >th,td{
+    padding:2px 10px;
+  }
+  .ant-table.ant-table-middle .ant-table-tbody > tr > td.ant-table-cell{
+    padding-top:3px;
+    padding-bottom: 3px;
+  }
+  .ant-table-thead > tr > th.ant-table-cell > div.ant-table-filter-column > span.active , .anticon.anticon-caret-up.ant-table-column-sorter-up.active , .anticon.anticon-caret-down.ant-table-column-sorter-down.active{
+    border:2px;
+   background-color: #a5acbf; 
+  }
+
+  .ant-table-cell > div > .ant-btn-sm{
+    margin : 0;
+  }
+
+  // .ant-table-tbody > tr > td .ant-table-cell .extra-col-end{
+  //   background-color: rgb(240, 240, 240);
+  //   border:none;
+  // }
+  // .ant-table-thead > tr > th.ant-table-cell.extra-col-end{
+  //   background-color: rgb(240, 240, 240);
+  //   border:none;
+  // }
+  // tr > td.ant-table-cell.extra-col-end{
+  //   background-color: rgb(240, 240, 240);
+  // }  
+  .ant-table-thead > tr > th.ant-table-cell.ant-table-cell-scrollbar{
+    background-color: rgb(240, 240, 240);
+    border:none;
+  }
+  .table-version-row{
+    width:75px !important;
+  }
+
+  .ant-table-header>table>colgroup>col , .ant-table-thead>tr>th , .ant-table-body>div>table>colgroup>col , .ant-table-tbody>tr.ant-table-row>td, .ant-table-tbody>tr.ant-table-measure-row>td{
+    min-width: 25px;
+  }

@@ -1,0 +1,21 @@
+.editable-cell {
+  position: relative;
+}
+
+.editable-cell-value-wrap {
+  cursor: pointer;
+}
+
+.editable-row:hover .editable-cell-value-wrap {
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+}
+
+.editable-table .ant-table-tbody > tr > td.ant-table-cell{
+  padding-top:3px;
+  padding-bottom: 3px;
+}
+
+.editable-table .ant-table-header .ant-table-thead > tr > th {
+  font-size: 13px;
+}
