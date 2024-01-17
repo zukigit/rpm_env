@@ -12,7 +12,10 @@ for file_path in "$folder"/*; do
     src_folder=$(basename "$file_path")    
 done
 
-mv ./src/$src_folder ./src/$src_name
+rm -rf ./src/*gz
+if [[ "$src_folder" != "$src_name" ]]; then
+    mv ./src/$src_folder ./src/$src_name
+fi
 cd ./src
 tar cvzf "$src_name.tar.gz" $src_name/
 
