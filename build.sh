@@ -24,18 +24,21 @@ if [ $? -eq 0 ]; then
     ./el7/build_7.sh
 else
     echo "file copy failed. Return code: $?"
+    exit 1
 fi
 
 if [ $? -eq 0 ]; then
     ./el8/build_8.sh
 else
     echo "el7 failed. Return code: $?"
+    exit 69
 fi
 
 if [ $? -eq 0 ]; then
     ./el9/build_9.sh
 else
     echo "el8 failed. Return code: $?"
+    exit 69
 fi
 
 if [ $? -eq 0 ]; then
