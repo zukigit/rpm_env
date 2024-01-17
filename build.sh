@@ -18,10 +18,34 @@ tar cvzf "$src_name.tar.gz" $src_name/
 
 cp -f "$src_name.tar.gz" ../el7/rpmbuild/SOURCES/
 cp -f "$src_name.tar.gz" ../el8/rpmbuild/SOURCES/
+cp -f "$src_name.tar.gz" ../el9/rpmbuild/SOURCES/
 
 if [ $? -eq 0 ]; then
     ./el7/build_7.sh
+else
+    echo "file copy failed. Return code: $?"
+fi
+
+if [ $? -eq 0 ]; then
     ./el8/build_8.sh
 else
-    echo "File copy failed. Return code: $?"
+    echo "el7 failed. Return code: $?"
+fi
+
+if [ $? -eq 0 ]; then
+    ./el9/build_8.sh
+else
+    echo "el8 failed. Return code: $?"
+fi
+
+if [ $? -eq 0 ]; then
+    rm -rf ./exports/el7/*
+    rm -rf ./exports/el8/*
+    rm -rf ./exports/el9/*
+
+    cp -r el7/rpmbuild/RPMS/x86_64/ ./exports/el7/
+    cp -r el8/rpmbuild/RPMS/x86_64/ ./exports/el8/
+    cp -r el9/rpmbuild/RPMS/x86_64/ ./exports/el9/
+else
+    echo "el9 failed. Return code: $?"
 fi
