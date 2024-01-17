@@ -33,7 +33,7 @@ else
 fi
 
 if [ $? -eq 0 ]; then
-    ./el9/build_8.sh
+    ./el9/build_9.sh
 else
     echo "el8 failed. Return code: $?"
 fi
