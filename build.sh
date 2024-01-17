@@ -20,6 +20,7 @@ cp -f "$src_name.tar.gz" ../el7/rpmbuild/SOURCES/
 cp -f "$src_name.tar.gz" ../el8/rpmbuild/SOURCES/
 cp -f "$src_name.tar.gz" ../el9/rpmbuild/SOURCES/
 
+cd ..
 if [ $? -eq 0 ]; then
     ./el7/build_7.sh
 else
