@@ -1,0 +1,5 @@
+[mariadb]
+name = MariaDB-10.3.34
+baseurl= http://archive.mariadb.org/mariadb-10.3.34/yum/centos/$releasever/$basearch
+gpgkey= https://archive.mariadb.org/PublicKey
+gpgcheck=1

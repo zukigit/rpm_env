@@ -1,0 +1,5 @@
+[cent6]
+name=CentOS 6
+baseurl=https://vault.centos.org/6.0/os/x86_64/
+enabled=1
+gpgcheck=0
