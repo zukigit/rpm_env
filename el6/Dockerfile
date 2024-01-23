@@ -10,6 +10,7 @@ RUN subscription-manager repos --enable rhel-6-server-optional-rpms \
     --enable rhel-server-rhscl-6-rpms && \
     yum install https://archives.fedoraproject.org/pub/archive/epel/6/x86_64/Packages/e/epel-release-6-8.noarch.rpm -y && \
     yum update -y && \
+    yum install tar -y && \
     yum install libgomp automake autoconf make -y && \
     yum install openssl-devel -y && \
     yum install libssh2 -y && \
