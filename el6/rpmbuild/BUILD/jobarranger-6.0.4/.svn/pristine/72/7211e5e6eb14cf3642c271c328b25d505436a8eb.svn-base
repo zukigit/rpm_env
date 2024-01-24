@@ -1,0 +1,111 @@
+/*
+** Job Arranger for ZABBIX
+** Copyright (C) 2012 FitechForce, Inc. All Rights Reserved.
+** Copyright (C) 2013 Daiwa Institute of Research Business Innovation Ltd. All Rights Reserved.
+** Copyright (C) 2021 Daiwa Institute of Research Ltd. All Rights Reserved.
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU General Public License as published by
+** the Free Software Foundation; either version 2 of the License, or
+** (at your option) any later version.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU General Public License for more details.
+**
+** You should have received a copy of the GNU General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+**/
+
+
+#include "common.h"
+#include "log.h"
+#include "db.h"
+
+#include "jacommon.h"
+#include "jajobnetkill.h"
+#include "jastatus.h"
+#include "jalog.h"
+#include "jajoblog.h"
+#include "../jarun/jaruniconjob.h"
+#include "../jarun/jaruniconfwait.h"
+#include "../jajob/jajobiconextjob.h"
+#include "../jajob/jajobiconless.h"
+
+/******************************************************************************
+ *                                                                            *
+ * Function:                                                                  *
+ *                                                                            *
+ * Purpose:                                                                   *
+ *                                                                            *
+ * Parameters:                                                                *
+ *                                                                            *
+ * Return value:                                                              *
+ *                                                                            *
+ * Comments:                                                                  *
+ *                                                                            *
+ ******************************************************************************/
+int jajobnet_kill(const zbx_uint64_t inner_jobnet_id)
+{
+    DB_RESULT result1;
+    DB_RESULT result2;
+    DB_ROW row1;
+    DB_ROW row2;
+    double sec;
+    zbx_uint64_t inner_job_id;
+    int job_status, job_type;
+    int db_ret;
+    const char *__function_name = "jajobnet_kill";
+
+    zabbix_log(LOG_LEVEL_DEBUG, "In %s() inner_jobnet_id: " ZBX_FS_UI64,
+               __function_name, inner_jobnet_id);
+
+    result1 = DBselect
+        ("select count(*) from ja_run_job_table where inner_jobnet_main_id = " ZBX_FS_UI64
+         " and status in (%d) and job_type<>%d", inner_jobnet_id,
+         JA_JOB_STATUS_READY, JA_JOB_TYPE_JOBNET);
+    if (NULL == (row1 = DBfetch(result1))) {
+        DBfree_result(result1);
+        return FAIL;
+    }
+    result2 = DBselect
+        ("select count(*) from ja_run_job_table where inner_jobnet_main_id = " ZBX_FS_UI64
+         " and status in (%d, %d) and job_type<>%d", inner_jobnet_id,
+         JA_JOB_STATUS_RUN, JA_JOB_STATUS_ABORT, JA_JOB_TYPE_JOBNET);
+    if (NULL == (row2 = DBfetch(result2))) {
+        DBfree_result(result1);
+        DBfree_result(result2);
+        return FAIL;
+    }
+
+    ja_log("JAABORT000002", inner_jobnet_id, NULL, 0, __function_name,
+           inner_jobnet_id, atoi(row1[0]), atoi(row2[0]));
+
+    if(atoi(row2[0]) == 0) {
+        db_ret =
+            DBexecute
+            ("update ja_run_job_table set status = %d where inner_jobnet_main_id = " ZBX_FS_UI64
+            " and job_type = %d and status in (%d, %d)", JA_JOB_STATUS_ENDERR, inner_jobnet_id,
+            JA_JOB_TYPE_JOBNET, JA_JOB_STATUS_RUN, JA_JOB_STATUS_RUNERR);
+            
+        if (db_ret < ZBX_DB_OK) {
+            DBfree_result(result1);
+            DBfree_result(result2);
+            return FAIL;
+        }
+
+        if( ja_set_jobstatus(inner_jobnet_id, JA_JOBNET_STATUS_ENDERR, JA_SUMMARY_JOB_STATUS_ERROR) == SUCCEED) {
+            ja_joblog(JC_JOBNET_ERR_END, inner_jobnet_id, 0);
+            zabbix_log(LOG_LEVEL_INFORMATION,"In %s(), inner_jobnet_id:"ZBX_FS_UI64" was successfully forced to stopped.",
+                        __function_name, inner_jobnet_id);
+        }else{
+             zabbix_log(LOG_LEVEL_ERR,"In %s(), ja_set_jobstatus for inner_jobnet_id:"ZBX_FS_UI64" gone worng!!!", 
+                        __function_name, inner_jobnet_id);
+        }
+    }
+    DBfree_result(result1);
+    DBfree_result(result2);
+    return SUCCEED;
+}

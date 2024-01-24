@@ -1,0 +1,981 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EBE7D28F-A658-402A-A223-DC4F0869C755}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>jp.co.ftf.jobcontroller.JobController</RootNamespace>
+    <AssemblyName>jobarg_manager</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>jp.co.ftf.jobcontroller.JobController.App</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>jobarg_manager.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>..\..\..\bin\jobarg_manager\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_viewer|AnyCPU'">
+    <OutputPath>..\..\..\bin\jobarg_manager_viewer\</OutputPath>
+    <DefineConstants>TRACE;VIEWER</DefineConstants>
+    <Optimize>false</Optimize>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug_viewer|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;VIEWER</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\net40\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\net40\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\net40\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="ZabbixApi, Version=1.3.5506.7054, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZabbixApi.1.3.5506.7054\lib\net40\ZabbixApi.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Command\JobArrangerCommands.cs" />
+    <Compile Include="CommonDialog\CommonDialog.cs" />
+    <Compile Include="CommonDialog\MessageUtil.cs" />
+    <Compile Include="Data\FormatComboBoxItem.cs" />
+    <Compile Include="Data\JobconDBSource.cs" />
+    <Compile Include="Data\JobnetExecInfo.cs" />
+    <Compile Include="Form\BaseWindow.cs" />
+    <Compile Include="Form\CalendarEdit\CalendarInitWindow.xaml.cs">
+      <DependentUpon>CalendarInitWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\CalendarEdit\CustomControl\JobArrangerCalendar.cs" />
+    <Compile Include="Form\CalendarEdit\CustomControl\ScrollViewerWindowsFormsHost.cs" />
+    <Compile Include="Form\CalendarEdit\FileReadWindow.xaml.cs">
+      <DependentUpon>FileReadWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DetailVisibilityConverter.cs" />
+    <Compile Include="Form\DuringStartupJobnetWindow.xaml.cs">
+      <DependentUpon>DuringStartupJobnetWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ExportWindow.xaml.cs">
+      <DependentUpon>ExportWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FilterEdit\CustomControl\JobArrangerCalendar.cs" />
+    <Compile Include="Form\FilterEdit\CustomControl\ScrollViewerWindowsFormsHost.cs" />
+    <Compile Include="Form\FilterEdit\Designer\Container.xaml.cs">
+      <DependentUpon>Container.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FilterEdit\FilterEdit.xaml.cs">
+      <DependentUpon>FilterEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\HankakuTextChangeEvent.cs" />
+    <Compile Include="Form\ImportWindow.xaml.cs">
+      <DependentUpon>ImportWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobArrangerMessageBox.xaml.cs">
+      <DependentUpon>JobArrangerMessageBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobArrangerWindow.xaml.cs">
+      <DependentUpon>JobArrangerWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Designer\CommonItem.xaml.cs">
+      <DependentUpon>CommonItem.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Form\JobEdit\Designer\Container.xaml.cs">
+      <DependentUpon>Container.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Form\JobEdit\Element\Cooperation.xaml.cs">
+      <DependentUpon>Cooperation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Element\FCopy.xaml.cs">
+      <DependentUpon>FCopy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Element\FWait.xaml.cs">
+      <DependentUpon>FWait.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Element\Ife.xaml.cs">
+      <DependentUpon>Ife.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Element\Reboot.xaml.cs">
+      <DependentUpon>Reboot.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Element\Release.xaml.cs">
+      <DependentUpon>Release.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Element\Agentless.xaml.cs">
+      <DependentUpon>Agentless.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\HistoryData.cs" />
+    <Compile Include="Form\JobEdit\IconViewData.cs" />
+    <Compile Include="Form\JobEdit\Sample\CooperationSample.xaml.cs">
+      <DependentUpon>CooperationSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Sample\FCopySample.xaml.cs">
+      <DependentUpon>FCopySample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Sample\FWaitSample.xaml.cs">
+      <DependentUpon>FWaitSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Sample\IfeSample.xaml.cs">
+      <DependentUpon>IfeSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Sample\RebootSample.xaml.cs">
+      <DependentUpon>RebootSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Sample\ReleaseSample.xaml.cs">
+      <DependentUpon>ReleaseSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Sample\AgentlessSample.xaml.cs">
+      <DependentUpon>AgentlessSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Setting\AgentlessSetting.xaml.cs">
+      <DependentUpon>AgentlessSetting.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Form\JobEdit\Setting\CooperationtSetting.xaml.cs">
+      <DependentUpon>CooperationtSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Setting\FCopySetting.xaml.cs">
+      <DependentUpon>FCopySetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Setting\EndSetting.xaml.cs">
+      <DependentUpon>EndSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Setting\FWaitSetting.xaml.cs">
+      <DependentUpon>FWaitSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Setting\JobnetSetting.xaml.cs">
+      <DependentUpon>JobnetSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Setting\RebootSetting.xaml.cs">
+      <DependentUpon>RebootSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Setting\ReleaseSetting.xaml.cs">
+      <DependentUpon>ReleaseSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\SubJobEdit.xaml.cs">
+      <DependentUpon>SubJobEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobManager\Designer\Container.xaml.cs">
+      <DependentUpon>Container.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobManager\JobnetExecControlAllPage.xaml.cs">
+      <DependentUpon>JobnetExecControlAllPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobManager\JobnetExecControlErrPage.xaml.cs">
+      <DependentUpon>JobnetExecControlErrPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobManager\JobnetExecControlPage.xaml.cs">
+      <DependentUpon>JobnetExecControlPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobManager\JobnetExecControlRunningPage.xaml.cs">
+      <DependentUpon>JobnetExecControlRunningPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobManager\JobnetExecDetail.xaml.cs">
+      <DependentUpon>JobnetExecDetail.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Form\JobManager\Setting\ParameterSetting.xaml.cs">
+      <DependentUpon>ParameterSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobManager\Setting\ParameterView.xaml.cs">
+      <DependentUpon>ParameterView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobManager\UpdateScheduleWindow.xaml.cs">
+      <DependentUpon>UpdateScheduleWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobResult\CsvWindow.xaml.cs">
+      <DependentUpon>CsvWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobResult\JobnetExecResultPage.xaml.cs">
+      <DependentUpon>JobnetExecResultPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobResult\JobResultDetail.xaml.cs">
+      <DependentUpon>JobResultDetail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\NumericTextBoxBehavior.cs" />
+    <Compile Include="Form\relatedObjectList.xaml.cs">
+      <DependentUpon>relatedObjectList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ScheduleEdit\Designer\CalendarContainer.xaml.cs">
+      <DependentUpon>CalendarContainer.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Form\ScheduleEdit\Designer\JobnetContainer.xaml.cs">
+      <DependentUpon>JobnetContainer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ScheduleEdit\ScheduleCalendarRegistWindow.xaml.cs">
+      <DependentUpon>ScheduleCalendarRegistWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Form\ScheduleEdit\ScheduleJobnetRegistWindow.xaml.cs">
+      <DependentUpon>ScheduleJobnetRegistWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Form\SetParameter\SetParameterPage.xaml.cs">
+      <DependentUpon>SetParameterPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\TextBlockService.cs" />
+    <Compile Include="Form\WindowBehavior.cs" />
+    <Compile Include="Form\DateConverter.cs" />
+    <Compile Include="Form\BootTimeConverter.cs" />
+    <Compile Include="Log\LogInfo.cs" />
+    <Compile Include="Properties\Resources.ja-JP.Designer.cs">
+      <DependentUpon>Resources.ja-JP.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form\CalendarEdit\CalendarEdit.xaml.cs">
+      <DependentUpon>CalendarEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\CalendarEdit\Designer\Container.xaml.cs">
+      <DependentUpon>Container.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FlagConverter.cs" />
+    <Compile Include="Form\JobEdit\Common\IFlow.cs" />
+    <Compile Include="Form\JobEdit\Common\JobData.cs" />
+    <Compile Include="Form\JobEdit\Flow\ArrowArc.cs" />
+    <Compile Include="Form\JobEdit\Flow\Extension\ExtentDirectionEnum.cs" />
+    <Compile Include="Form\JobEdit\Flow\Extension\MathExtension.cs" />
+    <Compile Include="Form\JobEdit\Flow\Extension\RadiusException.cs" />
+    <Compile Include="Form\JobEdit\Flow\FlowArc.xaml.cs">
+      <DependentUpon>FlowArc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\JobEdit.xaml.cs">
+      <DependentUpon>JobEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Sample\CalSample.xaml.cs">
+      <DependentUpon>CalSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Sample\EndSample.xaml.cs">
+      <DependentUpon>EndSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Sample\EnvSample.xaml.cs">
+      <DependentUpon>EnvSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Sample\ExtJobSample.xaml.cs">
+      <DependentUpon>ExtJobSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Sample\IfSample.xaml.cs">
+      <DependentUpon>IfSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Sample\InfSample.xaml.cs">
+      <DependentUpon>InfSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Sample\JobSample.xaml.cs">
+      <DependentUpon>JobSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Sample\JobNetSample.xaml.cs">
+      <DependentUpon>JobNetSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Sample\LoopSample.xaml.cs">
+      <DependentUpon>LoopSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Sample\MteSample.xaml.cs">
+      <DependentUpon>MteSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Sample\MtsSample.xaml.cs">
+      <DependentUpon>MtsSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Sample\StartSample.xaml.cs">
+      <DependentUpon>StartSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Sample\TaskSample.xaml.cs">
+      <DependentUpon>TaskSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Setting\CalSetting.xaml.cs">
+      <DependentUpon>CalSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Setting\EnvSetting.xaml.cs">
+      <DependentUpon>EnvSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Setting\ExtJobSettting.xaml.cs">
+      <DependentUpon>ExtJobSettting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Setting\IfSetting.xaml.cs">
+      <DependentUpon>IfSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Setting\InfSetting.xaml.cs">
+      <DependentUpon>InfSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Setting\JobSetting.xaml.cs">
+      <DependentUpon>JobSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Setting\TaskSetting.xaml.cs">
+      <DependentUpon>TaskSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\LoginWindow.xaml.cs">
+      <DependentUpon>LoginWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Common\CommonUtil.cs" />
+    <Compile Include="Form\JobEdit\Common\const.cs" />
+    <Compile Include="Form\JobEdit\Common\IContainer.cs" />
+    <Compile Include="Form\JobEdit\Common\IElement.cs" />
+    <Compile Include="Form\JobEdit\Common\IRoom.cs" />
+    <Compile Include="Form\JobEdit\Element\Cal.xaml.cs">
+      <DependentUpon>Cal.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Element\End.xaml.cs">
+      <DependentUpon>End.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Element\If.xaml.cs">
+      <DependentUpon>If.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Element\Inf.xaml.cs">
+      <DependentUpon>Inf.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Element\Job.xaml.cs">
+      <DependentUpon>Job.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Element\ExtJob.xaml.cs">
+      <DependentUpon>ExtJob.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Element\JobNet.xaml.cs">
+      <DependentUpon>JobNet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Element\Loop.xaml.cs">
+      <DependentUpon>Loop.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Element\Mte.xaml.cs">
+      <DependentUpon>Mte.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Element\Mts.xaml.cs">
+      <DependentUpon>Mts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Element\Start.xaml.cs">
+      <DependentUpon>Start.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Element\Task.xaml.cs">
+      <DependentUpon>Task.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Element\Env.xaml.cs">
+      <DependentUpon>Env.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Flow\Arrow.cs" />
+    <Compile Include="Form\JobEdit\Flow\Flow.xaml.cs">
+      <DependentUpon>Flow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\JobEdit\Setting\OtherSetting.xaml.cs">
+      <DependentUpon>OtherSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\BaseUserControl.cs" />
+    <Compile Include="Form\ObjectList.xaml.cs">
+      <DependentUpon>ObjectList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ScheduleEdit\ScheduleEdit.xaml.cs">
+      <DependentUpon>ScheduleEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ScheduleEdit\Designer\Container.xaml.cs">
+      <DependentUpon>Container.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form\EditBaseUserControl.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.ko-KR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.ko-KR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.ko-KR.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.ko-KR.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Resource Include="jobarg_manager_viewer.ico" />
+    <Resource Include="Resources\arrow_right.gif" />
+    <Resource Include="Resources\arrow_left.gif" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.ja-JP.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.ja-JP.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="app.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="jobarg_manager.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Form\CalendarEdit\CalendarEdit.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\CalendarEdit\CalendarInitWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\CalendarEdit\Designer\Container.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\CalendarEdit\FileReadWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\DuringStartupJobnetWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\ExportWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Form\FilterEdit\Designer\Container.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\FilterEdit\FilterEdit.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\ImportWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobArrangerMessageBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobArrangerWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Designer\CommonItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Form\JobEdit\Designer\Container.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Form\JobEdit\Element\Cooperation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Element\FCopy.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Element\FWait.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Element\Ife.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Element\Reboot.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Form\JobEdit\Element\Release.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Element\Agentless.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Sample\CooperationSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Sample\FCopySample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Sample\FWaitSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Sample\IfeSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Sample\RebootSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Form\JobEdit\Sample\ReleaseSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Sample\AgentlessSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Setting\AgentlessSetting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Form\JobEdit\Setting\CooperationtSetting.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Setting\FCopySetting.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Setting\EndSetting.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Setting\FWaitSetting.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Setting\JobnetSetting.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Setting\RebootSetting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Form\JobEdit\Setting\ReleaseSetting.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\SubJobEdit.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobManager\Designer\Container.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobManager\JobnetExecControlAllPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobManager\JobnetExecControlErrPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobManager\JobnetExecControlPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobManager\JobnetExecControlRunningPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Flow\FlowArc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\JobEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Form\JobEdit\Sample\CalSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Form\JobEdit\Sample\EndSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Sample\EnvSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Sample\ExtJobSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Sample\IfSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Sample\InfSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Sample\JobSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Sample\JobNetSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Sample\LoopSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Sample\MteSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Sample\MtsSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Sample\StartSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Sample\TaskSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Setting\CalSetting.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Setting\EnvSetting.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Setting\ExtJobSettting.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Setting\IfSetting.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Setting\InfSetting.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Setting\JobSetting.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Setting\TaskSetting.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobManager\JobnetExecDetail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Form\JobManager\Setting\ParameterSetting.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobManager\Setting\ParameterView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobManager\UpdateScheduleWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobResult\CsvWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobResult\JobnetExecResultPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobResult\JobResultDetail.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\LoginWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Form\JobEdit\Element\Cal.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Element\End.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Element\If.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Element\Inf.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Element\Job.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Element\ExtJob.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Element\JobNet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Element\Loop.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Element\Mte.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Element\Mts.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Element\Start.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Element\Task.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Element\Env.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Flow\Flow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\JobEdit\Setting\OtherSetting.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\ObjectList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Form\relatedObjectList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\ScheduleEdit\Designer\CalendarContainer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Form\ScheduleEdit\Designer\JobnetContainer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\ScheduleEdit\ScheduleCalendarRegistWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Form\ScheduleEdit\ScheduleEdit.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\ScheduleEdit\Designer\Container.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Form\ScheduleEdit\ScheduleJobnetRegistWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Form\SetParameter\SetParameterPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\common\common.csproj">
+      <Project>{DB228BF8-95FD-42B7-98F4-D566D117E187}</Project>
+      <Name>common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\dao\dao.csproj">
+      <Project>{29A5B2C2-371F-4AB4-BB3D-C4A3FE8A4296}</Project>
+      <Name>dao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MonthCalendarControl\MonthCalendarControl.csproj">
+      <Project>{19BBA547-3515-4E3E-ADB7-E9895171A43E}</Project>
+      <Name>MonthCalendarControl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 および x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows インストーラー 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

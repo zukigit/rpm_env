@@ -1,0 +1,79 @@
+﻿  basename.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\compat\basename.c(47,15): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\compat\basename.c(70,15): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\compat\basename.c(88,8): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  dirname.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\compat\dirname.c(47,15): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\compat\dirname.c(77,15): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\compat\dirname.c(93,8): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  fnmatch.c
+  glob.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\compat\glob.c(370,54): warning C4244: '=': conversion from 'const Char' to 'char', possible loss of data
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\compat\glob.c(389,13): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\compat\glob.c(407,12): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\compat\glob.c(359,17): warning C4101: 'pwd': unreferenced local variable
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\compat\glob.c(794,9): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\compat\glob.c(869,32): warning C4244: '=': conversion from 'const Char' to 'char', possible loss of data
+  strlcpy.c
+  strmode.c
+  strsep.c
+  append.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\append.c(60,6): warning C4101: 'i': unreferenced local variable
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\append.c(64,7): warning C4101: 'path': unreferenced local variable
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\append.c(239,15): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\append.c(224,11): warning C4996: 'open': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _open. See online help for details.
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\append.c(241,7): warning C4996: 'read': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _read. See online help for details.
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\append.c(254,7): warning C4996: 'read': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _read. See online help for details.
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\append.c(262,2): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _close. See online help for details.
+  block.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\block.c(121,54): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\block.c(166,54): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\block.c(274,3): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\block.c(285,59): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\block.c(309,3): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\block.c(325,3): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\block.c(336,59): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\block.c(360,3): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\block.c(298,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\block.c(349,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  decode.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\decode.c(38,10): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\decode.c(42,9): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\decode.c(59,2): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\decode.c(77,2): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  encode.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\encode.c(33,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\encode.c(36,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\encode.c(37,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\encode.c(92,9): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\encode.c(97,28): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\encode.c(98,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\encode.c(225,2): warning C4244: 'function': conversion from 'time_t' to 'int', possible loss of data
+  extract.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\extract.c(84,22): warning C4996: 'chmod': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _chmod. See online help for details.
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\extract.c(233,15): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\extract.c(199,10): warning C4996: 'open': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _open. See online help for details.
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\extract.c(244,7): warning C4996: 'write': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _write. See online help for details.
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\extract.c(250,6): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _close. See online help for details.
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\extract.c(276,15): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\extract.c(480,8): warning C4996: 'chmod': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _chmod. See online help for details.
+  handle.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\handle.c(30,35): warning C4996: 'open': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _open. See online help for details.
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\handle.c(30,60): warning C4028: formal parameter 3 different from declaration
+  output.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\output.c(116,8): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  util.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\util.c(31,8): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\util.c(91,9): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\util.c(99,10): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\util.c(100,9): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\util.c(136,2): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\util.c(149,24): warning C4477: 'snprintf' : format string '%0*lo' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\lib\util.c(149,24): message : this argument is used as a field width
+  wrapper.c
+  libtar_hash.c
+  libtar_list.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\listhash\libtar_list.c(367,26): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strdup. See online help for details.
+  dirent.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\win32\dirent.c(23,29): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  libtar.vcxproj -> D:\zuki\Documents\6.0.4-dev-from-6.0.3\bin\jobarg_agent\x64\libtar.lib

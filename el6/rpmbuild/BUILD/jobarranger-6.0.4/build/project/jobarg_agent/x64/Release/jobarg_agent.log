@@ -1,0 +1,224 @@
+﻿  jafile.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jalibs\jafile.c(41,10): warning C4101: 'gmtoff': unreferenced local variable
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jalibs\jafile.c(373,57): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  jahostname.c
+  jajobfile.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\include\comms.h(37,1): warning C4005: 'EAGAIN': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\errno.h(49): message : see previous definition of 'EAGAIN'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jalibs\jajobfile.c(76,23): warning C4013: '_mkdir' undefined; assuming extern returning int
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jalibs\jajobfile.c(89,39): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jalibs\jajobfile.c(288,9): warning C4101: 'folder_create_status': unreferenced local variable
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jalibs\jajobfile.c(287,11): warning C4101: 'file_pointer': unreferenced local variable
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jalibs\jajobfile.c(543,11): warning C4101: 'substr': unreferenced local variable
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jalibs\jajobfile.c(626,29): warning C4013: 'read_json_data' undefined; assuming extern returning int
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jalibs\jajobfile.c(693,34): warning C4311: 'type cast': pointer truncation from 'json_object *' to 'unsigned long'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jalibs\jajobfile.c(848,19): warning C4013: 'rmdir' undefined; assuming extern returning int
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jalibs\jajobfile.c(1065,46): warning C4047: 'function': 'char *' differs in levels of indirection from 'char (*)[20]'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jalibs\jajobfile.c(1065,33): warning C4024: 'ja_write_file_data': different types for formal and actual parameter 2
+  jajobobject.c
+  jakill.c
+  jastr.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jalibs\jastr.c(157,24): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jalibs\jastr.c(733,61): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+  jatar.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\include\comms.h(27,21): warning C4142: 'ssize_t': benign redefinition of type
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\tools\libtar\libtar\win32\win32\types.h(4): message : see declaration of 'ssize_t'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\include\comms.h(37,1): warning C4005: 'EAGAIN': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\errno.h(49): message : see previous definition of 'EAGAIN'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jalibs\jatar.c(56,15): warning C4267: '=': conversion from 'size_t' to 'ssize_t', possible loss of data
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jalibs\jatar.c(97,15): warning C4267: '=': conversion from 'size_t' to 'ssize_t', possible loss of data
+  jatcp.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\include\comms.h(37,1): warning C4005: 'EAGAIN': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\errno.h(49): message : see previous definition of 'EAGAIN'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jalibs\jatcp.c(44,1): warning C4005: 'EINTR': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\errno.h(42): message : see previous definition of 'EINTR'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jalibs\jatcp.c(327,9): warning C4311: 'type cast': pointer truncation from 'json_object *' to 'unsigned long'
+  jatelegram.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\include\comms.h(37,1): warning C4005: 'EAGAIN': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\errno.h(49): message : see previous definition of 'EAGAIN'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jalibs\jatelegram.c(207,64): warning C4133: 'function': incompatible types - from 'const int *' to 'const char *'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jalibs\jatelegram.c(250,9): warning C4311: 'type cast': pointer truncation from 'json_object *' to 'unsigned long'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jalibs\jatelegram.c(294,9): warning C4311: 'type cast': pointer truncation from 'json_object *' to 'unsigned long'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jalibs\jatelegram.c(315,38): warning C4013: 'ja_telegram_from_chkjob' undefined; assuming extern returning int
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jalibs\jatelegram.c(317,43): warning C4013: 'ja_telegram_from_ip_response' undefined; assuming extern returning int
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jalibs\jatelegram.c(676,83): warning C4133: '=': incompatible types - from 'char *' to 'json_object *'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jalibs\jatelegram.c(688,53): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jalibs\jatelegram.c(761,9): warning C4311: 'type cast': pointer truncation from 'json_object *' to 'unsigned long'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jalibs\jatelegram.c(895,41): warning C4013: 'ja_telegram_to_ip_response' undefined; assuming extern returning int
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jalibs\jatelegram.c(986,9): warning C4311: 'type cast': pointer truncation from 'json_object *' to 'unsigned long'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jalibs\jatelegram.c(997,9): warning C4311: 'type cast': pointer truncation from 'json_object *' to 'unsigned long'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jalibs\jatelegram.c(1060,91): warning C4244: 'function': conversion from 'unsigned __int64' to 'int', possible loss of data
+  executive.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\include\comms.h(37,1): warning C4005: 'EAGAIN': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\errno.h(49): message : see previous definition of 'EAGAIN'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\executive.c(108,10): warning C4098: 'main_executive_thread': 'void' function returning a value
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\executive.c(172,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\executive.c(175,57): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'LPTHREAD_START_ROUTINE'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\executive.c(175,57): warning C4133: 'function': incompatible types - from 'void (__cdecl *)()' to 'LPTHREAD_START_ROUTINE'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\executive.c(231,6): warning C4102: 'error': unreferenced label
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\executive.c(119,6): warning C4101: 'alarm_pid': unreferenced local variable
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\executive.c(118,6): warning C4101: 'status': unreferenced local variable
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\executive.c(116,17): warning C4101: 'job': unreferenced local variable
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\executive.c(266,22): warning C4013: 'ja_job_object_init' undefined; assuming extern returning int
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\executive.c(451,36): warning C4047: 'function': 'char *' differs in levels of indirection from 'char (*)[20]'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\executive.c(451,23): warning C4024: 'get_current_time': different types for formal and actual parameter 1
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\executive.c(334,9): warning C4101: 'len': unreferenced local variable
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\executive.c(488,7): warning C4101: 'prefix': unreferenced local variable
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\executive.c(608,38): warning C4101: 'close_status': unreferenced local variable
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\executive.c(768,23): warning C4013: '_mkdir' undefined; assuming extern returning int
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\executive.c(824,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\executive.c(927,7): warning C4101: 'tmp_output': unreferenced local variable
+  jaagent.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\include\comms.h(37,1): warning C4005: 'EAGAIN': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\errno.h(49): message : see previous definition of 'EAGAIN'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jaagent.c(111,9): warning C4311: 'type cast': pointer truncation from 'json_object *' to 'unsigned long'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jaagent.c(89,17): warning C4101: 'env': unreferenced local variable
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jaagent.c(577,38): warning C4047: '=': 'char' differs in levels of indirection from 'void *'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jaagent.c(578,41): warning C4047: '=': 'char' differs in levels of indirection from 'void *'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jaagent.c(587,33): warning C4047: '=': 'char' differs in levels of indirection from 'void *'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jaagent.c(894,18): warning C4013: 'change_ip_format' undefined; assuming extern returning int
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jaagent.c(896,27): warning C4013: 'filePath_for_tmpjob_agent' undefined; assuming extern returning int
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jaagent.c(899,28): warning C4013: 'read_lastLine_from_file' undefined; assuming extern returning int
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jaagent.c(920,9): warning C4311: 'type cast': pointer truncation from 'json_object *' to 'unsigned long'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jaagent.c(943,32): warning C4013: 'add_uid_to_job_file' undefined; assuming extern returning int
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jaagent.c(966,38): warning C4013: '_mkdir' undefined; assuming extern returning int
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jaagent.c(1004,26): warning C4013: 'ja_unique_id_generete' undefined; assuming extern returning int
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jaagent.c(1024,18): warning C4013: 'get_nano_time' undefined; assuming extern returning int
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jaagent.c(1017,10): warning C4101: 'jobfile_path': unreferenced local variable
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jaagent.c(1279,29): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jaagent.c(1287,49): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  jadbbackup.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\include\comms.h(37,1): warning C4005: 'EAGAIN': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\errno.h(49): message : see previous definition of 'EAGAIN'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jadbbackup.c(124,11): warning C4098: 'main_backup_thread': 'void' function returning a value
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jadbbackup.c(161,53): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'LPTHREAD_START_ROUTINE'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jadbbackup.c(161,53): warning C4133: 'function': incompatible types - from 'void (__cdecl *)()' to 'LPTHREAD_START_ROUTINE'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jadbbackup.c(134,6): warning C4101: 'status': unreferenced local variable
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jadbbackup.c(331,26): warning C4013: 'rmdir' undefined; assuming extern returning int
+  jaextjob.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\include\comms.h(37,1): warning C4005: 'EAGAIN': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\errno.h(49): message : see previous definition of 'EAGAIN'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jaextjob.c(65,9): warning C4311: 'type cast': pointer truncation from 'json_object *' to 'unsigned long'
+  jafcopy.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\include\comms.h(37,1): warning C4005: 'EAGAIN': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\errno.h(49): message : see previous definition of 'EAGAIN'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jafcopy.c(240,9): warning C4311: 'type cast': pointer truncation from 'json_object *' to 'unsigned long'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jafcopy.c(282,36): warning C4244: 'function': conversion from 'ZBX_SOCKET' to 'int', possible loss of data
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jafcopy.c(291,54): warning C4244: 'function': conversion from 'ZBX_SOCKET' to 'const int', possible loss of data
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jafcopy.c(396,9): warning C4311: 'type cast': pointer truncation from 'json_object *' to 'unsigned long'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jafcopy.c(441,36): warning C4244: 'function': conversion from 'ZBX_SOCKET' to 'int', possible loss of data
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jafcopy.c(469,40): warning C4244: 'function': conversion from 'ZBX_SOCKET' to 'const int', possible loss of data
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jafcopy.c(536,9): warning C4311: 'type cast': pointer truncation from 'json_object *' to 'unsigned long'
+  jajournal.c
+  jareboot.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jareboot.c(122,9): warning C4311: 'type cast': pointer truncation from 'json_object *' to 'unsigned long'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jareboot.c(243,23): warning C4013: 'write_data_file' undefined; assuming extern returning int
+  jobarg_agentd.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\include\comms.h(37,1): warning C4005: 'EAGAIN': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\errno.h(49): message : see previous definition of 'EAGAIN'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jobarg_agentd.c(450,38): warning C4013: '_mkdir' undefined; assuming extern returning int
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jobarg_agentd.c(513,10): warning C4101: 'tmp_file': unreferenced local variable
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jobarg_agentd.c(508,10): warning C4101: 'dir': unreferenced local variable
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jobarg_agentd.c(511,9): warning C4101: 'folder_create_status': unreferenced local variable
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jobarg_agentd.c(509,11): warning C4101: 'fp': unreferenced local variable
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jobarg_agentd.c(512,10): warning C4101: 'folderpath': unreferenced local variable
+  listener.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\include\comms.h(37,1): warning C4005: 'EAGAIN': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\errno.h(49): message : see previous definition of 'EAGAIN'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\listener.c(100,23): warning C4013: '_mkdir' undefined; assuming extern returning int
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\listener.c(117,29): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\listener.c(125,49): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\listener.c(184,30): warning C4311: 'type cast': pointer truncation from 'json_object *' to 'unsigned long'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\listener.c(210,47): warning C4090: 'return': different 'const' qualifiers
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\listener.c(374,49): warning C4047: 'function': 'char *' differs in levels of indirection from 'char (*)[20]'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\listener.c(374,36): warning C4024: 'ja_jobstatus_file': different types for formal and actual parameter 2
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\listener.c(398,60): warning C4047: 'function': 'char *' differs in levels of indirection from 'char (*)[20]'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\listener.c(398,47): warning C4024: 'ja_write_file_data': different types for formal and actual parameter 2
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\listener.c(407,53): warning C4047: 'function': 'char *' differs in levels of indirection from 'char (*)[20]'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\listener.c(407,40): warning C4024: 'ja_agent_begin': different types for formal and actual parameter 2
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\listener.c(407,66): warning C4047: 'function': 'char *' differs in levels of indirection from 'char (*)[260]'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\listener.c(407,55): warning C4024: 'ja_agent_begin': different types for formal and actual parameter 3
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\listener.c(413,31): warning C4013: 'ja_delete_file' undefined; assuming extern returning int
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\listener.c(497,37): warning C4047: '==': 'unsigned __int64' differs in levels of indirection from 'void *'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\listener.c(579,30): warning C4013: 'rmdir' undefined; assuming extern returning int
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\listener.c(595,13): warning C4098: 'ja_chk_job_begin': 'void' function returning a value
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\listener.c(455,9): warning C4101: 'pid': unreferenced local variable
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\listener.c(701,27): warning C4013: 'check_abort_job' undefined; assuming extern returning int
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\listener.c(728,61): warning C4133: 'function': incompatible types - from 'ja_jobrun_params *' to 'zbx_thread_args_t *'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\listener.c(876,9): warning C4101: 'folder_create_status': unreferenced local variable
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\listener.c(939,20): warning C4101: 'temp_job': unreferenced local variable
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\listener.c(1051,68): warning C4133: 'function': incompatible types - from 'void (__cdecl *)(LPVOID)' to 'LPTHREAD_START_ROUTINE'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\listener.c(968,6): warning C4101: 'status': unreferenced local variable
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\listener.c(971,16): warning C4101: 'tmp_sock': unreferenced local variable
+  perfstat.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\include\perfmon.h(41,2): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-PERF_COUNTER_NOTSUPPORTED>' when no variable is declared
+  alias.c
+  comms.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\libs\zbxcommon\comms.c(41,49): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\libs\zbxcommon\comms.c(53,47): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\libs\zbxcommon\comms.c(65,49): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\libs\zbxcommon\comms.c(77,63): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\libs\zbxcommon\comms.c(86,59): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\libs\zbxcommon\comms.c(95,53): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\libs\zbxcommon\comms.c(104,57): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+  file.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\libs\zbxcommon\file.c(68,45): warning C4267: 'function': conversion from 'size_t' to 'unsigned int', possible loss of data
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\libs\zbxcommon\file.c(123,22): warning C4267: 'function': conversion from 'size_t' to 'long', possible loss of data
+  gnuregex.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\libs\zbxcommon\gnuregex.c(3780,19): warning C4312: 'type cast': conversion from 'unsigned int' to 'fail_stack_elt_t' of greater size
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\libs\zbxcommon\gnuregex.c(3927,11): warning C4312: 'type cast': conversion from 'unsigned int' to 'fail_stack_elt_t' of greater size
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\libs\zbxcommon\gnuregex.c(3980,11): warning C4312: 'type cast': conversion from 'unsigned int' to 'fail_stack_elt_t' of greater size
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\libs\zbxcommon\gnuregex.c(4088,1): warning C4311: 'type cast': pointer truncation from 'fail_stack_elt_t' to 'unsigned int'
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\libs\zbxcommon\gnuregex.c(4119,11): warning C4312: 'type cast': conversion from 'unsigned int' to 'fail_stack_elt_t' of greater size
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\libs\zbxcommon\gnuregex.c(4132,11): warning C4312: 'type cast': conversion from 'unsigned int' to 'fail_stack_elt_t' of greater size
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\libs\zbxcommon\gnuregex.c(4302,1): warning C4311: 'type cast': pointer truncation from 'fail_stack_elt_t' to 'unsigned int'
+  misc.c
+  regexp.c
+  str.c
+  xml.c
+  zbxgetopt.c
+  comms.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\include\comms.h(37,1): warning C4005: 'EAGAIN': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\errno.h(49): message : see previous definition of 'EAGAIN'
+  comms.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\include\comms.h(37,1): warning C4005: 'EAGAIN': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\errno.h(49): message : see previous definition of 'EAGAIN'
+  cfg.c
+  base64.c
+  md5.c
+  execute.c
+  json.c
+  log.c
+  common.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\libs\zbxsysinfo\common\common.h(32,18): warning C4091: 'extern ': ignored on left of 'ja_boolean' when no variable is declared
+  file.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\libs\zbxsysinfo\common\common.h(32,18): warning C4091: 'extern ': ignored on left of 'ja_boolean' when no variable is declared
+  http.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\libs\zbxsysinfo\common\common.h(32,18): warning C4091: 'extern ': ignored on left of 'ja_boolean' when no variable is declared
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\include\comms.h(37,1): warning C4005: 'EAGAIN': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\errno.h(49): message : see previous definition of 'EAGAIN'
+  net.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\libs\zbxsysinfo\common\common.h(32,18): warning C4091: 'extern ': ignored on left of 'ja_boolean' when no variable is declared
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\include\comms.h(37,1): warning C4005: 'EAGAIN': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\errno.h(49): message : see previous definition of 'EAGAIN'
+  system.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\libs\zbxsysinfo\common\common.h(32,18): warning C4091: 'extern ': ignored on left of 'ja_boolean' when no variable is declared
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\include\perfmon.h(41,2): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-PERF_COUNTER_NOTSUPPORTED>' when no variable is declared
+  sysinfo.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\libs\zbxsysinfo\common\common.h(32,18): warning C4091: 'extern ': ignored on left of 'ja_boolean' when no variable is declared
+  pdhmon.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\include\perfmon.h(41,2): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-PERF_COUNTER_NOTSUPPORTED>' when no variable is declared
+  mutexs.c
+  threads.c
+  perfmon.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\include\perfmon.h(41,2): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-PERF_COUNTER_NOTSUPPORTED>' when no variable is declared
+  service.c
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\include\perfmon.h(41,2): warning C4091: 'typedef ': ignored on left of '<unnamed-enum-PERF_COUNTER_NOTSUPPORTED>' when no variable is declared
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\jaagent.c(1041): warning C4716: 'ja_unique_id_generete': must return a value
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jalibs\jajobfile.c(1082): warning C4715: 'create_check_res_files': not all control paths return a value
+D:\zuki\Documents\6.0.4-dev-from-6.0.3\src\jobarg_agent\listener.c(1113): warning C4700: uninitialized local variable 'job' used
+  All 460 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  jobarg_agent.vcxproj -> D:\zuki\Documents\6.0.4-dev-from-6.0.3\bin\jobarg_agent\x64\jobarg_agentd.exe

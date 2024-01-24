@@ -1,0 +1,87 @@
+﻿<!--
+/*
+** Job Arranger Manager
+** Copyright (C) 2012 FitechForce, Inc. All Rights Reserved.
+** Copyright (C) 2013 Daiwa Institute of Research Business Innovation Ltd. All Rights Reserved.
+** Copyright (C) 2021 Daiwa Institute of Research Ltd. All Rights Reserved.
+**
+** Licensed to the Apache Software Foundation (ASF) under one or more
+** contributor license agreements. See the NOTICE file distributed with
+** this work for additional information regarding copyright ownership.
+** The ASF licenses this file to you under the Apache License, Version 2.0
+** (the "License"); you may not use this file except in compliance with
+** the License. You may obtain a copy of the License at
+**
+** http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+**
+**/
+-->
+<src:EditBaseUserControl x:Class="jp.co.ftf.jobcontroller.JobController.Form.JobEdit.JobEdit"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:design="clr-namespace:jp.co.ftf.jobcontroller.JobController.Form.JobEdit"
+             xmlns:src="clr-namespace:jp.co.ftf.jobcontroller.JobController"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="300" FontFamily="Meiryo" FontSize="11" >
+    <Grid Grid.Column="2" Name="JobNetGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90" />
+            <RowDefinition Height="450*" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <Label Content="{x:Static src:Properties.Resources.jobnet_id_label_text}" Height="23" HorizontalAlignment="Left" Margin="0,3,0,0" VerticalAlignment="Top" />
+        <TextBox Height="23" Width="246" HorizontalAlignment="Left" Margin="96,3,0,0" Name="tbxJobNetId" VerticalAlignment="Top"
+                 VerticalContentAlignment="Center" MaxLength="32"/>
+        <Label Content="{x:Static src:Properties.Resources.multiple_start_label_text}" Height="23" HorizontalAlignment="Left" Margin="345,3,0,0" VerticalAlignment="Top" />
+        <ComboBox Height="23"  HorizontalAlignment="Left" Name="combMultipleStart" Width="75" Margin="408,3,0,0" VerticalAlignment="Top">
+        </ComboBox>
+        <Label Content="{x:Static src:Properties.Resources.public_label_text}" Height="23" HorizontalAlignment="Left" Margin="498,3,0,0" VerticalAlignment="Top" />
+        <CheckBox Height="16" HorizontalAlignment="Left" Margin="542,8,0,0" Name="cbOpen" VerticalAlignment="Top" />
+        <Label Content="{x:Static src:Properties.Resources.authority_label_text}" Height="23" HorizontalAlignment="Left" Margin="565,3,0,0" VerticalAlignment="Top" />
+        <Label Content="{x:Static src:Properties.Resources.can_update_auth}" Height="23" Width="80" HorizontalAlignment="Left" Margin="625,3,0,0" Name="powerLabel"
+               VerticalAlignment="Top" />
+        <Label Content="{x:Static src:Properties.Resources.user_name_label_text}" Height="23" HorizontalAlignment="Left" Margin="705,3,0,0" VerticalAlignment="Top" />
+        <Label Content="" Height="23" Width="100" HorizontalAlignment="Left" Margin="775,3,0,0" Name="lblUserName"
+               VerticalAlignment="Top" />
+        <Label Content="{x:Static src:Properties.Resources.jobnet_name_label_text}" HorizontalAlignment="Left" Margin="0,33,0,7" Name="label2" />
+        <TextBox Height="Auto" Width="470" HorizontalAlignment="Left" Margin="96,33,0,0" MaxLength="64"
+                 Name="tbJobnetName" VerticalAlignment="Top" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow"/>
+        <Label Content="{x:Static src:Properties.Resources.update_date_label_text}" Height="23" HorizontalAlignment="Left" Margin="580,30,0,0" VerticalAlignment="Top" />
+        <Label Content="" Height="23" Width="130" HorizontalAlignment="Left" Margin="655,30,0,0" Name="lblUpdDate"
+               VerticalAlignment="Top" />
+        <!-- ORG
+        <Label Content="{x:Static src:Properties.Resources.memo_label_text}" Height="23" HorizontalAlignment="Left" Margin="0,63,0,0" VerticalAlignment="Top" />
+        <TextBox Height="Auto" Width="700" Margin="96,63,0,0" HorizontalAlignment="Left" Name="tbComment" VerticalAlignment="Top" VerticalContentAlignment="Center"
+                 MaxLength="100" TextWrapping="WrapWithOverflow"/>
+         -->
+        <!--Park.iggy ADD 3.2 release -->
+        <Label Content="{x:Static src:Properties.Resources.memo_label_text}" Height="23" HorizontalAlignment="Left" Margin="0,63,0,0" VerticalAlignment="Top" />
+        <TextBox Height="Auto" Width="500" Margin="96,63,0,0" HorizontalAlignment="Left" Name="tbComment" VerticalAlignment="Top" VerticalContentAlignment="Center"
+                 MaxLength="100" TextWrapping="WrapWithOverflow"/>
+        <Label Content="{x:Static src:Properties.Resources.memo_label_jobnet_timeout}" Height="23" HorizontalAlignment="Left" Margin="600,63,0,0" VerticalAlignment="Top" />
+        <TextBox Height="Auto" Width="60" HorizontalAlignment="Left" Margin="725,63,0,0" MaxLength="5" Text="0"
+                 Name="tbJobnetTimeout" VerticalAlignment="Top" VerticalContentAlignment="Center" TextWrapping="WrapWithOverflow"/>
+        <ComboBox Name="combJobNetRunType" Height="23" Width="80" HorizontalAlignment="Left"
+                  Margin="790,63,0,0" VerticalAlignment="Top" >
+            <ComboBoxItem IsSelected="True" Content="{x:Static src:Properties.Resources.timeout_run_type_label_text}"></ComboBoxItem>
+            <ComboBoxItem>jobnet stop</ComboBoxItem>
+        </ComboBox>
+        <!--Park.iggy ADD END 3.2release -->
+        <design:Container x:Name="container" Grid.Row="1"></design:Container>
+        <!--  added by YAMA 2014/11/10    JAMのGUIの名称の変更
+        <Button Grid.Row="2" Content="{x:Static src:Properties.Resources.regist_button_text}" Height="28" Name="btnRegist" Width="75" Margin="0,6,120,6"
+        -->
+        <Button Grid.Row="2" Content="{x:Static src:Properties.Resources.save_button_text}" Height="28" Name="btnRegist" Width="75" Margin="0,6,120,6"
+                HorizontalAlignment="Right" Click="regist_Click" IsDefault="True"/>
+        <Button Grid.Row="2" Content="{x:Static src:Properties.Resources.cancel_button_text}" Height="28" Name="btnCancle" Width="75"
+                Margin="0,6,40,6" HorizontalAlignment="Right" Click="cancel_Click" IsCancel="True"/>
+    </Grid>
+</src:EditBaseUserControl>

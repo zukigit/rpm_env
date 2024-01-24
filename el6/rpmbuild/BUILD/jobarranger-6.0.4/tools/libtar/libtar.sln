@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libtar", "libtar\libtar.vcproj", "{D0E3F713-0281-4409-BD3D-5AD214467B84}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "alttar", "alttar\alttar.vcproj", "{B5E56E89-ED1F-4A65-A697-6A3618B93245}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D0E3F713-0281-4409-BD3D-5AD214467B84} = {D0E3F713-0281-4409-BD3D-5AD214467B84}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0E3F713-0281-4409-BD3D-5AD214467B84}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D0E3F713-0281-4409-BD3D-5AD214467B84}.Debug|Win32.Build.0 = Debug|Win32
+		{D0E3F713-0281-4409-BD3D-5AD214467B84}.Release|Win32.ActiveCfg = Release|Win32
+		{D0E3F713-0281-4409-BD3D-5AD214467B84}.Release|Win32.Build.0 = Release|Win32
+		{B5E56E89-ED1F-4A65-A697-6A3618B93245}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B5E56E89-ED1F-4A65-A697-6A3618B93245}.Debug|Win32.Build.0 = Debug|Win32
+		{B5E56E89-ED1F-4A65-A697-6A3618B93245}.Release|Win32.ActiveCfg = Release|Win32
+		{B5E56E89-ED1F-4A65-A697-6A3618B93245}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

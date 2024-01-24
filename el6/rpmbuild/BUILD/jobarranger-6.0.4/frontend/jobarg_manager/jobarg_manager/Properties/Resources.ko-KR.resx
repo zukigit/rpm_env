@@ -1,0 +1,2155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="authority_label_text" xml:space="preserve">
+    <value>권한：</value>
+  </data>
+  <data name="begin_month_checkbox_text" xml:space="preserve">
+    <value>월초지정</value>
+  </data>
+  <data name="boot_time_col_head_text" xml:space="preserve">
+    <value>기동시간</value>
+  </data>
+  <data name="boot_time_label_text" xml:space="preserve">
+    <value>기동시간：</value>
+  </data>
+  <data name="calendar_editing_screen_name" xml:space="preserve">
+    <value>달력편집화면</value>
+  </data>
+  <data name="calendar_id_label_text" xml:space="preserve">
+    <value>달력 ID：</value>
+  </data>
+  <data name="calendar_init_screen_language" xml:space="preserve">
+    <value>달력에 실행 초기값이 설정됩니다.
+실행하고 싶은 날을 책크해 주세요.
+실행은 현재 선택한 해에 적용됩니다.
+그리고,「달력을 초기화 안합니다.」에 책크하는 경우에는,
+등록된 실행일이 저장되고, 추가로 등록됩니다.</value>
+  </data>
+  <data name="calendar_init_screen_name" xml:space="preserve">
+    <value>달력 초기등록 화면</value>
+  </data>
+  <data name="calendar_name_col_head_text" xml:space="preserve">
+    <value>달력 이름</value>
+  </data>
+  <data name="calendar_name_label_text" xml:space="preserve">
+    <value>달력 이름</value>
+  </data>
+  <data name="calendar_node_text" xml:space="preserve">
+    <value>달력</value>
+  </data>
+  <data name="cancel_button_text" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="cancel_dialog_screen_name" xml:space="preserve">
+    <value>삭제 확인</value>
+  </data>
+  <data name="cancel_dialog_text" xml:space="preserve">
+    <value>달력을 삭제해도 되겠습니까?</value>
+  </data>
+  <data name="can_not_update_auth" xml:space="preserve">
+    <value>수정 불가</value>
+  </data>
+  <data name="can_update_auth" xml:space="preserve">
+    <value>수정 가능</value>
+  </data>
+  <data name="new_version_context_menu_text" xml:space="preserve">
+    <value>신버젼 작성(_V)</value>
+  </data>
+  <data name="day_week_checkbox_text" xml:space="preserve">
+    <value>요일 지정</value>
+  </data>
+  <data name="del_button_text" xml:space="preserve">
+    <value>삭제</value>
+  </data>
+  <data name="del_menu_text" xml:space="preserve">
+    <value>삭제(_D)</value>
+  </data>
+  <data name="during_jobnet_situation_menu_text" xml:space="preserve">
+    <value>실행중 JOBNET 목록(_R)</value>
+  </data>
+  <data name="during_startup_jobnet_screen_language" xml:space="preserve">
+    <value>JOBNET이 실행중입니다.
+       잠시만 기다려 주십시요.。</value>
+  </data>
+  <data name="during_startup_jobnet_screen_name" xml:space="preserve">
+    <value>JOBNET실행중</value>
+  </data>
+  <data name="edit_menu_text" xml:space="preserve">
+    <value>수정(_E)</value>
+  </data>
+  <data name="ended_time_col_head_text" xml:space="preserve">
+    <value>종료 시간</value>
+  </data>
+  <data name="end_month_checkbox_text" xml:space="preserve">
+    <value>월말지정</value>
+  </data>
+  <data name="ERROR_BOOT_TIME_001" xml:space="preserve">
+    <value>실행시간의 분설정은 00에서59사이의 숫자를 입력해 주세요.</value>
+  </data>
+  <data name="ERROR_CALENDAR_FILE_READ_001" xml:space="preserve">
+    <value>날짜의 형식 에러 입니다.</value>
+  </data>
+  <data name="ERROR_COMMON_001" xml:space="preserve">
+    <value>{0}을 입력해 주세요.</value>
+  </data>
+  <data name="ERROR_COMMON_002" xml:space="preserve">
+    <value>{0}은 ASCII문자로 입력해 주세요.</value>
+  </data>
+  <data name="ERROR_COMMON_003" xml:space="preserve">
+    <value>{0}은{1}바이트 이내로 입력해주세요.</value>
+  </data>
+  <data name="ERROR_COMMON_004" xml:space="preserve">
+    <value>입력한{0}은 이미 등록된것입니다.</value>
+  </data>
+  <data name="ERROR_COMMON_005" xml:space="preserve">
+    <value>{0}은 영어나 숫자 또는 하이픈(-)로 입력해 주세요.</value>
+  </data>
+  <data name="ERROR_COMMON_006" xml:space="preserve">
+    <value>{0}은 영어나 숫자 또는 하이픈(-)로 입력해 주세요.</value>
+  </data>
+  <data name="ERROR_COMMON_007" xml:space="preserve">
+    <value>{0}은 영어나 숫자 또는 하이픈(-)로 입력해 주세요.</value>
+  </data>
+  <data name="ERROR_COMMON_008" xml:space="preserve">
+    <value>{0}은 영어나 숫자 또는 하이픈(-)로 입력해 주세요.</value>
+  </data>
+  <data name="ERROR_COMMON_009" xml:space="preserve">
+    <value>{0}은 쉼표(,) 그리고  하이픈(-)의 전후에 숫자를 입력해 주세요.</value>
+  </data>
+  <data name="ERROR_COMMON_010" xml:space="preserve">
+    <value>{0}은 영어나 숫자 또는 하이픈(-), 슬래시(/)로 입력해 주세요.</value>
+  </data>
+  <data name="ERROR_IMPORT_001" xml:space="preserve">
+    <value>Import 파일을 읽는 중에 에러가 발생 했습니다.</value>
+  </data>
+  <data name="ERROR_IMPORT_002" xml:space="preserve">
+    <value>유져 정보가 등록되어 있지 않습니다.</value>
+  </data>
+  <data name="ERROR_IMPORT_003" xml:space="preserve">
+    <value>권한이 없습니다.</value>
+  </data>
+  <data name="ERROR_JOBEDIT_001" xml:space="preserve">
+    <value>START은 예약어입니다. 사용하지 말아주세요.</value>
+  </data>
+  <data name="ERROR_JOBEDIT_002" xml:space="preserve">
+    <value>선택된 JOBNET ID가 다른 유져에 의해 삭제되었습니다.</value>
+  </data>
+  <data name="ERROR_JOBEDIT_003" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="ERROR_JOBEDIT_004" xml:space="preserve">
+    <value>하나의 JOB 플로우중에서 한개만이 시작 아이콘이 등록이 가능합니다.</value>
+  </data>
+  <data name="ERROR_JOBEDIT_005" xml:space="preserve">
+    <value>아이콘「{0}」의 플로우가 정확하지 않습니다. In 플로우 또는 OUT 플로우를 수정해 주세요.</value>
+  </data>
+  <data name="ERROR_JOBEDIT_006" xml:space="preserve">
+    <value>선택된 JOBNET ID데이타은 다른 유져에 의해 수정중입니다.
+잠시 기다렸다 재실행 해 주세요.</value>
+  </data>
+  <data name="ERROR_LOGIN_001" xml:space="preserve">
+    <value>유져 또는 패스워드가 정확하지 않습니다.</value>
+  </data>
+  <data name="ERROR_RUN_JOBNET_001" xml:space="preserve">
+    <value>유효한 JOBNET가 없어서 실행이 불가능 합니다.</value>
+  </data>
+  <data name="err_jobnet_situation_menu_text" xml:space="preserve">
+    <value>에러 JOBNET목록(_T)</value>
+  </data>
+  <data name="err_message_alredy_exist_calendar" xml:space="preserve">
+    <value>같은 달력ID로 이미 등록되어 있습니다.</value>
+  </data>
+  <data name="err_message_alredy_exist_jobnet" xml:space="preserve">
+    <value>같은 JOBNET ID로 이미 등록되어 있습니다.</value>
+  </data>
+  <data name="err_message_alredy_exist_schedule" xml:space="preserve">
+    <value>같은 스케줄ID로 이미 등록되어 있습니다.。</value>
+  </data>
+  <data name="err_message_boot_time" xml:space="preserve">
+    <value>실행시간</value>
+  </data>
+  <data name="err_message_calendar_id" xml:space="preserve">
+    <value>달력 ID</value>
+  </data>
+  <data name="err_message_calendar_init_day" xml:space="preserve">
+    <value>요일을 선택해 주세요.</value>
+  </data>
+  <data name="err_message_calendar_init_every_month_day" xml:space="preserve">
+    <value>매월 실행 일을 선택해 주세요.</value>
+  </data>
+  <data name="err_message_calendar_name" xml:space="preserve">
+    <value>달력 이름</value>
+  </data>
+  <data name="err_message_db_dbs" xml:space="preserve">
+    <value>데이타 소스 이름</value>
+  </data>
+  <data name="err_message_db_pass" xml:space="preserve">
+    <value>DB 패스워드</value>
+  </data>
+  <data name="err_message_db_user" xml:space="preserve">
+    <value>DB 유져</value>
+  </data>
+  <data name="err_message_delete_relation" xml:space="preserve">
+    <value>다른곳에서 사용하고 있어 삭제가 불가능 합니다.</value>
+  </data>
+  <data name="err_message_jobcon_name" xml:space="preserve">
+    <value>JOB CON 이름</value>
+  </data>
+  <data name="err_message_jobnet_id" xml:space="preserve">
+    <value>JOBNET ID</value>
+  </data>
+  <data name="err_message_jobnet_name" xml:space="preserve">
+    <value>JOBNET 이름</value>
+  </data>
+  <data name="err_message_schedule_id" xml:space="preserve">
+    <value>스케줄 ID</value>
+  </data>
+  <data name="err_message_schedule_name" xml:space="preserve">
+    <value>스케줄 이름</value>
+  </data>
+  <data name="every_month_checkbox_text" xml:space="preserve">
+    <value>매월 지정</value>
+  </data>
+  <data name="exit_dialog_screen_name" xml:space="preserve">
+    <value>종료 확인</value>
+  </data>
+  <data name="exit_dialog_text" xml:space="preserve">
+    <value>JOB 매니져를 종료 해도 되겠습니까? </value>
+  </data>
+  <data name="exit_menu_text" xml:space="preserve">
+    <value>종료(_X)</value>
+  </data>
+  <data name="export_menu_text" xml:space="preserve">
+    <value>Export(_E)</value>
+  </data>
+  <data name="export_screen_language" xml:space="preserve">
+    <value>Export파일의 출력할곳을 지정해 주세요.</value>
+  </data>
+  <data name="export_screen_name" xml:space="preserve">
+    <value>Export 화면</value>
+  </data>
+  <data name="file_menu_text" xml:space="preserve">
+    <value>파일(_F)</value>
+  </data>
+  <data name="file_reading_button_text" xml:space="preserve">
+    <value>파일 읽기</value>
+  </data>
+  <data name="format_label_text" xml:space="preserve">
+    <value>형식 ：</value>
+  </data>
+  <data name="fri_day_checkbox_text" xml:space="preserve">
+    <value>금요일</value>
+  </data>
+  <data name="help_menu_text" xml:space="preserve">
+    <value>HELP(_H)</value>
+  </data>
+  <data name="hide_context_menu_text" xml:space="preserve">
+    <value>숨기기(_H)</value>
+  </data>
+  <data name="immediate_run_menu_text" xml:space="preserve">
+    <value>즉시 실행(_R)</value>
+  </data>
+  <data name="import_menu_text" xml:space="preserve">
+    <value>Import (_I)</value>
+  </data>
+  <data name="import_overwrite_duplicate_checkbox_text" xml:space="preserve">
+    <value>덮어쓰기 허용：</value>
+  </data>
+  <data name="import_screen_language" xml:space="preserve">
+    <value>Import할 Export 파일을 입력해 주세요.</value>
+  </data>
+  <data name="import_screen_name" xml:space="preserve">
+    <value>Import 화면</value>
+  </data>
+  <data name="init_regist_button_text" xml:space="preserve">
+    <value>초기 등록</value>
+  </data>
+  <data name="invalidity_context_menu_text" xml:space="preserve">
+    <value>무효(_I)</value>
+  </data>
+  <data name="jobnet_editing_screen_name" xml:space="preserve">
+    <value>JOBNET 수정화면</value>
+  </data>
+  <data name="jobnet_id_col_head_text" xml:space="preserve">
+    <value>JOBNET ID</value>
+  </data>
+  <data name="jobnet_id_label_text" xml:space="preserve">
+    <value>JB NET ID：</value>
+  </data>
+  <data name="jobnet_label_text" xml:space="preserve">
+    <value>JOBNET：</value>
+  </data>
+  <data name="jobnet_name_col_head_text" xml:space="preserve">
+    <value>JOBNET 이름</value>
+  </data>
+  <data name="jobnet_name_label_text" xml:space="preserve">
+    <value>JOBNET 이름 ：</value>
+  </data>
+  <data name="jobnet_node_text" xml:space="preserve">
+    <value>JOBNET</value>
+  </data>
+  <data name="jobnet_situation_menu_text" xml:space="preserve">
+    <value>운영 상황 JOBNET 목록(_O)</value>
+  </data>
+  <data name="job_control_tab_text" xml:space="preserve">
+    <value>JOBNET 실행관리</value>
+  </data>
+  <data name="job_id_col_head_text" xml:space="preserve">
+    <value>JOB ID</value>
+  </data>
+  <data name="job_name_col_head_text" xml:space="preserve">
+    <value>JOB 이름</value>
+  </data>
+  <data name="job_run_status_done" xml:space="preserve">
+    <value>실행 종료</value>
+  </data>
+  <data name="job_run_status_running" xml:space="preserve">
+    <value>실행 중</value>
+  </data>
+  <data name="job_run_status_schedule" xml:space="preserve">
+    <value>예정</value>
+  </data>
+  <data name="job_run_status_schedule_delete" xml:space="preserve">
+    <value>예정삭제</value>
+  </data>
+  <data name="last_operation_day_label_text" xml:space="preserve">
+    <value>최종 실행일：</value>
+  </data>
+  <data name="login_button_text" xml:space="preserve">
+    <value>LOGIN</value>
+  </data>
+  <data name="login_failed" xml:space="preserve">
+    <value>유져 또는 패스워드가 정확하지 않습니다.</value>
+  </data>
+  <data name="login_screen_db_group_label" xml:space="preserve">
+    <value>JOB CON접속할 DB정보</value>
+  </data>
+  <data name="login_screen_db_pass_label" xml:space="preserve">
+    <value>DB패스워드：</value>
+  </data>
+  <data name="login_screen_db_source_label" xml:space="preserve">
+    <value>데이터 리소스 이름：</value>
+  </data>
+  <data name="login_screen_db_user_label" xml:space="preserve">
+    <value>DB 유져 ：</value>
+  </data>
+  <data name="login_screen_jobcontrol_label" xml:space="preserve">
+    <value>JOB CON 이름：</value>
+  </data>
+  <data name="login_screen_language" xml:space="preserve">
+    <value>JOB 매니져에 오신걸 축하드립니다..
+
+JOB CON에 Login하기 위해서는, JOB CON이름, 유져, 패스워드를
+입력하시고 Login 버튼을 눌러 주십시요.</value>
+  </data>
+  <data name="login_screen_name" xml:space="preserve">
+    <value>LOGIN 화면</value>
+  </data>
+  <data name="login_screen_passwd_label" xml:space="preserve">
+    <value>패스워드：</value>
+  </data>
+  <data name="login_screen_user_label" xml:space="preserve">
+    <value>유져：</value>
+  </data>
+  <data name="memo_col_head_text" xml:space="preserve">
+    <value>설명</value>
+  </data>
+  <data name="memo_label_text" xml:space="preserve">
+    <value>설명：</value>
+  </data>
+  <data name="memo_label_jobnet_timeout" xml:space="preserve">
+    <value>Timeout 경고(분)：</value>
+  </data>
+  <data name="mon_day_checkbox_text" xml:space="preserve">
+    <value>월요일</value>
+  </data>
+  <data name="MSG_COMMON_001" xml:space="preserve">
+    <value>JOB 매니져를 종료하시겠습니까?</value>
+  </data>
+  <data name="MSG_COMMON_002" xml:space="preserve">
+    <value>데이터를 저장하시겠습니까?</value>
+  </data>
+  <data name="MSG_COMMON_003" xml:space="preserve">
+    <value>Job Arranger for Zabbix
+
+Job Manager Version 6.0.3 (Rev:2902)
+
+Copyright (C) 2012-2013 FitechForce, Inc. All Rights Reserved. 
+Copyright (C) 2013-2021 Daiwa Institute of Research Business Innovation Ltd. All Rights Reserved.
+Copyright (C) 2021-2022 Daiwa Institute of Research Ltd. All Rights Reserved..</value>
+  </data>
+  <data name="MSG_COMMON_004" xml:space="preserve">
+    <value>데이터를 삭제하시겠습니까?</value>
+  </data>
+  <data name="MSG_COMMON_005" xml:space="preserve">
+    <value>JOBNET을 실행하시겠습니까?</value>
+  </data>
+  <data name="MSG_COMMON_006" xml:space="preserve">
+    <value>권한이 없습니다.</value>
+  </data>
+  <data name="MSG_COMMON_007" xml:space="preserve">
+    <value>관련데이터가 있어 삭제가 불가능 합니다.</value>
+  </data>
+  <data name="MSG_COMMON_008" xml:space="preserve">
+    <value>수정중인 데이터를 취소하시겠습까?</value>
+  </data>
+  <data name="new_context_menu_text" xml:space="preserve">
+    <value>신기 추가(_N)</value>
+  </data>
+  <data name="new_menu_text" xml:space="preserve">
+    <value>신기 추가(_N)</value>
+  </data>
+  <data name="not_init_checkbox_text" xml:space="preserve">
+    <value>달력을 초기화 안합니다.</value>
+  </data>
+  <data name="object_control_tab_text" xml:space="preserve">
+    <value>Object관리 </value>
+  </data>
+  <data name="object_id_col_head_text" xml:space="preserve">
+    <value>Object ID</value>
+  </data>
+  <data name="object_list_screen_name" xml:space="preserve">
+    <value>Object 목록 화면</value>
+  </data>
+  <data name="object_name_col_head_text" xml:space="preserve">
+    <value>Object 이름</value>
+  </data>
+  <data name="operation_day_file_name_label_text" xml:space="preserve">
+    <value>실행일 파일명：</value>
+  </data>
+  <data name="operation_day_file_reading_screen_language" xml:space="preserve">
+    <value>실행일을 지정한 실생일 파일을 입력해 주세요.</value>
+  </data>
+  <data name="operation_day_file_reading_screen_name" xml:space="preserve">
+    <value>실행일파일을 읽는 화면</value>
+  </data>
+  <data name="operation_day_label_text" xml:space="preserve">
+    <value>실행일：</value>
+  </data>
+  <data name="operation_information_err_jobnet_label" xml:space="preserve">
+    <value>에러 JOBNET 운영정보`</value>
+  </data>
+  <data name="operation_information_jobnet_label" xml:space="preserve">
+    <value>JOBNET 운영정보</value>
+  </data>
+  <data name="operation_information_running_jobnet_label" xml:space="preserve">
+    <value>실행중인 JOBNET 운영정보</value>
+  </data>
+  <data name="private_calendar_node_text" xml:space="preserve">
+    <value>Private 달력</value>
+  </data>
+  <data name="private_jobnet_node_text" xml:space="preserve">
+    <value>Private JOBNET</value>
+  </data>
+  <data name="private_schedule_node_text" xml:space="preserve">
+    <value>Private 스케줄</value>
+  </data>
+  <data name="PROCESS_001" xml:space="preserve">
+    <value>등록처리</value>
+  </data>
+  <data name="PROCESS_002" xml:space="preserve">
+    <value>취소처리</value>
+  </data>
+  <data name="PROCESS_003" xml:space="preserve">
+    <value>신기추가처리</value>
+  </data>
+  <data name="PROCESS_004" xml:space="preserve">
+    <value>수정처리</value>
+  </data>
+  <data name="PROCESS_005" xml:space="preserve">
+    <value>신버젼 작성처리</value>
+  </data>
+  <data name="PROCESS_006" xml:space="preserve">
+    <value>삭제처리</value>
+  </data>
+  <data name="PROCESS_007" xml:space="preserve">
+    <value>유효처리</value>
+  </data>
+  <data name="PROCESS_008" xml:space="preserve">
+    <value>무효처리</value>
+  </data>
+  <data name="PROCESS_009" xml:space="preserve">
+    <value>JOBNET 실행</value>
+  </data>
+  <data name="PROCESS_010" xml:space="preserve">
+    <value>LOGIN 처리</value>
+  </data>
+  <data name="PROCESS_011" xml:space="preserve">
+    <value>닫기처리</value>
+  </data>
+  <data name="PROCESS_012" xml:space="preserve">
+    <value>Export처리</value>
+  </data>
+  <data name="PROCESS_013" xml:space="preserve">
+    <value>Import처리</value>
+  </data>
+  <data name="PROCESS_014" xml:space="preserve">
+    <value>실행 JOB 상세화면표시처리</value>
+  </data>
+  <data name="PROCESS_015" xml:space="preserve">
+    <value>Object 목록 표시처리</value>
+  </data>
+  <data name="PROCESS_016" xml:space="preserve">
+    <value>Object 수정화면 표시처리</value>
+  </data>
+  <data name="public_calendar_node_text" xml:space="preserve">
+    <value>Public 달력</value>
+  </data>
+  <data name="public_col_head_text" xml:space="preserve">
+    <value>Public</value>
+  </data>
+  <data name="public_jobnet_node_text" xml:space="preserve">
+    <value>Public JOBNET</value>
+  </data>
+  <data name="public_label_text" xml:space="preserve">
+    <value>Public：</value>
+  </data>
+  <data name="public_schedule_node_text" xml:space="preserve">
+    <value>Public 스케줄</value>
+  </data>
+  <data name="reading_button_text" xml:space="preserve">
+    <value>읽기</value>
+  </data>
+  <data name="ref_export_file_text" xml:space="preserve">
+    <value>Export 파일을 선택해 주세요.</value>
+  </data>
+  <data name="ref_file_button_text" xml:space="preserve">
+    <value>참조</value>
+  </data>
+  <data name="ref_import_file_text" xml:space="preserve">
+    <value>Import 파일을 선택해 주세요.</value>
+  </data>
+  <data name="regist_button_text" xml:space="preserve">
+    <value>등록</value>
+  </data>
+  <data name="regist_dialog_screen_name" xml:space="preserve">
+    <value>수정등록확인</value>
+  </data>
+  <data name="regist_dialog_text" xml:space="preserve">
+    <value>데이터를 등록하시겠습니까?</value>
+  </data>
+  <data name="reservation_run_menu_text" xml:space="preserve">
+    <value>실행보류(_W)</value>
+  </data>
+  <data name="run_job_management_screen" xml:space="preserve">
+    <value>실행 JOB관리화면</value>
+  </data>
+  <data name="run_menu_text" xml:space="preserve">
+    <value>실행(_S)</value>
+  </data>
+  <data name="sat_day_checkbox_text" xml:space="preserve">
+    <value>토요일</value>
+  </data>
+  <data name="schedule_editing_screen_name" xml:space="preserve">
+    <value>스케줄 수정화면</value>
+  </data>
+  <data name="schedule_id_label_text" xml:space="preserve">
+    <value>스케줄 ID：</value>
+  </data>
+  <data name="schedule_name_label_text" xml:space="preserve">
+    <value>스케줄 이름：</value>
+  </data>
+  <data name="schedule_node_text" xml:space="preserve">
+    <value>스케줄</value>
+  </data>
+  <data name="schedule_time_col_head_text" xml:space="preserve">
+    <value>시작예정시간</value>
+  </data>
+  <data name="started_time_col_head_text" xml:space="preserve">
+    <value>시작시간</value>
+  </data>
+  <data name="status_col_head_text" xml:space="preserve">
+    <value>상황</value>
+  </data>
+  <data name="stop_context_menu_text" xml:space="preserve">
+    <value>JOBNET 정지(_F)</value>
+  </data>
+  <data name="sun_day_checkbox_text" xml:space="preserve">
+    <value>일요일</value>
+  </data>
+  <data name="SYSERR_001" xml:space="preserve">
+    <value>DB에서 실행 에러가 발생했습니다. 시스템 관리자에게 연락바랍니다.</value>
+  </data>
+  <data name="SYSERR_002" xml:space="preserve">
+    <value>파일읽기 에러 발생. 시스템 관리자에게 연락바랍니다.</value>
+  </data>
+  <data name="SYSERR_003" xml:space="preserve">
+    <value>예정하지 않은 에러가 발생하였습니다. 시스템 관리자에게 연락바랍니다.</value>
+  </data>
+  <data name="test_run_menu_text" xml:space="preserve">
+    <value>테스트 실행(_T)</value>
+  </data>
+  <data name="thu_day_checkbox_text" xml:space="preserve">
+    <value>목요일</value>
+  </data>
+  <data name="Title_Msgbox_Delete" xml:space="preserve">
+    <value>삭제 확인</value>
+  </data>
+  <data name="Title_Msgbox_Edit" xml:space="preserve">
+    <value>수정등록확인</value>
+  </data>
+  <data name="Title_Msgbox_End" xml:space="preserve">
+    <value>종료확인</value>
+  </data>
+  <data name="Title_Msgbox_Error" xml:space="preserve">
+    <value>에러</value>
+  </data>
+  <data name="Title_Msgbox_Head" xml:space="preserve">
+    <value>버젼 정보</value>
+  </data>
+  <data name="Title_Msgbox_Jobnet_Start" xml:space="preserve">
+    <value>실행확인</value>
+  </data>
+  <data name="tue_day_checkbox_text" xml:space="preserve">
+    <value>화요일</value>
+  </data>
+  <data name="update_context_menu_text" xml:space="preserve">
+    <value>수정(_U)</value>
+  </data>
+  <data name="update_date_col_head_text" xml:space="preserve">
+    <value>수정일</value>
+  </data>
+  <data name="update_date_label_text" xml:space="preserve">
+    <value>수정일：</value>
+  </data>
+  <data name="user_name_label_text" xml:space="preserve">
+    <value>유져：</value>
+  </data>
+  <data name="validity_context_menu_text" xml:space="preserve">
+    <value>유효(_A)</value>
+  </data>
+  <data name="valid_col_head_text" xml:space="preserve">
+    <value>유효</value>
+  </data>
+  <data name="ver_dialog_screen_name" xml:space="preserve">
+    <value>버젼 정보</value>
+  </data>
+  <data name="ver_menu_text" xml:space="preserve">
+    <value>버젼 정보(_A)</value>
+  </data>
+  <data name="view_menu_text" xml:space="preserve">
+    <value>표시(_V)</value>
+  </data>
+  <data name="wed_day_checkbox_text" xml:space="preserve">
+    <value>수요일</value>
+  </data>
+  <data name="WINDOW_NAME_100" xml:space="preserve">
+    <value>LOGIN 화면</value>
+  </data>
+  <data name="WINDOW_NAME_200" xml:space="preserve">
+    <value>Object 목록화면</value>
+  </data>
+  <data name="WINDOW_NAME_210" xml:space="preserve">
+    <value>달력 수정화면</value>
+  </data>
+  <data name="WINDOW_NAME_211" xml:space="preserve">
+    <value>실행일 파일 일기화면</value>
+  </data>
+  <data name="WINDOW_NAME_212" xml:space="preserve">
+    <value>달력초기등록화면</value>
+  </data>
+  <data name="WINDOW_NAME_220" xml:space="preserve">
+    <value>스케줄 수정화면</value>
+  </data>
+  <data name="WINDOW_NAME_221" xml:space="preserve">
+    <value>실행시간등록화면面</value>
+  </data>
+  <data name="WINDOW_NAME_222" xml:space="preserve">
+    <value>JOBNET 등록화면</value>
+  </data>
+  <data name="WINDOW_NAME_230" xml:space="preserve">
+    <value>JOB 수정화면</value>
+  </data>
+  <data name="WINDOW_NAME_231" xml:space="preserve">
+    <value>JOB 아이콘 설정화면</value>
+  </data>
+  <data name="WINDOW_NAME_232" xml:space="preserve">
+    <value>조건분기 아이콘 설정화면</value>
+  </data>
+  <data name="WINDOW_NAME_233" xml:space="preserve">
+    <value>JOB CON 변수 아이콘 설정화면</value>
+  </data>
+  <data name="WINDOW_NAME_234" xml:space="preserve">
+    <value>확장 JOB 아이콘 설정 화면</value>
+  </data>
+  <data name="WINDOW_NAME_235" xml:space="preserve">
+    <value>종료 아이콘 설정 화면</value>
+  </data>
+  <data name="WINDOW_NAME_236" xml:space="preserve">
+    <value>계산 아이콘 설정 화면</value>
+  </data>
+  <data name="WINDOW_NAME_237" xml:space="preserve">
+    <value>Task 아이콘 설정 화면</value>
+  </data>
+  <data name="WINDOW_NAME_238" xml:space="preserve">
+    <value>정보 취득 아이콘 설정화면</value>
+  </data>
+  <data name="WINDOW_NAME_239" xml:space="preserve">
+    <value>기타 아이콘 설정 화면</value>
+  </data>
+  <data name="WINDOW_NAME_240" xml:space="preserve">
+    <value>Export 화면</value>
+  </data>
+  <data name="WINDOW_NAME_250" xml:space="preserve">
+    <value>Import 화면</value>
+  </data>
+  <data name="WINDOW_NAME_300" xml:space="preserve">
+    <value>실행 JOB 관리 화면</value>
+  </data>
+  <data name="WINDOW_NAME_310" xml:space="preserve">
+    <value>실행 JOB 상세 화면</value>
+  </data>
+  <data name="ERROR_COMMON_011" xml:space="preserve">
+    <value>지정된 파일이 존재하지 않습니다.</value>
+  </data>
+  <data name="ERROR_COMMON_012" xml:space="preserve">
+    <value>{0}은{1}자리까지 입력해 주세요.</value>
+  </data>
+  <data name="err_message_boot_time_hh" xml:space="preserve">
+    <value>실행시간의 시</value>
+  </data>
+  <data name="err_message_boot_time_mi" xml:space="preserve">
+    <value>실행시간의 분</value>
+  </data>
+  <data name="ERROR_CALENDAR_001" xml:space="preserve">
+    <value>선택된 달력버젼이 다른 유져에 의해 삭제되었습니다.</value>
+  </data>
+  <data name="ERROR_CALENDAR_002" xml:space="preserve">
+    <value>선택된 달력ID의 데이터는 다른 유져에 의해 수정중입니다.
+잠시 기다렸다 재실행 해 주세요.</value>
+  </data>
+  <data name="ERROR_COMMON_013" xml:space="preserve">
+    <value>{0}은 영어 또는 숫자와 하이픈(-), 언더바(_)로 입력해 주세요.</value>
+  </data>
+  <data name="ERROR_SCHEDULE_001" xml:space="preserve">
+    <value>선택된 스케줄 버젼은 다른 유져에 의해 삭제되었습니다.</value>
+  </data>
+  <data name="ERROR_SCHEDULE_002" xml:space="preserve">
+    <value>선택된 스케줄ID의 데이터는 다른 유져에 의해 수정중입니다.
+잠시 기다렸다 재실행 해 주세요.</value>
+  </data>
+  <data name="ERROR_JOBEDIT_009" xml:space="preserve">
+    <value>등록된 JOB이 없습니다.</value>
+  </data>
+  <data name="ERROR_SCHEDULE_003" xml:space="preserve">
+    <value>등록된 실행 시간이 없습니다.。</value>
+  </data>
+  <data name="ERROR_SCHEDULE_004" xml:space="preserve">
+    <value>등록된 JOBNET이 없습니다.</value>
+  </data>
+  <data name="ERROR_IMPORT_004" xml:space="preserve">
+    <value>데이터은 이미 등록되어 있습니다.</value>
+  </data>
+  <data name="ERROR_IMPORT_005" xml:space="preserve">
+    <value>데이터의 정합성에러로 Import가 불가능합니다.</value>
+  </data>
+  <data name="ERROR_JOBEDIT_010" xml:space="preserve">
+    <value>아이콘 {0}을 설정 해주세요.</value>
+  </data>
+  <data name="add_button_text" xml:space="preserve">
+    <value>추가</value>
+  </data>
+  <data name="calc_label_text" xml:space="preserve">
+    <value>계산</value>
+  </data>
+  <data name="exec_label_text" xml:space="preserve">
+    <value>실행</value>
+  </data>
+  <data name="extend_job_label_text" xml:space="preserve">
+    <value>확장 JOB：</value>
+  </data>
+  <data name="host_label_text" xml:space="preserve">
+    <value>HOST</value>
+  </data>
+  <data name="host_name_label_text" xml:space="preserve">
+    <value>HOST 명：</value>
+  </data>
+  <data name="if_label_text" xml:space="preserve">
+    <value>조건</value>
+  </data>
+  <data name="info_label_text" xml:space="preserve">
+    <value>정보취득</value>
+  </data>
+  <data name="jobcon_value_label_text" xml:space="preserve">
+    <value>JOB CON 변수：</value>
+  </data>
+  <data name="job_id_label_text" xml:space="preserve">
+    <value>JOB ID：</value>
+  </data>
+  <data name="job_label_text" xml:space="preserve">
+    <value>JOB</value>
+  </data>
+  <data name="job_name_label_text" xml:space="preserve">
+    <value>JOB 이름：</value>
+  </data>
+  <data name="job_value_label_text" xml:space="preserve">
+    <value>JOB 변수：</value>
+  </data>
+  <data name="stop_code_label_text" xml:space="preserve">
+    <value>JOB 정지 코드：</value>
+  </data>
+  <data name="stop_command_label_text" xml:space="preserve">
+    <value>정지 Command：</value>
+  </data>
+  <data name="task_label_text" xml:space="preserve">
+    <value>TASK</value>
+  </data>
+  <data name="timeout_label_text" xml:space="preserve">
+    <value>TimeOut 경고(분)：</value>
+  </data>
+  <data name="value_col_head_text" xml:space="preserve">
+    <value>값</value>
+  </data>
+  <data name="value_label_text" xml:space="preserve">
+    <value>값：</value>
+  </data>
+  <data name="value_name_col_head_text" xml:space="preserve">
+    <value>변수명</value>
+  </data>
+  <data name="value_name_label_text" xml:space="preserve">
+    <value>변수명：</value>
+  </data>
+  <data name="variable_label_text" xml:space="preserve">
+    <value>변수</value>
+  </data>
+  <data name="calc_icon_screen_name" xml:space="preserve">
+    <value>계산 아이콘 설정</value>
+  </data>
+  <data name="calc_method_label_text" xml:space="preserve">
+    <value>계산방법</value>
+  </data>
+  <data name="character_string_text" xml:space="preserve">
+    <value>문자열</value>
+  </data>
+  <data name="compare_value_label_text" xml:space="preserve">
+    <value>비교값：</value>
+  </data>
+  <data name="end_code_label_text" xml:space="preserve">
+    <value>종료 코드 (JOB_EXIT_CD)：</value>
+  </data>
+  <data name="end_icon_screen_name" xml:space="preserve">
+    <value>종료 아이콘 설정</value>
+  </data>
+  <data name="env_icon_screen_name" xml:space="preserve">
+    <value>JOB CON 변수 아이콘 설정</value>
+  </data>
+  <data name="err_message_compare_value" xml:space="preserve">
+    <value>비교값</value>
+  </data>
+  <data name="err_message_job_id" xml:space="preserve">
+    <value>JOB ID</value>
+  </data>
+  <data name="err_message_job_name" xml:space="preserve">
+    <value>JOB 이름</value>
+  </data>
+  <data name="err_message_memo" xml:space="preserve">
+    <value>설명</value>
+  </data>
+  <data name="err_message_value" xml:space="preserve">
+    <value>값</value>
+  </data>
+  <data name="err_message_value_name" xml:space="preserve">
+    <value>변수명</value>
+  </data>
+  <data name="ext_job_icon_screen_name" xml:space="preserve">
+    <value>확장 JOB 아이콘 설정</value>
+  </data>
+  <data name="formula_label_text" xml:space="preserve">
+    <value>계산식：</value>
+  </data>
+  <data name="if_icon_screen_name" xml:space="preserve">
+    <value>조건분기 아잉콘 설정</value>
+  </data>
+  <data name="information_classification_label_text" xml:space="preserve">
+    <value>정보종류：</value>
+  </data>
+  <data name="info_icon_screen_name" xml:space="preserve">
+    <value>정보취득 아이콘 설정</value>
+  </data>
+  <data name="integer_calc_label_text" xml:space="preserve">
+    <value>정수계산</value>
+  </data>
+  <data name="jobnet_icon_screen_name" xml:space="preserve">
+    <value>JOBNET 아이콘 설정</value>
+  </data>
+  <data name="jobnet_stop_label_text" xml:space="preserve">
+    <value>JOBNET 정지：</value>
+  </data>
+  <data name="job_icon_screen_name" xml:space="preserve">
+    <value>JOB 아이콘 설정</value>
+  </data>
+  <data name="job_info_text" xml:space="preserve">
+    <value>JOB 정보</value>
+  </data>
+  <data name="numerical_value_text" xml:space="preserve">
+    <value>숫자</value>
+  </data>
+  <data name="other_icon_screen_name" xml:space="preserve">
+    <value>기타 아이콘 설정</value>
+  </data>
+  <data name="parameter_label_text" xml:space="preserve">
+    <value>Parameter ：</value>
+  </data>
+  <data name="process_method_label_text" xml:space="preserve">
+    <value>처리방법：</value>
+  </data>
+  <data name="task_icon_screen_name" xml:space="preserve">
+    <value>Task 아이콘 설정</value>
+  </data>
+  <data name="time_calc_label_text" xml:space="preserve">
+    <value>시간계산</value>
+  </data>
+  <data name="curve_flow_menu_text" xml:space="preserve">
+    <value>곡선 flow(_C)</value>
+  </data>
+  <data name="del_flow_menu_text" xml:space="preserve">
+    <value>flow 삭제(_O)</value>
+  </data>
+  <data name="err_message_exec" xml:space="preserve">
+    <value>실행란</value>
+  </data>
+  <data name="err_message_extend_job" xml:space="preserve">
+    <value>확장 JOB</value>
+  </data>
+  <data name="err_message_formula" xml:space="preserve">
+    <value>계산식</value>
+  </data>
+  <data name="err_message_host_name" xml:space="preserve">
+    <value>HOST 명</value>
+  </data>
+  <data name="err_message_host_value_name" xml:space="preserve">
+    <value>HOST (변수명)</value>
+  </data>
+  <data name="err_message_jobcontrol_value" xml:space="preserve">
+    <value>JOB CON 변수(값)</value>
+  </data>
+  <data name="err_message_jobcontrol_value_name" xml:space="preserve">
+    <value>JOB CON 변수(변수명)</value>
+  </data>
+  <data name="err_message_jobcontrol_variable" xml:space="preserve">
+    <value>JOB CON 변수</value>
+  </data>
+  <data name="err_message_job_info" xml:space="preserve">
+    <value>JOB 정보(JOB ID)</value>
+  </data>
+  <data name="err_message_job_value" xml:space="preserve">
+    <value>JOB 변수(값)</value>
+  </data>
+  <data name="err_message_job_value_name" xml:space="preserve">
+    <value>JOB 변수(변수명)</value>
+  </data>
+  <data name="err_message_parameter" xml:space="preserve">
+    <value>Parameter</value>
+  </data>
+  <data name="err_message_stop_code" xml:space="preserve">
+    <value>JOB 정지 코드</value>
+  </data>
+  <data name="err_message_stop_command" xml:space="preserve">
+    <value>정지 Command</value>
+  </data>
+  <data name="err_message_timeout" xml:space="preserve">
+    <value>TimeOut 경고</value>
+  </data>
+  <data name="false_setting_menu_text" xml:space="preserve">
+    <value>FALSE정정(_F)</value>
+  </data>
+  <data name="force_stop_menu_text" xml:space="preserve">
+    <value>강제정지(_F)</value>
+  </data>
+  <data name="hold_menu_text" xml:space="preserve">
+    <value>보류(_W)</value>
+  </data>
+  <data name="info_type_job_status_text" xml:space="preserve">
+    <value>JOB 상태</value>
+  </data>
+  <data name="linear_flow_menu_text" xml:space="preserve">
+    <value>직선 flow(_L)</value>
+  </data>
+  <data name="rerun_menu_text" xml:space="preserve">
+    <value>재실행(_A)</value>
+  </data>
+  <data name="setting_menu_text" xml:space="preserve">
+    <value>설정(_S)</value>
+  </data>
+  <data name="skip_menu_text" xml:space="preserve">
+    <value>Skip(_S)</value>
+  </data>
+  <data name="true_setting_menu_text" xml:space="preserve">
+    <value>TRUE설정(_T)</value>
+  </data>
+  <data name="unhold_menu_text" xml:space="preserve">
+    <value>보류해제(_U)</value>
+  </data>
+  <data name="unskip_menu_text" xml:space="preserve">
+    <value>skip 해제(_R)</value>
+  </data>
+  <data name="variable_value_change_menu_text" xml:space="preserve">
+    <value>변수값변경(_C)</value>
+  </data>
+  <data name="change_variable_value_screen_name" xml:space="preserve">
+    <value>변수값변경</value>
+  </data>
+  <data name="ERROR_JOBEDIT_011" xml:space="preserve">
+    <value>자신이외의 JOB ID를 입력해 주세요.</value>
+  </data>
+  <data name="extend_job_text" xml:space="preserve">
+    <value>확장 JOB</value>
+  </data>
+  <data name="ERROR_JOBEDIT_012" xml:space="preserve">
+    <value>Start아이콘은 한개 뿐입니다. End아이콘은 1개이상 설정할 필요가 있습니다.</value>
+  </data>
+  <data name="SYSERR_004" xml:space="preserve">
+    <value>통신번호의 취득에 시패했습니다. 시스템 관리자에게 연락바랍니다.</value>
+  </data>
+  <data name="ERROR_LOGIN_002" xml:space="preserve">
+    <value>유져가 무효 입니다.</value>
+  </data>
+  <data name="user_name_col_head_text" xml:space="preserve">
+    <value>유져</value>
+  </data>
+  <data name="ERROR_JOBNET_LOAD_001" xml:space="preserve">
+    <value>JOBNET 아이콘, 그리고 Task아이콘의 JOBNET은 무효입니다.</value>
+  </data>
+  <data name="load_err" xml:space="preserve">
+    <value>전개 에러</value>
+  </data>
+  <data name="ERROR_JOBEDIT_007" xml:space="preserve">
+    <value>시작점과 종료점이 같습니다.</value>
+  </data>
+  <data name="ERROR_JOBEDIT_008" xml:space="preserve">
+    <value>{0}은 {1}이내에서 입력해 주세요.</value>
+  </data>
+  <data name="after_variable_label_text" xml:space="preserve">
+    <value>수정후 변수：</value>
+  </data>
+  <data name="before_variable_label_text" xml:space="preserve">
+    <value>수정전 변수：</value>
+  </data>
+  <data name="view_variable_value_menu_text" xml:space="preserve">
+    <value>변수 표시(_V)</value>
+  </data>
+  <data name="view_variable_value_screen_name" xml:space="preserve">
+    <value>변수 표시</value>
+  </data>
+  <data name="calc_icon_label_text" xml:space="preserve">
+    <value>계산</value>
+  </data>
+  <data name="extend_job_icon_text" xml:space="preserve">
+    <value>확장 JOB</value>
+  </data>
+  <data name="info_icon_label_text" xml:space="preserve">
+    <value>정보취득</value>
+  </data>
+  <data name="job_icon_label_text" xml:space="preserve">
+    <value>JOB</value>
+  </data>
+  <data name="task_icon_label_text" xml:space="preserve">
+    <value>TASK</value>
+  </data>
+  <data name="variable_icon_label_text" xml:space="preserve">
+    <value>변수</value>
+  </data>
+  <data name="close_button_text" xml:space="preserve">
+    <value>닫기</value>
+  </data>
+  <data name="ERROR_COMMON_014" xml:space="preserve">
+    <value>파일 이름을 입력해 주세요.</value>
+  </data>
+  <data name="file_copy_icon_label_text" xml:space="preserve">
+    <value>파일 전송</value>
+  </data>
+  <data name="file_wait_icon_label_text" xml:space="preserve">
+    <value>파일 대기</value>
+  </data>
+  <data name="copy_new_context_menu_text" xml:space="preserve">
+    <value>복사 신기(_C)</value>
+  </data>
+  <data name="PROCESS_017" xml:space="preserve">
+    <value>복사 신기처리</value>
+  </data>
+  <data name="fcopy_icon_screen_name" xml:space="preserve">
+    <value>파일 전송 아이콘 설정</value>
+  </data>
+  <data name="destination_directory_label_text" xml:space="preserve">
+    <value>수신 디렉토리 정보</value>
+  </data>
+  <data name="destination_host_label_text" xml:space="preserve">
+    <value>수신 HOST</value>
+  </data>
+  <data name="directory_label_text" xml:space="preserve">
+    <value>디렉토리：</value>
+  </data>
+  <data name="file_name_label_text" xml:space="preserve">
+    <value>디렉토리명：</value>
+  </data>
+  <data name="fwait_icon_screen_name" xml:space="preserve">
+    <value>파일 대기 아이콘 설정</value>
+  </data>
+  <data name="source_file_label_text" xml:space="preserve">
+    <value>전송 파일 정보</value>
+  </data>
+  <data name="source_host_label_text" xml:space="preserve">
+    <value>전송 HOST</value>
+  </data>
+  <data name="ERROR_BOOT_TIME_003" xml:space="preserve">
+    <value>실행시간이 이미 등록되어있습니다.</value>
+  </data>
+  <data name="ERROR_BOOT_TIME_004" xml:space="preserve">
+    <value>실행시간은 필수 입력으로 HHMI(HH은1～2자리숫자0～99,MI은2자리숫자로00～59)형식으로 입력해 주세요.</value>
+  </data>
+  <data name="ERROR_COMMON_015" xml:space="preserve">
+    <value>{0}은 영어숫자와언더바(_)를 사용합니다. 그러나 처음의 문자은 숫자외에 입력해 주세요</value>
+  </data>
+  <data name="err_message_from_dir" xml:space="preserve">
+    <value>전송 디렉토리</value>
+  </data>
+  <data name="err_message_from_file_name" xml:space="preserve">
+    <value>전송 파일명</value>
+  </data>
+  <data name="err_message_from_host_name" xml:space="preserve">
+    <value>전송 HOST명</value>
+  </data>
+  <data name="err_message_from_host_value_name" xml:space="preserve">
+    <value>전송 HOSt(변수명)</value>
+  </data>
+  <data name="err_message_to_dir" xml:space="preserve">
+    <value>전송 디렉토리</value>
+  </data>
+  <data name="err_message_to_host_name" xml:space="preserve">
+    <value>전송 HOST명</value>
+  </data>
+  <data name="err_message_to_host_value_name" xml:space="preserve">
+    <value>전송 HOST(변수명)</value>
+  </data>
+  <data name="ERROR_LOGIN_003" xml:space="preserve">
+    <value>설정 파일(jobarg_manager.conf)이 없습니다.</value>
+  </data>
+  <data name="ERROR_LOGIN_004" xml:space="preserve">
+    <value>설정 파일(jobarg_manager.conf)내용을 확인해 주세요.</value>
+  </data>
+  <data name="ERROR_LOGIN_005" xml:space="preserve">
+    <value>ODBC의DSN이 발견되지 않습니다. ODBC의 설정을 확인해주세요.</value>
+  </data>
+  <data name="ERROR_LOGIN_006" xml:space="preserve">
+    <value>DB접속에 실패했습니다.ODBC와 DB를 확인해 주세요.</value>
+  </data>
+  <data name="err_message_file_name" xml:space="preserve">
+    <value>파일 명</value>
+  </data>
+  <data name="Title_Msgbox_Cancel" xml:space="preserve">
+    <value>취소확인</value>
+  </data>
+  <data name="MSG_COMMON_009" xml:space="preserve">
+    <value>예정된 스케줄을 삭제하겠습니까?</value>
+  </data>
+  <data name="MSG_COMMON_010" xml:space="preserve">
+    <value>{0} 스케줄이 유효합니다.
+무효를 선택하고 삭제해주세요.</value>
+  </data>
+  <data name="PROCESS_018" xml:space="preserve">
+    <value>보류처리</value>
+  </data>
+  <data name="PROCESS_019" xml:space="preserve">
+    <value>보류해제처리</value>
+  </data>
+  <data name="PROCESS_020" xml:space="preserve">
+    <value>취소처리</value>
+  </data>
+  <data name="PROCESS_021" xml:space="preserve">
+    <value>Skip해제처리</value>
+  </data>
+  <data name="PROCESS_022" xml:space="preserve">
+    <value>강제정지처리</value>
+  </data>
+  <data name="PROCESS_023" xml:space="preserve">
+    <value>재실행처리</value>
+  </data>
+  <data name="reboot_icon_label_text" xml:space="preserve">
+    <value>Reboot</value>
+  </data>
+  <data name="reboot_icon_screen_name" xml:space="preserve">
+    <value>Reboot아이콘 설정</value>
+  </data>
+  <data name="force_reboot_label_text" xml:space="preserve">
+    <value>강제Reboot</value>
+  </data>
+  <data name="process_mode_label_text" xml:space="preserve">
+    <value>처리 모드</value>
+  </data>
+  <data name="waiting_reboot_label_text" xml:space="preserve">
+    <value>JOB 대기후 Reboot</value>
+  </data>
+  <data name="err_message_wait_time" xml:space="preserve">
+    <value>대기 시간</value>
+  </data>
+  <data name="wait_time_label_text" xml:space="preserve">
+    <value>대기시간 (초)：</value>
+  </data>
+  <data name="job_run_menu_text" xml:space="preserve">
+    <value>JOB 기동(_J)</value>
+  </data>
+  <data name="run_job_jobnet_name_head" xml:space="preserve">
+    <value>JOB 아이코단체 기동</value>
+  </data>
+  <data name="calendar_id_col_head_text" xml:space="preserve">
+    <value>달력 ID</value>
+  </data>
+  <data name="ERROR_COMMON_016" xml:space="preserve">
+    <value>{0}은 영문숫자와 하이픈(-),언더바(_),슬래시(/)를 입력해 주세요.</value>
+  </data>
+  <data name="err_message_release_job_id" xml:space="preserve">
+    <value>보류해제JOB ID</value>
+  </data>
+  <data name="file_check_label_text" xml:space="preserve">
+    <value>파일 존재 첵크</value>
+  </data>
+  <data name="file_delete_checkbox_text" xml:space="preserve">
+    <value>파일 삭제：</value>
+  </data>
+  <data name="file_wait_label_text" xml:space="preserve">
+    <value>파일 대기</value>
+  </data>
+  <data name="release_icon_label_text" xml:space="preserve">
+    <value>보류 해제</value>
+  </data>
+  <data name="release_job_id_label_text" xml:space="preserve">
+    <value>보류 해제 JOB ID：</value>
+  </data>
+  <data name="calendar_info_text" xml:space="preserve">
+    <value>달력 정보</value>
+  </data>
+  <data name="ERROR_CALENDAR_003" xml:space="preserve">
+    <value>선택된 달력ID가 다른 유져에 의해 삭제되었습니다.</value>
+  </data>
+  <data name="info_type_running_day_text" xml:space="preserve">
+    <value>실행일</value>
+  </data>
+  <data name="job_result_tab_text" xml:space="preserve">
+    <value>실행결과 표시</value>
+  </data>
+  <data name="day_label_text" xml:space="preserve">
+    <value>일</value>
+  </data>
+  <data name="hour_label_text" xml:space="preserve">
+    <value>시</value>
+  </data>
+  <data name="min_label_text" xml:space="preserve">
+    <value>분</value>
+  </data>
+  <data name="month_label_text" xml:space="preserve">
+    <value>월</value>
+  </data>
+  <data name="search_term_label_text" xml:space="preserve">
+    <value>검색기간：</value>
+  </data>
+  <data name="year_label_text" xml:space="preserve">
+    <value>년</value>
+  </data>
+  <data name="csv_button_text" xml:space="preserve">
+    <value>CSV출력</value>
+  </data>
+  <data name="manage_id_col_head_text" xml:space="preserve">
+    <value>관리ID</value>
+  </data>
+  <data name="manage_id_label_text" xml:space="preserve">
+    <value>관리ID：</value>
+  </data>
+  <data name="return_value_col_head_text" xml:space="preserve">
+    <value>반환값</value>
+  </data>
+  <data name="run_date_col_head_text" xml:space="preserve">
+    <value>실행일시</value>
+  </data>
+  <data name="search_button_text" xml:space="preserve">
+    <value>검색</value>
+  </data>
+  <data name="std_err_col_head_text" xml:space="preserve">
+    <value>표준에러</value>
+  </data>
+  <data name="std_out_col_head_text" xml:space="preserve">
+    <value>표준출력</value>
+  </data>
+  <data name="csv_screen_language" xml:space="preserve">
+    <value>JOB실행결과 CSV파일을 저장할곳을 지정해 주세요.</value>
+  </data>
+  <data name="csv_screen_name" xml:space="preserve">
+    <value>JOB 실행결과 출력화면</value>
+  </data>
+  <data name="ERROR_COMMON_017" xml:space="preserve">
+    <value>{0}은{1}～{2}의 값을 입력해주세요.</value>
+  </data>
+  <data name="ERROR_COMMON_018" xml:space="preserve">
+    <value>{0}은 정확한 날짜를 입력해주세요.</value>
+  </data>
+  <data name="err_message_search_from_date" xml:space="preserve">
+    <value>검색 FROM일시</value>
+  </data>
+  <data name="err_message_search_from_day" xml:space="preserve">
+    <value>검색 FROM일</value>
+  </data>
+  <data name="err_message_search_from_hour" xml:space="preserve">
+    <value>검색 FROM시</value>
+  </data>
+  <data name="err_message_search_from_min" xml:space="preserve">
+    <value>검색 FROM분</value>
+  </data>
+  <data name="err_message_search_from_month" xml:space="preserve">
+    <value>검색 FROM월</value>
+  </data>
+  <data name="err_message_search_from_time" xml:space="preserve">
+    <value>검색 FROM시간</value>
+  </data>
+  <data name="err_message_search_from_year" xml:space="preserve">
+    <value>검색 FROM년</value>
+  </data>
+  <data name="err_message_search_to_date" xml:space="preserve">
+    <value>검색 TO일시</value>
+  </data>
+  <data name="err_message_search_to_day" xml:space="preserve">
+    <value>검색 TO일</value>
+  </data>
+  <data name="err_message_search_to_hour" xml:space="preserve">
+    <value>검색 TO시</value>
+  </data>
+  <data name="err_message_search_to_min" xml:space="preserve">
+    <value>검색 TO분</value>
+  </data>
+  <data name="err_message_search_to_month" xml:space="preserve">
+    <value>검색 TO월</value>
+  </data>
+  <data name="err_message_search_to_time" xml:space="preserve">
+    <value>검색 TO시간</value>
+  </data>
+  <data name="err_message_search_to_year" xml:space="preserve">
+    <value>검색 TO년</value>
+  </data>
+  <data name="ERROR_COMMON_019" xml:space="preserve">
+    <value>지정된 파일 PATH의 형식은 서포트하질 않습니다.</value>
+  </data>
+  <data name="ERROR_COMMON_020" xml:space="preserve">
+    <value>정규표현식을 확인해 주세요.</value>
+  </data>
+  <data name="ERROR_COMMON_021" xml:space="preserve">
+    <value>CSV출력데이터가 존재하지 않습니다.</value>
+  </data>
+  <data name="err_message_user_name" xml:space="preserve">
+    <value>유져</value>
+  </data>
+  <data name="PROCESS_024" xml:space="preserve">
+    <value>실행결과검색처리</value>
+  </data>
+  <data name="PROCESS_025" xml:space="preserve">
+    <value>출력결과 CSV출력처리</value>
+  </data>
+  <data name="ERROR_COMMON_022" xml:space="preserve">
+    <value>파일의 디렉토리가 존재하지 않습니다.</value>
+  </data>
+  <data name="ERROR_JOBEDIT_013" xml:space="preserve">
+    <value>해당 JOBNET은 이미 표시중입니다.</value>
+  </data>
+  <data name="ERROR_COMMON_023" xml:space="preserve">
+    <value>액세스가 거부되었습니다.</value>
+  </data>
+  <data name="edit_skip_menu_text" xml:space="preserve">
+    <value>Skip (_K)</value>
+  </data>
+  <data name="ERROR_COMMON_024" xml:space="preserve">
+    <value>해당 데이터가 존재하지 않습니다.</value>
+  </data>
+  <data name="ERROR_COMMON_025" xml:space="preserve">
+    <value>{0}은「"'\,」가 포함하지 않게 입력해 주세요.</value>
+  </data>
+  <data name="ERROR_COMMON_026" xml:space="preserve">
+    <value>{0}은 정확한 시간을 입력해 주세요.</value>
+  </data>
+  <data name="detail_col_head_text" xml:space="preserve">
+    <value>상세</value>
+  </data>
+  <data name="log_detail_screen_name" xml:space="preserve">
+    <value>JOB 실행결과 상세화면</value>
+  </data>
+  <data name="std_err_label_text" xml:space="preserve">
+    <value>표준 에러：</value>
+  </data>
+  <data name="std_out_label_text" xml:space="preserve">
+    <value>표준 출력：</value>
+  </data>
+  <data name="WINDOW_NAME_500" xml:space="preserve">
+    <value>JOB 실생결과화면</value>
+  </data>
+  <data name="end_time_label_text" xml:space="preserve">
+    <value>종료시간：</value>
+  </data>
+  <data name="ife_icon_screen_name" xml:space="preserve">
+    <value>조건분기종료 아이콘 설정</value>
+  </data>
+  <data name="loop_icon_screen_name" xml:space="preserve">
+    <value>LOOP 아이콘 설정</value>
+  </data>
+  <data name="management_id_col_head_text" xml:space="preserve">
+    <value>관리ID</value>
+  </data>
+  <data name="mte_icon_screen_name" xml:space="preserve">
+    <value>병렬종료 아이콘 설정</value>
+  </data>
+  <data name="mts_icon_screen_name" xml:space="preserve">
+    <value>병렬 시작 아이콘 설정</value>
+  </data>
+  <data name="release_icon_screen_name" xml:space="preserve">
+    <value>보류해제 아이콘 설정</value>
+  </data>
+  <data name="schedule_time_label_text" xml:space="preserve">
+    <value>시작 예정시간：</value>
+  </data>
+  <data name="start_icon_screen_name" xml:space="preserve">
+    <value>시작 아이콘 설정</value>
+  </data>
+  <data name="start_time_label_text" xml:space="preserve">
+    <value>시작 시간：</value>
+  </data>
+  <data name="ERROR_DB_LOCK" xml:space="preserve">
+    <value>데이터가 사용중이여서 사용이 불가능합니다. 잠시 기다렸다 재실행 해 주세요.</value>
+  </data>
+  <data name="force_label_text" xml:space="preserve">
+    <value>강제 실행</value>
+  </data>
+  <data name="rbCycleStart_label_text" xml:space="preserve">
+    <value>Cycle 기동：</value>
+  </data>
+  <data name="rbStartTime_label_text" xml:space="preserve">
+    <value>실행시간：</value>
+  </data>
+  <data name="textBox_CycleInterval_label_text" xml:space="preserve">
+    <value>분 간격</value>
+  </data>
+  <data name="ERROR_COMMON_027" xml:space="preserve">
+    <value>{0}은 숫자와 콜론(:)으로 입력해 주세요.</value>
+  </data>
+  <data name="err_message_boot_end_time_hh" xml:space="preserve">
+    <value>기동 종료 시간</value>
+  </data>
+  <data name="err_message_boot_start_time_hh" xml:space="preserve">
+    <value>기동 시작 시간</value>
+  </data>
+  <data name="ERROR_BOOT_TIME_005" xml:space="preserve">
+    <value>기동 시간은 시작시간 보다 큰 종료시간을 입력해 주세요.</value>
+  </data>
+  <data name="err_message_boot_end_time" xml:space="preserve">
+    <value>종료 시간</value>
+  </data>
+  <data name="err_message_boot_end_time_mi" xml:space="preserve">
+    <value>종료시간 분</value>
+  </data>
+  <data name="err_message_boot_start_time" xml:space="preserve">
+    <value>시작 시간</value>
+  </data>
+  <data name="err_message_boot_start_time_mi" xml:space="preserve">
+    <value>시작 시간 분</value>
+  </data>
+  <data name="err_message_boot_time_CycleInterval" xml:space="preserve">
+    <value>간격 시간(분)</value>
+  </data>
+  <data name="multiple_start_label_text" xml:space="preserve">
+    <value>다중기동：</value>
+  </data>
+  <data name="job_run_status_delay_err" xml:space="preserve">
+    <value>지연실행에러</value>
+  </data>
+  <data name="job_run_status_scheduled_wait" xml:space="preserve">
+    <value>예정 (완료 대기)</value>
+  </data>
+  <data name="job_run_status_skip" xml:space="preserve">
+    <value>실행 Skip</value>
+  </data>
+  <data name="multiple_start_type1" xml:space="preserve">
+    <value>있슴</value>
+  </data>
+  <data name="multiple_start_type2" xml:space="preserve">
+    <value>Skip</value>
+  </data>
+  <data name="multiple_start_type3" xml:space="preserve">
+    <value>대기</value>
+  </data>
+  <data name="delayedStart_context_menu_text" xml:space="preserve">
+    <value>지연 실행 에러 재실행(_R)</value>
+  </data>
+  <data name="cooperation_get_data" xml:space="preserve">
+    <value>최신데이터 취득</value>
+  </data>
+  <data name="cooperation_get_stat" xml:space="preserve">
+    <value>상태 취득</value>
+  </data>
+  <data name="cooperation_hostgroup_label_text" xml:space="preserve">
+    <value>HOST 그룹</value>
+  </data>
+  <data name="cooperation_hostgroup_pdl_label_text" xml:space="preserve">
+    <value>HOST 그룹명：</value>
+  </data>
+  <data name="cooperation_hostname_label_text" xml:space="preserve">
+    <value>HOST</value>
+  </data>
+  <data name="cooperation_hostname_pdl_label_text" xml:space="preserve">
+    <value>HOST 명：</value>
+  </data>
+  <data name="cooperation_icon_label_text" xml:space="preserve">
+    <value>Zabbix연결</value>
+  </data>
+  <data name="cooperation_icon_screen_name" xml:space="preserve">
+    <value>Zabbix연결 아이콘 설정</value>
+  </data>
+  <data name="cooperation_itemname_label_text" xml:space="preserve">
+    <value>아이템</value>
+  </data>
+  <data name="cooperation_itemname_pdl_label_text" xml:space="preserve">
+    <value>아이템 명：</value>
+  </data>
+  <data name="cooperation_mode_disabled" xml:space="preserve">
+    <value>무효화</value>
+  </data>
+  <data name="cooperation_mode_enabled" xml:space="preserve">
+    <value>유효화</value>
+  </data>
+  <data name="cooperation_mode_label_text" xml:space="preserve">
+    <value>연결조작</value>
+  </data>
+  <data name="cooperation_Object_label_text" xml:space="preserve">
+    <value>연결대상</value>
+  </data>
+  <data name="cooperation_triggername_label_text" xml:space="preserve">
+    <value>트리거</value>
+  </data>
+  <data name="cooperation_triggername_pdl_label_text" xml:space="preserve">
+    <value>트리거 명：</value>
+  </data>
+  <data name="ERROR_ZABBIX_LINK_001" xml:space="preserve">
+    <value>연결조작으로「최신데이터 취득」은 선택이 불가능 합니다.</value>
+  </data>
+  <data name="ERROR_ZABBIX_LINK_002" xml:space="preserve">
+    <value>연결 조작으로「상태취득」은 선택이 불가능합니다.</value>
+  </data>
+  <data name="ERROR_ZABBIX_LINK_003" xml:space="preserve">
+    <value>연결조작을 선택하고 수정해 주세요.</value>
+  </data>
+  <data name="err_message_host_gropu_name" xml:space="preserve">
+    <value>HOST 그룹 명</value>
+  </data>
+  <data name="err_message_item_name" xml:space="preserve">
+    <value>아이템 명</value>
+  </data>
+  <data name="err_message_trigger_name" xml:space="preserve">
+    <value>트리거 명</value>
+  </data>
+  <data name="agentless_icon_label_text" xml:space="preserve">
+    <value>Agentless</value>
+  </data>
+  <data name="agentless_authentic_label_text" xml:space="preserve">
+    <value>인증방법：</value>
+  </data>
+  <data name="agentless_basicconfig_label_text" xml:space="preserve">
+    <value>기본 설정</value>
+  </data>
+  <data name="agentless_command_label_text" xml:space="preserve">
+    <value>Command</value>
+  </data>
+  <data name="agentless_connection_label_text" xml:space="preserve">
+    <value>접속</value>
+  </data>
+  <data name="agentless_continue_label_text" xml:space="preserve">
+    <value>계속</value>
+  </data>
+  <data name="agentless_disconnect_label_text" xml:space="preserve">
+    <value>단절</value>
+  </data>
+  <data name="agentless_executemode_label_text" xml:space="preserve">
+    <value>실행 모드：</value>
+  </data>
+  <data name="agentless_force_label_text" xml:space="preserve">
+    <value>강제 실행：</value>
+  </data>
+  <data name="agentless_icon_screen_name" xml:space="preserve">
+    <value>Agentless 아이콘 설정</value>
+  </data>
+  <data name="agentless_onetime_label_text" xml:space="preserve">
+    <value>OneTime</value>
+  </data>
+  <data name="agentless_passphrase_label_text" xml:space="preserve">
+    <value>패스프레이즈：</value>
+  </data>
+  <data name="agentless_privatekey_label_text" xml:space="preserve">
+    <value>Private key：</value>
+  </data>
+  <data name="agentless_publickey_label_text" xml:space="preserve">
+    <value>Public key：</value>
+  </data>
+  <data name="agentless_sessionid_label_text" xml:space="preserve">
+    <value>세션 ID：</value>
+  </data>
+  <data name="agentless_session_label_text" xml:space="preserve">
+    <value>세션</value>
+  </data>
+  <data name="agentless_ssh_label_text" xml:space="preserve">
+    <value>SSH</value>
+  </data>
+  <data name="agentless_comb_passwd_text" xml:space="preserve">
+    <value>패스워드</value>
+  </data>
+  <data name="agentless_comb_publickey_text" xml:space="preserve">
+    <value>Plublic key</value>
+  </data>
+  <data name="agentless_charcode_label_text" xml:space="preserve">
+    <value>문자 코드：</value>
+  </data>
+  <data name="agentless_comb_CRLF_text" xml:space="preserve">
+    <value>CRLF</value>
+  </data>
+  <data name="agentless_comb_CR_text" xml:space="preserve">
+    <value>CR</value>
+  </data>
+  <data name="agentless_comb_EUC_JP_text" xml:space="preserve">
+    <value>EUC-JP</value>
+  </data>
+  <data name="agentless_comb_interactive_text" xml:space="preserve">
+    <value>대화 모드</value>
+  </data>
+  <data name="agentless_comb_LF_text" xml:space="preserve">
+    <value>LF</value>
+  </data>
+  <data name="agentless_comb_noninteractive_text" xml:space="preserve">
+    <value>비 대화모드</value>
+  </data>
+  <data name="agentless_comb_SHIFT_JIS_text" xml:space="preserve">
+    <value>SHIFT_JIS</value>
+  </data>
+  <data name="agentless_comb_unspecified_text" xml:space="preserve">
+    <value>지정않함</value>
+  </data>
+  <data name="agentless_comb_UTF8_text" xml:space="preserve">
+    <value>UTF-8</value>
+  </data>
+  <data name="agentless_linefeedcode_label_text" xml:space="preserve">
+    <value>개행 코드：</value>
+  </data>
+  <data name="agentless_passwd_label_text" xml:space="preserve">
+    <value>패스워드：</value>
+  </data>
+  <data name="agentless_prompt_label_text" xml:space="preserve">
+    <value>Prompt 문자열</value>
+  </data>
+  <data name="agentless_timeout_label_text" xml:space="preserve">
+    <value>TimeOut 경고(분)：</value>
+  </data>
+  <data name="err_message_session_id" xml:space="preserve">
+    <value>세션 ID</value>
+  </data>
+  <data name="err_message_passphrase" xml:space="preserve">
+    <value>패스프레이즈</value>
+  </data>
+  <data name="err_message_password" xml:space="preserve">
+    <value>페스워드</value>
+  </data>
+  <data name="err_message_privatekey" xml:space="preserve">
+    <value>Private Key</value>
+  </data>
+  <data name="err_message_prompt" xml:space="preserve">
+    <value>Prompt 문자열</value>
+  </data>
+  <data name="err_message_publickey" xml:space="preserve">
+    <value>Public key</value>
+  </data>
+  <data name="cooperation_all_label_text" xml:space="preserve">
+    <value>전부</value>
+  </data>
+  <data name="err_message_charcode" xml:space="preserve">
+    <value>문자 코드</value>
+  </data>
+  <data name="ERROR_BOOT_TIME_006" xml:space="preserve">
+    <value>시작 시간과 종료시간의 차이는 23시간 59분이내로 지정해 주세요.</value>
+  </data>
+  <data name="ERROR_JOBNET_LOAD_002" xml:space="preserve">
+    <value>기동중의 JOBNET가 존재해서 실행이 보류되었습니다.</value>
+  </data>
+  <data name="ERROR_JOBNET_LOAD_003" xml:space="preserve">
+    <value>JOBNET의 실행이 Skip되었습니다.</value>
+  </data>
+  <data name="ERROR_ZABBIX_LINK_004" xml:space="preserve">
+    <value>연결조작이 선택되어있지 않습니다.</value>
+  </data>
+  <data name="continue_label_text" xml:space="preserve">
+    <value>처리 계속</value>
+  </data>
+  <data name="ERROR_JOBEDIT_014" xml:space="preserve">
+    <value>우져가 부정확합니다.</value>
+  </data>
+  <data name="ERROR_JOBEDIT_015" xml:space="preserve">
+    <value>패스워드가 부정확합니다.</value>
+  </data>
+  <data name="err_message_run_user" xml:space="preserve">
+    <value>실행 유져</value>
+  </data>
+  <data name="err_message_run_user_pw" xml:space="preserve">
+    <value>패스워드</value>
+  </data>
+  <data name="run_user_label_text" xml:space="preserve">
+    <value>실행 유져：</value>
+  </data>
+  <data name="run_user_password_label_text" xml:space="preserve">
+    <value>패스워드：</value>
+  </data>
+  <data name="running_job_name_col_head_text" xml:space="preserve">
+    <value>JOB 명</value>
+  </data>
+  <data name="running_job_name_id_col_head_text" xml:space="preserve">
+    <value>JOB ID</value>
+  </data>
+  <data name="ERROR_SETTING_001" xml:space="preserve">
+    <value>Parameter설정테이블은 다른 유저에 의해 편집중입니다.
+잠시후에 재실행 해주십시요.</value>
+  </data>
+  <data name="err_message_settings_joblog_keep_span" xml:space="preserve">
+    <value>JOB 실행결과 로그보존 기간</value>
+  </data>
+  <data name="err_message_settings_jobnet_keep_span" xml:space="preserve">
+    <value>종료한 JOBNET정보보존 기간</value>
+  </data>
+  <data name="err_message_settings_jobnet_load_span" xml:space="preserve">
+    <value>JOBNET 예정 전개 시간</value>
+  </data>
+  <data name="err_message_settings_jobnet_view_span" xml:space="preserve">
+    <value>JOBNET 운행정보 표시기간</value>
+  </data>
+  <data name="err_message_settings_zbxsnd_retry_count" xml:space="preserve">
+    <value>재전송횟수</value>
+  </data>
+  <data name="err_message_settings_zbxsnd_retry_interval" xml:space="preserve">
+    <value>재전송 간격</value>
+  </data>
+  <data name="err_message_settings_zbxsnd_sender" xml:space="preserve">
+    <value>Zabbix Sender Command</value>
+  </data>
+  <data name="err_message_settings_zbxsnd_zabbix_host" xml:space="preserve">
+    <value>메세지를 통지할 Zabbix 호스트</value>
+  </data>
+  <data name="err_message_settings_zbxsnd_zabbix_ip" xml:space="preserve">
+    <value>ZabbixIP Address</value>
+  </data>
+  <data name="err_message_settings_zbxsnd_zabbix_item" xml:space="preserve">
+    <value>아이템 키</value>
+  </data>
+  <data name="err_message_settings_zbxsnd_zabbix_port" xml:space="preserve">
+    <value>Zabbix 포트</value>
+  </data>
+  <data name="general_settings_tab_text" xml:space="preserve">
+    <value>일반 설정</value>
+  </data>
+  <data name="redisplay_button_text" xml:space="preserve">
+    <value>재표시</value>
+  </data>
+  <data name="settings_Annotation1" xml:space="preserve">
+    <value>※1 변경후에는 Job Arranger Server재실행후에 사용이 가능합니다.</value>
+  </data>
+  <data name="settings_Annotation2" xml:space="preserve">
+    <value>※2 JOBNET 운행정보표시기간은 Job Manager재 로그인후 사용이 가능합니다.</value>
+  </data>
+  <data name="settings_JobArranger_std_time_label_text" xml:space="preserve">
+    <value>Job Manager기준시각 :</value>
+  </data>
+  <data name="settings_joblog_keep_span_label_text" xml:space="preserve">
+    <value>JOB 실행 결과 로그보존기간(분) :</value>
+  </data>
+  <data name="settings_jobnet_keep_span_label_text" xml:space="preserve">
+    <value>종료한 JOBNET정보보존기간(분) :</value>
+  </data>
+  <data name="settings_jobnet_load_span_label_text" xml:space="preserve">
+    <value>JOBNET 예정 전개 시간(분) :</value>
+  </data>
+  <data name="settings_jobnet_view_span_label_text" xml:space="preserve">
+    <value>JOBNET 운행정보표시기간(분) :</value>
+  </data>
+  <data name="settings_Job_Arranger_std_time0" xml:space="preserve">
+    <value>LOCAL 시간사용</value>
+  </data>
+  <data name="settings_Job_Arranger_std_time1" xml:space="preserve">
+    <value>Job Arranger Server기간 사용</value>
+  </data>
+  <data name="settings_system_setting_label_text" xml:space="preserve">
+    <value>시스템 설정</value>
+  </data>
+  <data name="settings_zbxsnd_notice0" xml:space="preserve">
+    <value>무</value>
+  </data>
+  <data name="settings_zbxsnd_notice1" xml:space="preserve">
+    <value>유</value>
+  </data>
+  <data name="settings_zbxsnd_retry0" xml:space="preserve">
+    <value>재전송 없슴</value>
+  </data>
+  <data name="settings_zbxsnd_retry1" xml:space="preserve">
+    <value>재전송 있슴</value>
+  </data>
+  <data name="settings_zbxsnd_retry_count_label_text" xml:space="preserve">
+    <value>재전송 횟수 (0 은 무재한 재전송) :</value>
+  </data>
+  <data name="settings_zbxsnd_retry_interval_label_text" xml:space="preserve">
+    <value>재전송 간격(초) :</value>
+  </data>
+  <data name="settings_zbxsnd_retry_label_text" xml:space="preserve">
+    <value>Zabbix통지 재전송 :</value>
+  </data>
+  <data name="settings_zbxsnd_sender_label_text" xml:space="preserve">
+    <value>Zabbix Sender Command(Full path지정) :</value>
+  </data>
+  <data name="settings_zbxsnd_zabbix_host_label_text" xml:space="preserve">
+    <value>메세지를 통지할 Zabbix 호스트 :</value>
+  </data>
+  <data name="settings_zbxsnd_zabbix_ip_label_text" xml:space="preserve">
+    <value>Zabbix IP Address :</value>
+  </data>
+  <data name="settings_zbxsnd_zabbix_item_label_text" xml:space="preserve">
+    <value>이이템 키 :</value>
+  </data>
+  <data name="settings_zbxsnd_zabbix_notice_label_text" xml:space="preserve">
+    <value>Zabbix 통지 :</value>
+  </data>
+  <data name="settings_zbxsnd_zabbix_notice_setting_label_text" xml:space="preserve">
+    <value>Zabbix 통지설정</value>
+  </data>
+  <data name="settings_zbxsnd_zabbix_port_label_text" xml:space="preserve">
+    <value>Zabbix 포트 :</value>
+  </data>
+  <data name="update_button_text" xml:space="preserve">
+    <value>변경</value>
+  </data>
+  <data name="WINDOW_NAME_600" xml:space="preserve">
+    <value>일반설정화면</value>
+  </data>
+  <data name="ERROR_COMMON_028" xml:space="preserve">
+    <value>{0}은 반각 영어,숫자,공백,언더바(_),마침표(.),하이픈(-),으로 입력해 주세요.</value>
+  </data>
+  <data name="ERROR_COMMON_029" xml:space="preserve">
+    <value>권한이 없습니다. {0}</value>
+  </data>
+  <data name="ERROR_COMMON_030" xml:space="preserve">
+    <value>JOBNET가 실행되기 5분전이거나,
+실행되었는지 확인해 주세요.</value>
+  </data>
+  <data name="ERROR_END_SETTING_001" xml:space="preserve">
+    <value>종료코드가 맞지 않습니다. 반각 영어,숫자,언더바(_),달러기호($)로 입력해 주세요.
+숫자은 0～255를 설정해주세요.
+JOB 콘트롤러 변수은 $기호부터 시작해주세요.</value>
+  </data>
+  <data name="filter_id_label_text" xml:space="preserve">
+    <value>필터 ID :</value>
+  </data>
+  <data name="filter_name_label_text" xml:space="preserve">
+    <value>필터 명 :</value>
+  </data>
+  <data name="first_day_button_text" xml:space="preserve">
+    <value>월초</value>
+  </data>
+  <data name="last_day_button_text" xml:space="preserve">
+    <value>월말</value>
+  </data>
+  <data name="shift_day_node_text" xml:space="preserve">
+    <value>이동일수 :</value>
+  </data>
+  <data name="base_date_node_text" xml:space="preserve">
+    <value>기준일 :</value>
+  </data>
+  <data name="calendar_label_text" xml:space="preserve">
+    <value>달력 :</value>
+  </data>
+  <data name="designated_day_button_text" xml:space="preserve">
+    <value>지정일 :</value>
+  </data>
+  <data name="err_message_calendar" xml:space="preserve">
+    <value>달력</value>
+  </data>
+  <data name="err_message_designated_day" xml:space="preserve">
+    <value>지정일</value>
+  </data>
+  <data name="err_message_filter_id" xml:space="preserve">
+    <value>필터 ID</value>
+  </data>
+  <data name="err_message_filter_name" xml:space="preserve">
+    <value>필터 명</value>
+  </data>
+  <data name="err_message_shift_day" xml:space="preserve">
+    <value>이동 일수</value>
+  </data>
+  <data name="private_filter_node_text" xml:space="preserve">
+    <value>Private 필터</value>
+  </data>
+  <data name="public_filter_node_text" xml:space="preserve">
+    <value>Public 필터</value>
+  </data>
+  <data name="filter_annotation" xml:space="preserve">
+    <value>※이동일수는, 기준일이 휴일일경우에 이동하는 가동일의 일수를 지정합니다.</value>
+  </data>
+  <data name="ERROR_SCHEDULE_005" xml:space="preserve">
+    <value>STATUS가 [미실행]이 아니므로 개시예정시간을 변경하는 것이 불가능합니다. </value>
+  </data>
+  <data name="ERROR_SCHEDULE_006" xml:space="preserve">
+    <value>날짜가 정확하지 않습니다.YYYY/MM/DD HH:MM로 입력해 주세요.</value>
+  </data>
+  <data name="ERROR_SCHEDULE_007" xml:space="preserve">
+    <value>과거의 시간은 입력이 불가능 합니다.</value>
+  </data>
+  <data name="job_run_status_reserve" xml:space="preserve">
+    <value>기동 보류</value>
+  </data>
+  <data name="PROCESS_026" xml:space="preserve">
+    <value>개시 예정시각 변경 처리</value>
+  </data>
+  <data name="release_context_menu_text" xml:space="preserve">
+    <value>기동 보류해제 (_C)</value>
+  </data>
+  <data name="reserve_context_menu_text" xml:space="preserve">
+    <value>기동 보류 (_S)</value>
+  </data>
+  <data name="schedule_label_text" xml:space="preserve">
+    <value>현재 개시예정 시각 :</value>
+  </data>
+  <data name="time_of_day_label_text" xml:space="preserve">
+    <value>개시 시각 :</value>
+  </data>
+  <data name="updt_context_menu_text" xml:space="preserve">
+    <value>개시예정시각 변경 (_M)</value>
+  </data>
+  <data name="upd_schedule_screen_name" xml:space="preserve">
+    <value>개시 예정시각 변경 화면</value>
+  </data>
+  <data name="err_message_exit_code" xml:space="preserve">
+    <value>종료 코드</value>
+  </data>
+  <data name="relatedobject_calendar" xml:space="preserve">
+    <value>[달력]------------------------------------------------------------------</value>
+  </data>
+  <data name="relatedObject_del_message" xml:space="preserve">
+    <value>다른 Object에서 사용하고 있어 삭제하질 못합니다.
+이하에서 표현한 관련Object로 부터의 부름, 또는 등록을 삭제하고, 다시한번 실행해 주세요</value>
+  </data>
+  <data name="relatedobject_filter" xml:space="preserve">
+    <value>[필터]------------------------------------------------------------------</value>
+  </data>
+  <data name="relatedObject_invalid_message" xml:space="preserve">
+    <value>관련하고 있는 다른 Object가 유효하고 있어서 무효하는 것이 불가능합니다.
+아래에 표시되는 관련 Object를 무효화 하시고, 다시한번 실행해 주세요.</value>
+  </data>
+  <data name="relatedobject_jobnet" xml:space="preserve">
+    <value>[JOBNET]----------------------------------------------------------------</value>
+  </data>
+  <data name="relatedobject_schedule" xml:space="preserve">
+    <value>[스케줄]----------------------------------------------------------------</value>
+  </data>
+  <data name="relatedObject_Title" xml:space="preserve">
+    <value>관련 Object :</value>
+  </data>
+  <data name="relatedObject_valid_message" xml:space="preserve">
+    <value>관련하고 있는 다른 Object가 무효하고있어, 유효하는 것이 불가능 합니다.
+아래 표현하고 있는 관련Object를 유효화 해주시고, 다시 실행해 주세요.</value>
+  </data>
+  <data name="ERROR_SETTING_002" xml:space="preserve">
+    <value>Zabbix IP Address가 정확하지 않습니다. 반각 영어,숫자,언더바(_),마침표(.),하이픈(-)으로 입력해 주세요.
+하이픈 또는 마침표를 선두, 선미에 쓰는 것은 불가능합니다.
+숫자만 쓰는 것도 불가능합니다.
+숫자은 0～255사이만 사용해 주세요.</value>
+  </data>
+  <data name="relatedObject_screen_name" xml:space="preserve">
+    <value>관련 데이터 Error 화면</value>
+  </data>
+  <data name="WINDOW_NAME_260" xml:space="preserve">
+    <value>관련 데이터 Error 화면</value>
+  </data>
+  <data name="tooltip_continue_label_text" xml:space="preserve">
+    <value>처리 계속 :</value>
+  </data>
+  <data name="tooltip_force_label_text" xml:space="preserve">
+    <value>강제 실행 :</value>
+  </data>
+  <data name="tooltip_flag_off" xml:space="preserve">
+    <value>OFF</value>
+  </data>
+  <data name="tooltip_flag_on" xml:space="preserve">
+    <value>ON</value>
+  </data>
+  <data name="tooltip_err_jobarg_message" xml:space="preserve">
+    <value>JOBARG_MESSAGE :</value>
+  </data>
+  <data name="tooltip_err_job_exit_cd" xml:space="preserve">
+    <value>JOB_EXIT_CD :</value>
+  </data>
+  <data name="tooltip_err_stderr" xml:space="preserve">
+    <value>STD_ERR :</value>
+  </data>
+  <data name="tooltip_err_stdout" xml:space="preserve">
+    <value>STD_OUT :</value>
+  </data>
+  <data name="export_menu_list_text" xml:space="preserve">
+    <value>엑스포트 개별 버젼 (_E)</value>
+  </data>
+  <data name="export_menu_tree_text" xml:space="preserve">
+    <value>엑스포트 Object (_E)</value>
+  </data>
+  <data name="save_button_text" xml:space="preserve">
+    <value>동록</value>
+  </data>
+  <data name="ForceRun_dialog_text" xml:space="preserve">
+    <value>강제 처리 해도 되겠습니까?</value>
+  </data>
+  <data name="force_button_text" xml:space="preserve">
+    <value>강제 실행</value>
+  </data>
+  <data name="Title_Msgbox_ForceRun" xml:space="preserve">
+    <value>강제 실행</value>
+  </data>
+  <data name="WINDOW_NAME_213" xml:space="preserve">
+    <value>가동일 필터 화면</value>
+  </data>
+  <data name="variable_name_label_text" xml:space="preserve">
+    <value>변수명 :</value>
+  </data>
+  <data name="calc_method_label_textToolTip" xml:space="preserve">
+    <value>계산 방법 :</value>
+  </data>
+  <data name="cooperation_mode_label_textToolTip" xml:space="preserve">
+    <value>연계 동작 :</value>
+  </data>
+  <data name="cooperation_Object_label_textToolTip" xml:space="preserve">
+    <value>연계 대상 :</value>
+  </data>
+  <data name="exec_label_textToolTip" xml:space="preserve">
+    <value>실행 :</value>
+  </data>
+  <data name="memo_col_head_textToolTip" xml:space="preserve">
+    <value>설명 :</value>
+  </data>
+  <data name="process_mode_label_textToolTip" xml:space="preserve">
+    <value>처리 모드 :</value>
+  </data>
+  <data name="timeout_run_type_label_text" xml:space="preserve">
+    <value>경고연락</value>
+  </data>
+    <data name="ERROR_JOBEDIT_016" xml:space="preserve">
+    <value>병렬처리 종료 아이콘을 확인해 주세요.</value>
+  </data>
+  <data name="ERROR_JOBEDIT_017" xml:space="preserve">
+    <value>병렬처리 시작 아이콘을 확인해 주세요.</value>
+  </data>
+</root>

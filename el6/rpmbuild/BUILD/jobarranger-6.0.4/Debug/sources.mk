@@ -1,0 +1,92 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+O_SRCS := 
+C_SRCS := 
+S_UPPER_SRCS := 
+OBJ_SRCS := 
+ASM_SRCS := 
+OBJS := 
+C_DEPS := 
+EXECUTABLES := 
+
+# Every subdirectory with source files must be described here
+SUBDIRS := \
+tools/sqlite3/tea/win \
+tools/sqlite3/tea/generic \
+tools/sqlite3 \
+tools/libtar/libtar/win32 \
+tools/libtar/libtar/listhash \
+tools/libtar/libtar/lib \
+tools/libtar/libtar/compat \
+tools/libtar/alttar \
+tools/libarchive/tar \
+tools/libarchive/tar/test \
+tools/libarchive/libarchive_fe \
+tools/libarchive/libarchive/test \
+tools/libarchive/libarchive \
+tools/libarchive/examples \
+tools/libarchive/examples/minitar \
+tools/libarchive/cpio/test \
+tools/libarchive/cpio \
+tools/libarchive/contrib \
+tools/libarchive/contrib/shar \
+tools/libarchive/build/cmake \
+tools/json \
+tools/createprocesswithlogin \
+src/libs/zbxwin32 \
+src/libs/zbxsysinfo/win32 \
+src/libs/zbxsysinfo/unknown \
+src/libs/zbxsysinfo \
+src/libs/zbxsysinfo/solaris \
+src/libs/zbxsysinfo/simple \
+src/libs/zbxsysinfo/osx \
+src/libs/zbxsysinfo/osf \
+src/libs/zbxsysinfo/openbsd \
+src/libs/zbxsysinfo/netbsd \
+src/libs/zbxsysinfo/linux \
+src/libs/zbxsysinfo/hpux \
+src/libs/zbxsysinfo/freebsd \
+src/libs/zbxsysinfo/common \
+src/libs/zbxsysinfo/aix \
+src/libs/zbxsysinfo/agent \
+src/libs/zbxsys \
+src/libs/zbxserver \
+src/libs/zbxself \
+src/libs/zbxnix \
+src/libs/zbxmemory \
+src/libs/zbxmedia \
+src/libs/zbxlog \
+src/libs/zbxjson \
+src/libs/zbxicmpping \
+src/libs/zbxexec \
+src/libs/zbxdbhigh \
+src/libs/zbxdbcache \
+src/libs/zbxdb \
+src/libs/zbxcrypto \
+src/libs/zbxconf \
+src/libs/zbxcommshigh \
+src/libs/zbxcomms \
+src/libs/zbxcommon \
+src/libs/zbxalgo \
+src/jobarg_session \
+src/jobarg_server \
+src/jobarg_server/jatrapper \
+src/jobarg_server/jaselfmon \
+src/jobarg_server/jarun \
+src/jobarg_server/jamsgsnd \
+src/jobarg_server/jaloader \
+src/jobarg_server/jajobnet \
+src/jobarg_server/jajob \
+src/jobarg_server/jaboot \
+src/jobarg_release \
+src/jobarg_monitor \
+src/jobarg_joblogput \
+src/jobarg_get \
+src/jobarg_exec \
+src/jobarg_command \
+src/jobarg_agent \
+src/jalibs \
+build/project/json2/Release \
+

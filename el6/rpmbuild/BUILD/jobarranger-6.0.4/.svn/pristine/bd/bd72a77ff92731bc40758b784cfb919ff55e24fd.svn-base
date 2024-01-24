@@ -1,0 +1,2159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="authority_label_text" xml:space="preserve">
+    <value>権限：</value>
+  </data>
+  <data name="begin_month_checkbox_text" xml:space="preserve">
+    <value>月初指定</value>
+  </data>
+  <data name="boot_time_col_head_text" xml:space="preserve">
+    <value>起動時刻</value>
+  </data>
+  <data name="boot_time_label_text" xml:space="preserve">
+    <value>起動時刻：</value>
+  </data>
+  <data name="calendar_editing_screen_name" xml:space="preserve">
+    <value>カレンダー編集画面</value>
+  </data>
+  <data name="calendar_id_label_text" xml:space="preserve">
+    <value>カレンダーID：</value>
+  </data>
+  <data name="calendar_init_screen_language" xml:space="preserve">
+    <value>カレンダーに稼働日の初期設定を行います。
+稼働日としたい項目にチェックを入れてください。
+稼働日は現在選択されている年に適用されます。
+なお、「カレンダーを初期化しない」にチェックした場合、
+登録済みの稼働日を保持し、追加で登録します。</value>
+  </data>
+  <data name="calendar_init_screen_name" xml:space="preserve">
+    <value>カレンダー初期登録画面</value>
+  </data>
+  <data name="calendar_name_col_head_text" xml:space="preserve">
+    <value>カレンダー名</value>
+  </data>
+  <data name="calendar_name_label_text" xml:space="preserve">
+    <value>カレンダー名：</value>
+  </data>
+  <data name="calendar_node_text" xml:space="preserve">
+    <value>カレンダー</value>
+  </data>
+  <data name="cancel_button_text" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="cancel_dialog_screen_name" xml:space="preserve">
+    <value>削除確認</value>
+  </data>
+  <data name="cancel_dialog_text" xml:space="preserve">
+    <value>データを削除します。よろしいですか？</value>
+  </data>
+  <data name="can_not_update_auth" xml:space="preserve">
+    <value>更新不可</value>
+  </data>
+  <data name="can_update_auth" xml:space="preserve">
+    <value>更新可能</value>
+  </data>
+  <data name="new_version_context_menu_text" xml:space="preserve">
+    <value>新バージョン作成（_V）</value>
+  </data>
+  <data name="day_week_checkbox_text" xml:space="preserve">
+    <value>曜日指定</value>
+  </data>
+  <data name="del_button_text" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="del_menu_text" xml:space="preserve">
+    <value>削除（_D）</value>
+  </data>
+  <data name="during_jobnet_situation_menu_text" xml:space="preserve">
+    <value>実行中ジョブネット一覧（_R）</value>
+  </data>
+  <data name="during_startup_jobnet_screen_language" xml:space="preserve">
+    <value>ジョブネットの起動を行っています。
+       しばらくお待ちください。</value>
+  </data>
+  <data name="during_startup_jobnet_screen_name" xml:space="preserve">
+    <value>ジョブネット起動中</value>
+  </data>
+  <data name="edit_menu_text" xml:space="preserve">
+    <value>編集（_E）</value>
+  </data>
+  <data name="ended_time_col_head_text" xml:space="preserve">
+    <value>終了時間</value>
+  </data>
+  <data name="end_month_checkbox_text" xml:space="preserve">
+    <value>月末指定</value>
+  </data>
+  <data name="ERROR_BOOT_TIME_001" xml:space="preserve">
+    <value>起動時刻の分は00から59の間の数値を入力してください。</value>
+  </data>
+  <data name="ERROR_CALENDAR_FILE_READ_001" xml:space="preserve">
+    <value>日付のフォーマットエラーです。</value>
+  </data>
+  <data name="ERROR_COMMON_001" xml:space="preserve">
+    <value>{0}を入力してください。</value>
+  </data>
+  <data name="ERROR_COMMON_002" xml:space="preserve">
+    <value>{0}はASCII文字で入力してください。</value>
+  </data>
+  <data name="ERROR_COMMON_003" xml:space="preserve">
+    <value>{0}は{1}バイト以内で入力してください。</value>
+  </data>
+  <data name="ERROR_COMMON_004" xml:space="preserve">
+    <value>入力した{0}はすでに登録済みです。</value>
+  </data>
+  <data name="ERROR_COMMON_005" xml:space="preserve">
+    <value>{0}は半角英数字とハイフン（-）で入力してください。</value>
+  </data>
+  <data name="ERROR_COMMON_006" xml:space="preserve">
+    <value>{0}は全半角英数字で入力してください。</value>
+  </data>
+  <data name="ERROR_COMMON_007" xml:space="preserve">
+    <value>{0}は半角数字で入力してください。</value>
+  </data>
+  <data name="ERROR_COMMON_008" xml:space="preserve">
+    <value>{0}は半角数字、カンマ（,）、ハイフン（-）で入力してください。</value>
+  </data>
+  <data name="ERROR_COMMON_009" xml:space="preserve">
+    <value>{0}はカンマ（,）、およびハイフン（-）の前後が数字で入力してください。</value>
+  </data>
+  <data name="ERROR_COMMON_010" xml:space="preserve">
+    <value>{0}は半角英数字とハイフン（-）、スラッシュ（/）で入力してください。</value>
+  </data>
+  <data name="ERROR_IMPORT_001" xml:space="preserve">
+    <value>インポートファイル読込でエラーが発生しました。</value>
+  </data>
+  <data name="ERROR_IMPORT_002" xml:space="preserve">
+    <value>ユーザー情報が存在しません。</value>
+  </data>
+  <data name="ERROR_IMPORT_003" xml:space="preserve">
+    <value>権限がありません。</value>
+  </data>
+  <data name="ERROR_JOBEDIT_001" xml:space="preserve">
+    <value>STARTは予約語のため、入力しないでください。</value>
+  </data>
+  <data name="ERROR_JOBEDIT_002" xml:space="preserve">
+    <value>選択されたジョブネットIDが他のユーザによって削除されました。</value>
+  </data>
+  <data name="ERROR_JOBEDIT_003" xml:space="preserve">
+    <value>指定されたジョブIDが自ジョブネット、および自ジョブネットから呼び出されるジョブネットに所属していません。</value>
+  </data>
+  <data name="ERROR_JOBEDIT_004" xml:space="preserve">
+    <value>一つジョブフローの中で、１つだけ開始アイコンが登録できます。</value>
+  </data>
+  <data name="ERROR_JOBEDIT_005" xml:space="preserve">
+    <value>アイコン「{0}」のフローが不正です。INフロー又はOUTフローを修正してください。</value>
+  </data>
+  <data name="ERROR_JOBEDIT_006" xml:space="preserve">
+    <value>選択されたジョブネットIDデータは他のユーザーによって編集中です。
+しばらくしてから、再実行してください。</value>
+  </data>
+  <data name="ERROR_LOGIN_001" xml:space="preserve">
+    <value>ユーザー名又はパスワードが不正です。</value>
+  </data>
+  <data name="ERROR_RUN_JOBNET_001" xml:space="preserve">
+    <value>有効なジョブネットが存在しないため、起動できません。</value>
+  </data>
+  <data name="err_jobnet_situation_menu_text" xml:space="preserve">
+    <value>エラージョブネット一覧（_T）</value>
+  </data>
+  <data name="err_message_alredy_exist_calendar" xml:space="preserve">
+    <value>同一カレンダーIDのカレンダーは既に存在します。</value>
+  </data>
+  <data name="err_message_alredy_exist_jobnet" xml:space="preserve">
+    <value>同一ジョブネットIDのジョブネットは既に存在します。</value>
+  </data>
+  <data name="err_message_alredy_exist_schedule" xml:space="preserve">
+    <value>同一スケジュールIDのスケジュールは既に存在します。</value>
+  </data>
+  <data name="err_message_boot_time" xml:space="preserve">
+    <value>起動時刻</value>
+  </data>
+  <data name="err_message_calendar_id" xml:space="preserve">
+    <value>カレンダーID</value>
+  </data>
+  <data name="err_message_calendar_init_day" xml:space="preserve">
+    <value>曜日を選択してください。</value>
+  </data>
+  <data name="err_message_calendar_init_every_month_day" xml:space="preserve">
+    <value>毎月指定日を選択してください。</value>
+  </data>
+  <data name="err_message_calendar_name" xml:space="preserve">
+    <value>カレンダー名</value>
+  </data>
+  <data name="err_message_db_dbs" xml:space="preserve">
+    <value>データソース名</value>
+  </data>
+  <data name="err_message_db_pass" xml:space="preserve">
+    <value>DBパスワード</value>
+  </data>
+  <data name="err_message_db_user" xml:space="preserve">
+    <value>DBユーザー</value>
+  </data>
+  <data name="err_message_delete_relation" xml:space="preserve">
+    <value>他で使われているため削除できません。</value>
+  </data>
+  <data name="err_message_jobcon_name" xml:space="preserve">
+    <value>ジョブコントローラ名</value>
+  </data>
+  <data name="err_message_jobnet_id" xml:space="preserve">
+    <value>ジョブネットID</value>
+  </data>
+  <data name="err_message_jobnet_name" xml:space="preserve">
+    <value>ジョブネット名</value>
+  </data>
+  <data name="err_message_schedule_id" xml:space="preserve">
+    <value>スケジュールID</value>
+  </data>
+  <data name="err_message_schedule_name" xml:space="preserve">
+    <value>スケジュール名</value>
+  </data>
+  <data name="every_month_checkbox_text" xml:space="preserve">
+    <value>毎月指定</value>
+  </data>
+  <data name="exit_dialog_screen_name" xml:space="preserve">
+    <value>終了確認</value>
+  </data>
+  <data name="exit_dialog_text" xml:space="preserve">
+    <value>ジョブマネージャを終了します。よろしいですか？</value>
+  </data>
+  <data name="exit_menu_text" xml:space="preserve">
+    <value>終了（_X）</value>
+  </data>
+  <data name="export_menu_text" xml:space="preserve">
+    <value>エクスポート（_E）</value>
+  </data>
+  <data name="export_screen_language" xml:space="preserve">
+    <value>エクスポートファイルの出力先を入力してください。</value>
+  </data>
+  <data name="export_screen_name" xml:space="preserve">
+    <value>エクスポート画面</value>
+  </data>
+  <data name="file_menu_text" xml:space="preserve">
+    <value>ファイル（_F）</value>
+  </data>
+  <data name="file_reading_button_text" xml:space="preserve">
+    <value>ファイル読込</value>
+  </data>
+  <data name="format_label_text" xml:space="preserve">
+    <value>フォーマット：</value>
+  </data>
+  <data name="fri_day_checkbox_text" xml:space="preserve">
+    <value>金曜日</value>
+  </data>
+  <data name="help_menu_text" xml:space="preserve">
+    <value>ヘルプ（_H）</value>
+  </data>
+  <data name="hide_context_menu_text" xml:space="preserve">
+    <value>非表示（_H）</value>
+  </data>
+  <data name="immediate_run_menu_text" xml:space="preserve">
+    <value>即時実行（_R）</value>
+  </data>
+  <data name="import_menu_text" xml:space="preserve">
+    <value>インポート（_I）</value>
+  </data>
+  <data name="import_overwrite_duplicate_checkbox_text" xml:space="preserve">
+    <value>上書きを許可する：</value>
+  </data>
+  <data name="import_screen_language" xml:space="preserve">
+    <value>インポートするエクスポートファイルを入力してください。</value>
+  </data>
+  <data name="import_screen_name" xml:space="preserve">
+    <value>インポート画面</value>
+  </data>
+  <data name="init_regist_button_text" xml:space="preserve">
+    <value>初期登録</value>
+  </data>
+  <data name="invalidity_context_menu_text" xml:space="preserve">
+    <value>無効（_I）</value>
+  </data>
+  <data name="jobnet_editing_screen_name" xml:space="preserve">
+    <value>ジョブネット編集画面</value>
+  </data>
+  <data name="jobnet_id_col_head_text" xml:space="preserve">
+    <value>ジョブネットID</value>
+  </data>
+  <data name="jobnet_id_label_text" xml:space="preserve">
+    <value>ジョブネットID：</value>
+  </data>
+  <data name="jobnet_label_text" xml:space="preserve">
+    <value>ジョブネット：</value>
+  </data>
+  <data name="jobnet_name_col_head_text" xml:space="preserve">
+    <value>ジョブネット名</value>
+  </data>
+  <data name="jobnet_name_label_text" xml:space="preserve">
+    <value>ジョブネット名：</value>
+  </data>
+  <data name="jobnet_node_text" xml:space="preserve">
+    <value>ジョブネット</value>
+  </data>
+  <data name="jobnet_situation_menu_text" xml:space="preserve">
+    <value>運用状況ジョブネット一覧（_O）</value>
+  </data>
+  <data name="job_control_tab_text" xml:space="preserve">
+    <value>ジョブ実行管理</value>
+  </data>
+  <data name="job_id_col_head_text" xml:space="preserve">
+    <value>ジョブID</value>
+  </data>
+  <data name="job_name_col_head_text" xml:space="preserve">
+    <value>ジョブ名</value>
+  </data>
+  <data name="job_run_status_done" xml:space="preserve">
+    <value>処理終了</value>
+  </data>
+  <data name="job_run_status_running" xml:space="preserve">
+    <value>実行中</value>
+  </data>
+  <data name="job_run_status_schedule" xml:space="preserve">
+    <value>予定</value>
+  </data>
+  <data name="job_run_status_schedule_delete" xml:space="preserve">
+    <value>予定削除</value>
+  </data>
+  <data name="last_operation_day_label_text" xml:space="preserve">
+    <value>最終稼働日：</value>
+  </data>
+  <data name="login_button_text" xml:space="preserve">
+    <value>ログイン</value>
+  </data>
+  <data name="login_failed" xml:space="preserve">
+    <value>ユーザー名又はパスワードが不正です。</value>
+  </data>
+  <data name="login_screen_db_group_label" xml:space="preserve">
+    <value>ジョブコントローラ接続先DB情報</value>
+  </data>
+  <data name="login_screen_db_pass_label" xml:space="preserve">
+    <value>DBパスワード：</value>
+  </data>
+  <data name="login_screen_db_source_label" xml:space="preserve">
+    <value>データソース名：</value>
+  </data>
+  <data name="login_screen_db_user_label" xml:space="preserve">
+    <value>DBユーザー名：</value>
+  </data>
+  <data name="login_screen_jobcontrol_label" xml:space="preserve">
+    <value>ジョブコントローラ名：</value>
+  </data>
+  <data name="login_screen_language" xml:space="preserve">
+    <value>ジョブマネージャへようこそ。
+
+ジョブコントローラにログインするには、ジョブコントローラ名、ユーザー名、
+パスワードを入力しログインボタンを押します。</value>
+  </data>
+  <data name="login_screen_name" xml:space="preserve">
+    <value>ログイン画面</value>
+  </data>
+  <data name="login_screen_passwd_label" xml:space="preserve">
+    <value>パスワード：</value>
+  </data>
+  <data name="login_screen_user_label" xml:space="preserve">
+    <value>ユーザー：</value>
+  </data>
+  <data name="memo_col_head_text" xml:space="preserve">
+    <value>説明</value>
+  </data>
+  <data name="memo_label_text" xml:space="preserve">
+    <value>説明：</value>
+  </data>
+  <data name="memo_label_jobnet_timeout" xml:space="preserve">
+    <value>タイムアウト警告(分)：</value>
+  </data>
+  <data name="mon_day_checkbox_text" xml:space="preserve">
+    <value>月曜日</value>
+  </data>
+  <data name="MSG_COMMON_001" xml:space="preserve">
+    <value>ジョブマネージャを終了します。よろしいですか？</value>
+  </data>
+  <data name="MSG_COMMON_002" xml:space="preserve">
+    <value>編集中のデータを登録します。よろしいですか？</value>
+  </data>
+  <data name="MSG_COMMON_003" xml:space="preserve">
+    <value>Job Arranger for Zabbix
+
+Job Manager Version 6.0.3 (Rev:2902)
+
+Copyright (C) 2012-2013 FitechForce, Inc. All Rights Reserved. 
+Copyright (C) 2013-2021 Daiwa Institute of Research Business Innovation Ltd. All Rights Reserved.
+Copyright (C) 2021-2022 Daiwa Institute of Research Ltd. All Rights Reserved..</value>
+  </data>
+  <data name="MSG_COMMON_004" xml:space="preserve">
+    <value>データを削除します。よろしいですか？</value>
+  </data>
+  <data name="MSG_COMMON_005" xml:space="preserve">
+    <value>ジョブネットを起動します。よろしいですか？</value>
+  </data>
+  <data name="MSG_COMMON_006" xml:space="preserve">
+    <value>権限がありません。</value>
+  </data>
+  <data name="MSG_COMMON_007" xml:space="preserve">
+    <value>関連データが存在するため削除できません。</value>
+  </data>
+  <data name="MSG_COMMON_008" xml:space="preserve">
+    <value>編集中のデータを破棄します。よろしいですか？</value>
+  </data>
+  <data name="MSG_COMMON_009" xml:space="preserve">
+    <value>予定されたジョブネットを削除しますか？</value>
+  </data>
+  <data name="MSG_COMMON_010" xml:space="preserve">
+    <value>{0} スケジュールは有効です。
+無効にしてから削除お願いします。</value>
+  </data>
+  <data name="MSG_COMMON_011" xml:space="preserve">
+    <value>有効なオブジェクトは削除できません。</value>
+  </data>
+  <data name="new_context_menu_text" xml:space="preserve">
+    <value>新規追加（_N）</value>
+  </data>
+  <data name="new_menu_text" xml:space="preserve">
+    <value>新規追加（_N）</value>
+  </data>
+  <data name="not_init_checkbox_text" xml:space="preserve">
+    <value>カレンダーを初期化しない</value>
+  </data>
+  <data name="object_control_tab_text" xml:space="preserve">
+    <value>オブジェクト管理</value>
+  </data>
+  <data name="object_id_col_head_text" xml:space="preserve">
+    <value>オブジェクトID</value>
+  </data>
+  <data name="object_list_screen_name" xml:space="preserve">
+    <value>オブジェクト一覧画面</value>
+  </data>
+  <data name="object_name_col_head_text" xml:space="preserve">
+    <value>オブジェクト名</value>
+  </data>
+  <data name="operation_day_file_name_label_text" xml:space="preserve">
+    <value>稼働日ファイル名：</value>
+  </data>
+  <data name="operation_day_file_reading_screen_language" xml:space="preserve">
+    <value>稼働日を指定した稼働日ファイルを入力してください。</value>
+  </data>
+  <data name="operation_day_file_reading_screen_name" xml:space="preserve">
+    <value>稼働日ファイル読込画面</value>
+  </data>
+  <data name="operation_day_label_text" xml:space="preserve">
+    <value>稼働日：</value>
+  </data>
+  <data name="operation_information_err_jobnet_label" xml:space="preserve">
+    <value>エラージョブネット運行情報</value>
+  </data>
+  <data name="operation_information_jobnet_label" xml:space="preserve">
+    <value>ジョブネット運行情報</value>
+  </data>
+  <data name="operation_information_running_jobnet_label" xml:space="preserve">
+    <value>実行中ジョブネット運行情報</value>
+  </data>
+  <data name="private_calendar_node_text" xml:space="preserve">
+    <value>プライベートカレンダー</value>
+  </data>
+  <data name="private_jobnet_node_text" xml:space="preserve">
+    <value>プライベートジョブネット</value>
+  </data>
+  <data name="private_schedule_node_text" xml:space="preserve">
+    <value>プライベートスケジュール</value>
+  </data>
+  <data name="PROCESS_001" xml:space="preserve">
+    <value>登録処理</value>
+  </data>
+  <data name="PROCESS_002" xml:space="preserve">
+    <value>キャンセル処理</value>
+  </data>
+  <data name="PROCESS_003" xml:space="preserve">
+    <value>新規追加処理</value>
+  </data>
+  <data name="PROCESS_004" xml:space="preserve">
+    <value>編集処理</value>
+  </data>
+  <data name="PROCESS_005" xml:space="preserve">
+    <value>新バージョン作成処理</value>
+  </data>
+  <data name="PROCESS_006" xml:space="preserve">
+    <value>削除処理</value>
+  </data>
+  <data name="PROCESS_007" xml:space="preserve">
+    <value>有効処理</value>
+  </data>
+  <data name="PROCESS_008" xml:space="preserve">
+    <value>無効処理</value>
+  </data>
+  <data name="PROCESS_009" xml:space="preserve">
+    <value>ジョブネット実行</value>
+  </data>
+  <data name="PROCESS_010" xml:space="preserve">
+    <value>ログイン処理</value>
+  </data>
+  <data name="PROCESS_011" xml:space="preserve">
+    <value>閉じる処理</value>
+  </data>
+  <data name="PROCESS_012" xml:space="preserve">
+    <value>エクスポート処理</value>
+  </data>
+  <data name="PROCESS_013" xml:space="preserve">
+    <value>インポート処理</value>
+  </data>
+  <data name="PROCESS_014" xml:space="preserve">
+    <value>実行ジョブ詳細画面表示処理</value>
+  </data>
+  <data name="PROCESS_015" xml:space="preserve">
+    <value>オブジェクト一覧表示処理</value>
+  </data>
+  <data name="PROCESS_016" xml:space="preserve">
+    <value>オブジェクト編集画面表示処理</value>
+  </data>
+  <data name="public_calendar_node_text" xml:space="preserve">
+    <value>公開カレンダー</value>
+  </data>
+  <data name="public_col_head_text" xml:space="preserve">
+    <value>公開</value>
+  </data>
+  <data name="public_jobnet_node_text" xml:space="preserve">
+    <value>公開ジョブネット</value>
+  </data>
+  <data name="public_label_text" xml:space="preserve">
+    <value>公開：</value>
+  </data>
+  <data name="public_schedule_node_text" xml:space="preserve">
+    <value>公開スケジュール</value>
+  </data>
+  <data name="reading_button_text" xml:space="preserve">
+    <value>読込み</value>
+  </data>
+  <data name="ref_export_file_text" xml:space="preserve">
+    <value>エクスポートファイルを選択してください</value>
+  </data>
+  <data name="ref_file_button_text" xml:space="preserve">
+    <value>参照</value>
+  </data>
+  <data name="ref_import_file_text" xml:space="preserve">
+    <value>インポートファイルを選択してください</value>
+  </data>
+  <data name="regist_button_text" xml:space="preserve">
+    <value>登録</value>
+  </data>
+  <data name="regist_dialog_screen_name" xml:space="preserve">
+    <value>編集登録確認</value>
+  </data>
+  <data name="regist_dialog_text" xml:space="preserve">
+    <value>編集中のデータを登録します。よろしいですか？</value>
+  </data>
+  <data name="reservation_run_menu_text" xml:space="preserve">
+    <value>保留実行（_W）</value>
+  </data>
+  <data name="run_job_management_screen" xml:space="preserve">
+    <value>実行ジョブ管理画面</value>
+  </data>
+  <data name="run_menu_text" xml:space="preserve">
+    <value>実行（_S）</value>
+  </data>
+  <data name="sat_day_checkbox_text" xml:space="preserve">
+    <value>土曜日</value>
+  </data>
+  <data name="schedule_editing_screen_name" xml:space="preserve">
+    <value>スケジュール編集画面</value>
+  </data>
+  <data name="schedule_id_label_text" xml:space="preserve">
+    <value>スケジュールID：</value>
+  </data>
+  <data name="schedule_name_label_text" xml:space="preserve">
+    <value>スケジュール名：</value>
+  </data>
+  <data name="schedule_node_text" xml:space="preserve">
+    <value>スケジュール</value>
+  </data>
+  <data name="schedule_time_col_head_text" xml:space="preserve">
+    <value>開始予定時間</value>
+  </data>
+  <data name="started_time_col_head_text" xml:space="preserve">
+    <value>開始時間</value>
+  </data>
+  <data name="status_col_head_text" xml:space="preserve">
+    <value>状況</value>
+  </data>
+  <data name="stop_context_menu_text" xml:space="preserve">
+    <value>ジョブネット停止（_F）</value>
+  </data>
+  <data name="sun_day_checkbox_text" xml:space="preserve">
+    <value>日曜日</value>
+  </data>
+  <data name="SYSERR_001" xml:space="preserve">
+    <value>データベース実行エラーが発生しました。システム管理者にご連絡ください。</value>
+  </data>
+  <data name="SYSERR_002" xml:space="preserve">
+    <value>ファイル読込みエラーが発生しました。システム管理者にご連絡ください。</value>
+  </data>
+  <data name="SYSERR_003" xml:space="preserve">
+    <value>予期せぬエラーが発生しました。システム管理者にご連絡ください。</value>
+  </data>
+  <data name="test_run_menu_text" xml:space="preserve">
+    <value>テスト実行（_T）</value>
+  </data>
+  <data name="thu_day_checkbox_text" xml:space="preserve">
+    <value>木曜日</value>
+  </data>
+  <data name="Title_Msgbox_Delete" xml:space="preserve">
+    <value>削除確認</value>
+  </data>
+  <data name="Title_Msgbox_Edit" xml:space="preserve">
+    <value>編集登録確認</value>
+  </data>
+  <data name="Title_Msgbox_End" xml:space="preserve">
+    <value>終了確認</value>
+  </data>
+  <data name="Title_Msgbox_Error" xml:space="preserve">
+    <value>エラー</value>
+  </data>
+  <data name="Title_Msgbox_Head" xml:space="preserve">
+    <value>バージョン情報</value>
+  </data>
+  <data name="Title_Msgbox_Jobnet_Start" xml:space="preserve">
+    <value>実行確認</value>
+  </data>
+  <data name="tue_day_checkbox_text" xml:space="preserve">
+    <value>火曜日</value>
+  </data>
+  <data name="update_context_menu_text" xml:space="preserve">
+    <value>編集（_U）</value>
+  </data>
+  <data name="update_date_col_head_text" xml:space="preserve">
+    <value>更新日</value>
+  </data>
+  <data name="update_date_label_text" xml:space="preserve">
+    <value>更新日：</value>
+  </data>
+  <data name="user_name_label_text" xml:space="preserve">
+    <value>ユーザー名：</value>
+  </data>
+  <data name="validity_context_menu_text" xml:space="preserve">
+    <value>有効（_A）</value>
+  </data>
+  <data name="valid_col_head_text" xml:space="preserve">
+    <value>有効</value>
+  </data>
+  <data name="ver_dialog_screen_name" xml:space="preserve">
+    <value>バージョン情報</value>
+  </data>
+  <data name="ver_menu_text" xml:space="preserve">
+    <value>バージョン情報（_A）</value>
+  </data>
+  <data name="view_menu_text" xml:space="preserve">
+    <value>表示（_V）</value>
+  </data>
+  <data name="wed_day_checkbox_text" xml:space="preserve">
+    <value>水曜日</value>
+  </data>
+  <data name="WINDOW_NAME_100" xml:space="preserve">
+    <value>ログイン画面</value>
+  </data>
+  <data name="WINDOW_NAME_200" xml:space="preserve">
+    <value>オブジェクト一覧画面</value>
+  </data>
+  <data name="WINDOW_NAME_210" xml:space="preserve">
+    <value>カレンダー編集画面</value>
+  </data>
+  <data name="WINDOW_NAME_211" xml:space="preserve">
+    <value>稼働日ファイル読込画面</value>
+  </data>
+  <data name="WINDOW_NAME_212" xml:space="preserve">
+    <value>カレンダー初期登録画面</value>
+  </data>
+  <data name="WINDOW_NAME_220" xml:space="preserve">
+    <value>スケジュール編集画面</value>
+  </data>
+  <data name="WINDOW_NAME_221" xml:space="preserve">
+    <value>起動時刻登録画面</value>
+  </data>
+  <data name="WINDOW_NAME_222" xml:space="preserve">
+    <value>ジョブネット登録画面</value>
+  </data>
+  <data name="WINDOW_NAME_230" xml:space="preserve">
+    <value>ジョブ編集画面</value>
+  </data>
+  <data name="WINDOW_NAME_231" xml:space="preserve">
+    <value>ジョブアイコン設定画面</value>
+  </data>
+  <data name="WINDOW_NAME_232" xml:space="preserve">
+    <value>条件分岐アイコン設定画面</value>
+  </data>
+  <data name="WINDOW_NAME_233" xml:space="preserve">
+    <value>ジョブコントローラ変数アイコン設定画面</value>
+  </data>
+  <data name="WINDOW_NAME_234" xml:space="preserve">
+    <value>拡張ジョブアイコン設定画面</value>
+  </data>
+  <data name="WINDOW_NAME_235" xml:space="preserve">
+    <value>終了アイコン設定画面</value>
+  </data>
+  <data name="WINDOW_NAME_236" xml:space="preserve">
+    <value>計算アイコン設定画面</value>
+  </data>
+  <data name="WINDOW_NAME_237" xml:space="preserve">
+    <value>タスクアイコン設定画面</value>
+  </data>
+  <data name="WINDOW_NAME_238" xml:space="preserve">
+    <value>情報取得アイコン設定画面</value>
+  </data>
+  <data name="WINDOW_NAME_239" xml:space="preserve">
+    <value>その他のアイコン設定画面</value>
+  </data>
+  <data name="WINDOW_NAME_240" xml:space="preserve">
+    <value>エクスポート画面</value>
+  </data>
+  <data name="WINDOW_NAME_250" xml:space="preserve">
+    <value>インポート画面</value>
+  </data>
+  <data name="WINDOW_NAME_300" xml:space="preserve">
+    <value>実行ジョブ管理画面</value>
+  </data>
+  <data name="WINDOW_NAME_310" xml:space="preserve">
+    <value>実行ジョブ詳細画面</value>
+  </data>
+  <data name="ERROR_COMMON_011" xml:space="preserve">
+    <value>指定したファイルが存在しません。</value>
+  </data>
+  <data name="ERROR_COMMON_012" xml:space="preserve">
+    <value>{0}は{1}桁で入力してください。</value>
+  </data>
+  <data name="err_message_boot_time_hh" xml:space="preserve">
+    <value>起動時刻の時間</value>
+  </data>
+  <data name="err_message_boot_time_mi" xml:space="preserve">
+    <value>起動時刻の分</value>
+  </data>
+  <data name="ERROR_CALENDAR_001" xml:space="preserve">
+    <value>選択されたカレンダーバージョンは他のユーザーによって、削除されました。</value>
+  </data>
+  <data name="ERROR_CALENDAR_002" xml:space="preserve">
+    <value>選択されたカレンダーIDデータは他のユーザーによって編集中です。
+しばらくしてから、再実行してください。</value>
+  </data>
+  <data name="ERROR_COMMON_013" xml:space="preserve">
+    <value>{0}は半角英数字とハイフン（-）、アンダーバー（_）で入力してください。</value>
+  </data>
+  <data name="ERROR_SCHEDULE_001" xml:space="preserve">
+    <value>選択されたスケジュールバージョンは他のユーザーによって、削除されました。</value>
+  </data>
+  <data name="ERROR_SCHEDULE_002" xml:space="preserve">
+    <value>選択されたスケジュールIDデータは他のユーザーによって編集中です。
+しばらくしてから、再実行してください。</value>
+  </data>
+  <data name="ERROR_JOBEDIT_009" xml:space="preserve">
+    <value>登録されたジョブがありません。</value>
+  </data>
+  <data name="ERROR_SCHEDULE_003" xml:space="preserve">
+    <value>登録された起動時刻がありません。</value>
+  </data>
+  <data name="ERROR_SCHEDULE_004" xml:space="preserve">
+    <value>登録されたジョブネットがありません。</value>
+  </data>
+  <data name="ERROR_IMPORT_004" xml:space="preserve">
+    <value>データは既に登録済みです。</value>
+  </data>
+  <data name="ERROR_IMPORT_005" xml:space="preserve">
+    <value>データの整合性エラーのためインポートできません。</value>
+  </data>
+  <data name="ERROR_JOBEDIT_010" xml:space="preserve">
+    <value>アイコン「{0}」の設定を行ってください。</value>
+  </data>
+  <data name="add_button_text" xml:space="preserve">
+    <value>追加</value>
+  </data>
+  <data name="calc_label_text" xml:space="preserve">
+    <value>計算</value>
+  </data>
+  <data name="exec_label_text" xml:space="preserve">
+    <value>実行</value>
+  </data>
+  <data name="extend_job_label_text" xml:space="preserve">
+    <value>拡張ジョブ：</value>
+  </data>
+  <data name="host_label_text" xml:space="preserve">
+    <value>ホスト</value>
+  </data>
+  <data name="host_name_label_text" xml:space="preserve">
+    <value>ホスト名：</value>
+  </data>
+  <data name="if_label_text" xml:space="preserve">
+    <value>条件</value>
+  </data>
+  <data name="info_label_text" xml:space="preserve">
+    <value>情報取得</value>
+  </data>
+  <data name="jobcon_value_label_text" xml:space="preserve">
+    <value>ジョブコントローラ変数：</value>
+  </data>
+  <data name="job_id_label_text" xml:space="preserve">
+    <value>ジョブID：</value>
+  </data>
+  <data name="job_label_text" xml:space="preserve">
+    <value>ジョブ</value>
+  </data>
+  <data name="job_name_label_text" xml:space="preserve">
+    <value>ジョブ名：</value>
+  </data>
+  <data name="job_value_label_text" xml:space="preserve">
+    <value>ジョブ変数：</value>
+  </data>
+  <data name="stop_code_label_text" xml:space="preserve">
+    <value>ジョブ停止コード：</value>
+  </data>
+  <data name="stop_command_label_text" xml:space="preserve">
+    <value>停止コマンド：</value>
+  </data>
+  <data name="task_label_text" xml:space="preserve">
+    <value>タスク</value>
+  </data>
+  <data name="timeout_label_text" xml:space="preserve">
+    <value>タイムアウト警告(分)：</value>
+  </data>
+  <data name="timeout_run_type_label_text" xml:space="preserve">
+    <value>警告のみ</value>
+  </data>
+  <data name="value_col_head_text" xml:space="preserve">
+    <value>値</value>
+  </data>
+  <data name="value_label_text" xml:space="preserve">
+    <value>値：</value>
+  </data>
+  <data name="value_name_col_head_text" xml:space="preserve">
+    <value>変数名</value>
+  </data>
+  <data name="value_name_label_text" xml:space="preserve">
+    <value>変数名：</value>
+  </data>
+  <data name="variable_label_text" xml:space="preserve">
+    <value>変数</value>
+  </data>
+  <data name="calc_icon_screen_name" xml:space="preserve">
+    <value>計算アイコンの設定</value>
+  </data>
+  <data name="calc_method_label_text" xml:space="preserve">
+    <value>計算方法</value>
+  </data>
+  <data name="character_string_text" xml:space="preserve">
+    <value>文字列</value>
+  </data>
+  <data name="compare_value_label_text" xml:space="preserve">
+    <value>比較値：</value>
+  </data>
+  <data name="end_code_label_text" xml:space="preserve">
+    <value>終了コード（JOB_EXIT_CD）：</value>
+  </data>
+  <data name="end_icon_screen_name" xml:space="preserve">
+    <value>終了アイコンの設定</value>
+  </data>
+  <data name="env_icon_screen_name" xml:space="preserve">
+    <value>ジョブコントローラ変数アイコンの設定</value>
+  </data>
+  <data name="err_message_compare_value" xml:space="preserve">
+    <value>比較値</value>
+  </data>
+  <data name="err_message_job_id" xml:space="preserve">
+    <value>ジョブＩＤ</value>
+  </data>
+  <data name="err_message_job_name" xml:space="preserve">
+    <value>ジョブ名</value>
+  </data>
+  <data name="err_message_memo" xml:space="preserve">
+    <value>説明</value>
+  </data>
+  <data name="err_message_value" xml:space="preserve">
+    <value>値</value>
+  </data>
+  <data name="err_message_value_name" xml:space="preserve">
+    <value>変数名</value>
+  </data>
+  <data name="ext_job_icon_screen_name" xml:space="preserve">
+    <value>拡張ジョブアイコンの設定</value>
+  </data>
+  <data name="formula_label_text" xml:space="preserve">
+    <value>計算式：</value>
+  </data>
+  <data name="if_icon_screen_name" xml:space="preserve">
+    <value>条件分岐アイコンの設定</value>
+  </data>
+  <data name="information_classification_label_text" xml:space="preserve">
+    <value>情報種別：</value>
+  </data>
+  <data name="info_icon_screen_name" xml:space="preserve">
+    <value>情報取得アイコンの設定</value>
+  </data>
+  <data name="integer_calc_label_text" xml:space="preserve">
+    <value>整数計算</value>
+  </data>
+  <data name="jobnet_icon_screen_name" xml:space="preserve">
+    <value>ジョブネットアイコンの設定</value>
+  </data>
+  <data name="jobnet_stop_label_text" xml:space="preserve">
+    <value>ジョブネット停止：</value>
+  </data>
+  <data name="job_icon_screen_name" xml:space="preserve">
+    <value>ジョブアイコンの設定</value>
+  </data>
+  <data name="job_info_text" xml:space="preserve">
+    <value>ジョブ情報</value>
+  </data>
+  <data name="numerical_value_text" xml:space="preserve">
+    <value>数値</value>
+  </data>
+  <data name="other_icon_screen_name" xml:space="preserve">
+    <value>その他アイコンの設定</value>
+  </data>
+  <data name="parameter_label_text" xml:space="preserve">
+    <value>パラメータ：</value>
+  </data>
+  <data name="process_method_label_text" xml:space="preserve">
+    <value>処理方法：</value>
+  </data>
+  <data name="task_icon_screen_name" xml:space="preserve">
+    <value>タスクアイコンの設定</value>
+  </data>
+  <data name="time_calc_label_text" xml:space="preserve">
+    <value>時刻計算</value>
+  </data>
+  <data name="curve_flow_menu_text" xml:space="preserve">
+    <value>曲線フロー（_C）</value>
+  </data>
+  <data name="del_flow_menu_text" xml:space="preserve">
+    <value>フロー削除（_O）</value>
+  </data>
+  <data name="err_message_exec" xml:space="preserve">
+    <value>実行欄</value>
+  </data>
+  <data name="err_message_extend_job" xml:space="preserve">
+    <value>拡張ジョブ</value>
+  </data>
+  <data name="err_message_formula" xml:space="preserve">
+    <value>計算式</value>
+  </data>
+  <data name="err_message_host_name" xml:space="preserve">
+    <value>ホスト名</value>
+  </data>
+  <data name="err_message_host_value_name" xml:space="preserve">
+    <value>ホスト（変数名）</value>
+  </data>
+  <data name="err_message_jobcontrol_value" xml:space="preserve">
+    <value>ジョブコントローラ変数（値）</value>
+  </data>
+  <data name="err_message_jobcontrol_value_name" xml:space="preserve">
+    <value>ジョブコントローラ変数（変数名）</value>
+  </data>
+  <data name="err_message_jobcontrol_variable" xml:space="preserve">
+    <value>ジョブコントローラ変数</value>
+  </data>
+  <data name="err_message_job_info" xml:space="preserve">
+    <value>ジョブ情報（ジョブID）</value>
+  </data>
+  <data name="err_message_job_value" xml:space="preserve">
+    <value>ジョブ変数（値）</value>
+  </data>
+  <data name="err_message_job_value_name" xml:space="preserve">
+    <value>ジョブ変数（変数名）</value>
+  </data>
+  <data name="err_message_parameter" xml:space="preserve">
+    <value>パラメータ</value>
+  </data>
+  <data name="err_message_stop_code" xml:space="preserve">
+    <value>ジョブ停止コード</value>
+  </data>
+  <data name="err_message_stop_command" xml:space="preserve">
+    <value>停止コマンド</value>
+  </data>
+  <data name="err_message_timeout" xml:space="preserve">
+    <value>タイムアウト警告</value>
+  </data>
+  <data name="false_setting_menu_text" xml:space="preserve">
+    <value>FALSE設定（_F）</value>
+  </data>
+  <data name="force_stop_menu_text" xml:space="preserve">
+    <value>強制停止（_F）</value>
+  </data>
+  <data name="hold_menu_text" xml:space="preserve">
+    <value>保留（_W）</value>
+  </data>
+  <data name="info_type_job_status_text" xml:space="preserve">
+    <value>ジョブ状態</value>
+  </data>
+  <data name="linear_flow_menu_text" xml:space="preserve">
+    <value>直線フロー（_L）</value>
+  </data>
+  <data name="rerun_menu_text" xml:space="preserve">
+    <value>再実行（_A）</value>
+  </data>
+  <data name="setting_menu_text" xml:space="preserve">
+    <value>設定（_S）</value>
+  </data>
+  <data name="skip_menu_text" xml:space="preserve">
+    <value>スキップ（_S）</value>
+  </data>
+  <data name="true_setting_menu_text" xml:space="preserve">
+    <value>TRUE設定（_T）</value>
+  </data>
+  <data name="unhold_menu_text" xml:space="preserve">
+    <value>保留解除（_U）</value>
+  </data>
+  <data name="unskip_menu_text" xml:space="preserve">
+    <value>スキップ解除（_R）</value>
+  </data>
+  <data name="variable_value_change_menu_text" xml:space="preserve">
+    <value>変数値変更（_C）</value>
+  </data>
+  <data name="change_variable_value_screen_name" xml:space="preserve">
+    <value>変数値変更</value>
+  </data>
+  <data name="ERROR_JOBEDIT_011" xml:space="preserve">
+    <value>自身以外のジョブネットＩＤを入力してください。</value>
+  </data>
+  <data name="extend_job_text" xml:space="preserve">
+    <value>拡張ジョブ</value>
+  </data>
+  <data name="ERROR_JOBEDIT_012" xml:space="preserve">
+    <value>Startアイコンは一つのみ、Endアイコンは一つ以上設定する必要があります。</value>
+  </data>
+  <data name="SYSERR_004" xml:space="preserve">
+    <value>通番の取得に失敗しました。システム管理者にご連絡ください。</value>
+  </data>
+  <data name="ERROR_LOGIN_002" xml:space="preserve">
+    <value>ユーザーが無効です。</value>
+  </data>
+  <data name="user_name_col_head_text" xml:space="preserve">
+    <value>ユーザー名</value>
+  </data>
+  <data name="ERROR_JOBNET_LOAD_001" xml:space="preserve">
+    <value>ジョブネットアイコン、およびタスクアイコンのジョブネットが無効です。</value>
+  </data>
+  <data name="load_err" xml:space="preserve">
+    <value>展開エラー</value>
+  </data>
+  <data name="ERROR_JOBEDIT_007" xml:space="preserve">
+    <value>開始点と終了点が同じです。</value>
+  </data>
+  <data name="ERROR_JOBEDIT_008" xml:space="preserve">
+    <value>{0}は{1}以内で入力してください。</value>
+  </data>
+  <data name="after_variable_label_text" xml:space="preserve">
+    <value>変更後変数：</value>
+  </data>
+  <data name="before_variable_label_text" xml:space="preserve">
+    <value>変更前変数：</value>
+  </data>
+  <data name="view_variable_value_menu_text" xml:space="preserve">
+    <value>変数表示（_V）</value>
+  </data>
+  <data name="view_variable_value_screen_name" xml:space="preserve">
+    <value>変数表示</value>
+  </data>
+  <data name="calc_icon_label_text" xml:space="preserve">
+    <value>計算</value>
+  </data>
+  <data name="extend_job_icon_text" xml:space="preserve">
+    <value>拡張ジョブ</value>
+  </data>
+  <data name="info_icon_label_text" xml:space="preserve">
+    <value>情報取得</value>
+  </data>
+  <data name="job_icon_label_text" xml:space="preserve">
+    <value>ジョブ</value>
+  </data>
+  <data name="task_icon_label_text" xml:space="preserve">
+    <value>タスク</value>
+  </data>
+  <data name="variable_icon_label_text" xml:space="preserve">
+    <value>変数</value>
+  </data>
+  <data name="close_button_text" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="ERROR_COMMON_014" xml:space="preserve">
+    <value>ファイル名を入力してください。</value>
+  </data>
+  <data name="file_copy_icon_label_text" xml:space="preserve">
+    <value>ファイル転送</value>
+  </data>
+  <data name="file_wait_icon_label_text" xml:space="preserve">
+    <value>ファイル待合せ</value>
+  </data>
+  <data name="copy_new_context_menu_text" xml:space="preserve">
+    <value>コピー新規（_C）</value>
+  </data>
+  <data name="PROCESS_017" xml:space="preserve">
+    <value>コピー新規処理</value>
+  </data>
+  <data name="fcopy_icon_screen_name" xml:space="preserve">
+    <value>ファイル転送アイコンの設定</value>
+  </data>
+  <data name="destination_directory_label_text" xml:space="preserve">
+    <value>転送先ディレクトリ情報</value>
+  </data>
+  <data name="destination_host_label_text" xml:space="preserve">
+    <value>転送先ホスト</value>
+  </data>
+  <data name="directory_label_text" xml:space="preserve">
+    <value>ディレクトリ：</value>
+  </data>
+  <data name="file_name_label_text" xml:space="preserve">
+    <value>ファイル名：</value>
+  </data>
+  <data name="fwait_icon_screen_name" xml:space="preserve">
+    <value>ファイル待合せアイコンの設定</value>
+  </data>
+  <data name="source_file_label_text" xml:space="preserve">
+    <value>転送元ファイル情報</value>
+  </data>
+  <data name="source_host_label_text" xml:space="preserve">
+    <value>転送元ホスト</value>
+  </data>
+  <data name="ERROR_BOOT_TIME_003" xml:space="preserve">
+    <value>起動時刻は既に登録済みです。</value>
+  </data>
+  <data name="ERROR_BOOT_TIME_004" xml:space="preserve">
+    <value>起動時刻は必須入力で、HHMI（HHは1～2桁の数値で0～99、MIは2桁の数値で00～59）形式で入力してください。</value>
+  </data>
+  <data name="ERROR_COMMON_015" xml:space="preserve">
+    <value>{0}は半角英数字とアンダーバー（_）、及び最初の文字は数値以外で入力してください。</value>
+  </data>
+  <data name="err_message_from_dir" xml:space="preserve">
+    <value>転送元ディレクトリー</value>
+  </data>
+  <data name="err_message_from_file_name" xml:space="preserve">
+    <value>転送元ファイル名</value>
+  </data>
+  <data name="err_message_from_host_name" xml:space="preserve">
+    <value>転送元ホスト名</value>
+  </data>
+  <data name="err_message_from_host_value_name" xml:space="preserve">
+    <value>転送元ホスト（変数名）</value>
+  </data>
+  <data name="err_message_to_dir" xml:space="preserve">
+    <value>転送先ディレクトリー</value>
+  </data>
+  <data name="err_message_to_host_name" xml:space="preserve">
+    <value>転送先ホスト名</value>
+  </data>
+  <data name="err_message_to_host_value_name" xml:space="preserve">
+    <value>転送先ホスト（変数名）</value>
+  </data>
+  <data name="ERROR_LOGIN_003" xml:space="preserve">
+    <value>設定ファイル（jobarg_manager.conf）が見つかりません。</value>
+  </data>
+  <data name="ERROR_LOGIN_004" xml:space="preserve">
+    <value>設定ファイル（jobarg_manager.conf）の内容が不正です。</value>
+  </data>
+  <data name="ERROR_LOGIN_005" xml:space="preserve">
+    <value>ODBCのDSNが見つかりません。ODBCの設定をご確認下さい。</value>
+  </data>
+  <data name="ERROR_LOGIN_006" xml:space="preserve">
+    <value>DBへの接続に失敗しました。ODBC、およびデータベースをご確認下さい。</value>
+  </data>
+  <data name="err_message_file_name" xml:space="preserve">
+    <value>ファイル名</value>
+  </data>
+  <data name="Title_Msgbox_Cancel" xml:space="preserve">
+    <value>取消確認</value>
+  </data>
+  <data name="PROCESS_018" xml:space="preserve">
+    <value>保留処理</value>
+  </data>
+  <data name="PROCESS_019" xml:space="preserve">
+    <value>保留解除処理</value>
+  </data>
+  <data name="PROCESS_020" xml:space="preserve">
+    <value>スキップ処理</value>
+  </data>
+  <data name="PROCESS_021" xml:space="preserve">
+    <value>スキップ解除処理</value>
+  </data>
+  <data name="PROCESS_022" xml:space="preserve">
+    <value>強制停止処理</value>
+  </data>
+  <data name="PROCESS_023" xml:space="preserve">
+    <value>再実行処理</value>
+  </data>
+  <data name="reboot_icon_label_text" xml:space="preserve">
+    <value>リブート</value>
+  </data>
+  <data name="reboot_icon_screen_name" xml:space="preserve">
+    <value>リブートアイコンの設定</value>
+  </data>
+  <data name="force_reboot_label_text" xml:space="preserve">
+    <value>強制リブート</value>
+  </data>
+  <data name="process_mode_label_text" xml:space="preserve">
+    <value>処理モード</value>
+  </data>
+  <data name="waiting_reboot_label_text" xml:space="preserve">
+    <value>ジョブ待ち合わせ後リブート</value>
+  </data>
+  <data name="err_message_wait_time" xml:space="preserve">
+    <value>待合せ時間</value>
+  </data>
+  <data name="wait_time_label_text" xml:space="preserve">
+    <value>待合せ時間(秒)：</value>
+  </data>
+  <data name="job_run_menu_text" xml:space="preserve">
+    <value>ジョブ起動（_J）</value>
+  </data>
+  <data name="run_job_jobnet_name_head" xml:space="preserve">
+    <value>ジョブアイコン単体起動</value>
+  </data>
+  <data name="calendar_id_col_head_text" xml:space="preserve">
+    <value>カレンダーID</value>
+  </data>
+  <data name="ERROR_COMMON_016" xml:space="preserve">
+    <value>{0}は半角英数字とハイフン（-）、アンダーバー（_）、スラッシュ（/）で入力してください。</value>
+  </data>
+  <data name="err_message_release_job_id" xml:space="preserve">
+    <value>保留解除ジョブID</value>
+  </data>
+  <data name="file_check_label_text" xml:space="preserve">
+    <value>ファイル存在チェック</value>
+  </data>
+  <data name="file_delete_checkbox_text" xml:space="preserve">
+    <value>ファイル削除：</value>
+  </data>
+  <data name="file_wait_label_text" xml:space="preserve">
+    <value>ファイル待合せ</value>
+  </data>
+  <data name="release_icon_label_text" xml:space="preserve">
+    <value>保留解除</value>
+  </data>
+  <data name="release_job_id_label_text" xml:space="preserve">
+    <value>保留解除ジョブID：</value>
+  </data>
+  <data name="calendar_info_text" xml:space="preserve">
+    <value>カレンダー情報</value>
+  </data>
+  <data name="ERROR_CALENDAR_003" xml:space="preserve">
+    <value>選択されたカレンダーIDが他のユーザによって削除されました。</value>
+  </data>
+  <data name="info_type_running_day_text" xml:space="preserve">
+    <value>稼働日</value>
+  </data>
+  <data name="job_result_tab_text" xml:space="preserve">
+    <value>実行結果表示</value>
+  </data>
+  <data name="day_label_text" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="hour_label_text" xml:space="preserve">
+    <value>時</value>
+  </data>
+  <data name="min_label_text" xml:space="preserve">
+    <value>分</value>
+  </data>
+  <data name="month_label_text" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="search_term_label_text" xml:space="preserve">
+    <value>検索期間：</value>
+  </data>
+  <data name="year_label_text" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="csv_button_text" xml:space="preserve">
+    <value>CSV出力</value>
+  </data>
+  <data name="manage_id_col_head_text" xml:space="preserve">
+    <value>管理ID</value>
+  </data>
+  <data name="manage_id_label_text" xml:space="preserve">
+    <value>管理ID：</value>
+  </data>
+  <data name="return_value_col_head_text" xml:space="preserve">
+    <value>戻り値</value>
+  </data>
+  <data name="run_date_col_head_text" xml:space="preserve">
+    <value>実行日付</value>
+  </data>
+  <data name="search_button_text" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="std_err_col_head_text" xml:space="preserve">
+    <value>標準エラー</value>
+  </data>
+  <data name="std_out_col_head_text" xml:space="preserve">
+    <value>標準出力</value>
+  </data>
+  <data name="csv_screen_language" xml:space="preserve">
+    <value>ジョブ実行結果CSVファイルの出力先を入力してください。</value>
+  </data>
+  <data name="csv_screen_name" xml:space="preserve">
+    <value>ジョブ実行結果出力画面</value>
+  </data>
+  <data name="ERROR_COMMON_017" xml:space="preserve">
+    <value>{0}は{1}～{2}の数値で入力してください。</value>
+  </data>
+  <data name="ERROR_COMMON_018" xml:space="preserve">
+    <value>{0}は正しい日付で入力してください。</value>
+  </data>
+  <data name="err_message_search_from_date" xml:space="preserve">
+    <value>検索FROM日付</value>
+  </data>
+  <data name="err_message_search_from_day" xml:space="preserve">
+    <value>検索FROM日</value>
+  </data>
+  <data name="err_message_search_from_hour" xml:space="preserve">
+    <value>検索FROM時</value>
+  </data>
+  <data name="err_message_search_from_min" xml:space="preserve">
+    <value>検索FROM分</value>
+  </data>
+  <data name="err_message_search_from_month" xml:space="preserve">
+    <value>検索FROM月</value>
+  </data>
+  <data name="err_message_search_from_time" xml:space="preserve">
+    <value>検索FROM時間</value>
+  </data>
+  <data name="err_message_search_from_year" xml:space="preserve">
+    <value>検索FROM年</value>
+  </data>
+  <data name="err_message_search_to_date" xml:space="preserve">
+    <value>検索TO日付</value>
+  </data>
+  <data name="err_message_search_to_day" xml:space="preserve">
+    <value>検索TO日</value>
+  </data>
+  <data name="err_message_search_to_hour" xml:space="preserve">
+    <value>検索TO時</value>
+  </data>
+  <data name="err_message_search_to_min" xml:space="preserve">
+    <value>検索TO分</value>
+  </data>
+  <data name="err_message_search_to_month" xml:space="preserve">
+    <value>検索TO月</value>
+  </data>
+  <data name="err_message_search_to_time" xml:space="preserve">
+    <value>検索TO時間</value>
+  </data>
+  <data name="err_message_search_to_year" xml:space="preserve">
+    <value>検索TO年</value>
+  </data>
+  <data name="ERROR_COMMON_019" xml:space="preserve">
+    <value>指定されたファイルパスのフォーマットはサポートされていません。</value>
+  </data>
+  <data name="ERROR_COMMON_020" xml:space="preserve">
+    <value>正規表現の指定が誤ってます。</value>
+  </data>
+  <data name="ERROR_COMMON_021" xml:space="preserve">
+    <value>CSV出力データが存在しません。</value>
+  </data>
+  <data name="err_message_user_name" xml:space="preserve">
+    <value>ユーザー名</value>
+  </data>
+  <data name="PROCESS_024" xml:space="preserve">
+    <value>実行結果検索処理</value>
+  </data>
+  <data name="PROCESS_025" xml:space="preserve">
+    <value>実行結果CSV出力処理</value>
+  </data>
+  <data name="ERROR_COMMON_022" xml:space="preserve">
+    <value>ファイルのディレクトリーが存在しません。</value>
+  </data>
+  <data name="ERROR_JOBEDIT_013" xml:space="preserve">
+    <value>当ジョブネットは既に表示中です。</value>
+  </data>
+  <data name="ERROR_COMMON_023" xml:space="preserve">
+    <value>アクセスが拒否されました。</value>
+  </data>
+  <data name="edit_skip_menu_text" xml:space="preserve">
+    <value>スキップ（_K）</value>
+  </data>
+  <data name="ERROR_COMMON_024" xml:space="preserve">
+    <value>該当データが存在しません。</value>
+  </data>
+  <data name="ERROR_COMMON_025" xml:space="preserve">
+    <value>{0}は「"'\,」以外で入力してください。</value>
+  </data>
+  <data name="ERROR_COMMON_026" xml:space="preserve">
+    <value>{0}は正しい時間で入力してください。</value>
+  </data>
+  <data name="detail_col_head_text" xml:space="preserve">
+    <value>詳細</value>
+  </data>
+  <data name="log_detail_screen_name" xml:space="preserve">
+    <value>ジョブ実行結果詳細画面</value>
+  </data>
+  <data name="std_err_label_text" xml:space="preserve">
+    <value>標準エラー：</value>
+  </data>
+  <data name="std_out_label_text" xml:space="preserve">
+    <value>標準出力：</value>
+  </data>
+  <data name="WINDOW_NAME_500" xml:space="preserve">
+    <value>ジョブ実行結果画面</value>
+  </data>
+  <data name="end_time_label_text" xml:space="preserve">
+    <value>終了時間：</value>
+  </data>
+  <data name="ife_icon_screen_name" xml:space="preserve">
+    <value>条件分岐終了アイコンの設定</value>
+  </data>
+  <data name="loop_icon_screen_name" xml:space="preserve">
+    <value>ループアイコンの設定</value>
+  </data>
+  <data name="management_id_col_head_text" xml:space="preserve">
+    <value>管理ID</value>
+  </data>
+  <data name="mte_icon_screen_name" xml:space="preserve">
+    <value>並列終了アイコンの設定</value>
+  </data>
+  <data name="mts_icon_screen_name" xml:space="preserve">
+    <value>並列開始アイコンの設定</value>
+  </data>
+  <data name="release_icon_screen_name" xml:space="preserve">
+    <value>保留解除アイコンの設定</value>
+  </data>
+  <data name="schedule_time_label_text" xml:space="preserve">
+    <value>開始予定時間：</value>
+  </data>
+  <data name="start_icon_screen_name" xml:space="preserve">
+    <value>開始アイコンの設定</value>
+  </data>
+  <data name="start_time_label_text" xml:space="preserve">
+    <value>開始時間：</value>
+  </data>
+  <data name="ERROR_DB_LOCK" xml:space="preserve">
+    <value>データが使用中のため、操作できません。しばらくしてから、再実行してください。</value>
+  </data>
+  <data name="force_label_text" xml:space="preserve">
+    <value>強制実行</value>
+  </data>
+  <data name="rbCycleStart_label_text" xml:space="preserve">
+    <value>サイクル起動：</value>
+  </data>
+  <data name="rbStartTime_label_text" xml:space="preserve">
+    <value>起動時刻：</value>
+  </data>
+  <data name="textBox_CycleInterval_label_text" xml:space="preserve">
+    <value>分間隔</value>
+  </data>
+  <data name="ERROR_COMMON_027" xml:space="preserve">
+    <value>{0}は半角数字、コロン（:）で入力してください。</value>
+  </data>
+  <data name="err_message_boot_end_time_hh" xml:space="preserve">
+    <value>終了時刻の時間</value>
+  </data>
+  <data name="err_message_boot_start_time_hh" xml:space="preserve">
+    <value>開始時刻の時間</value>
+  </data>
+  <data name="ERROR_BOOT_TIME_005" xml:space="preserve">
+    <value>起動時間は、開始時間＜終了時間で入力してください。</value>
+  </data>
+  <data name="err_message_boot_end_time" xml:space="preserve">
+    <value>終了時刻</value>
+  </data>
+  <data name="err_message_boot_end_time_mi" xml:space="preserve">
+    <value>終了時刻の分</value>
+  </data>
+  <data name="err_message_boot_start_time" xml:space="preserve">
+    <value>開始時刻</value>
+  </data>
+  <data name="err_message_boot_start_time_mi" xml:space="preserve">
+    <value>開始時刻の分</value>
+  </data>
+  <data name="err_message_boot_time_CycleInterval" xml:space="preserve">
+    <value>間隔時間（分）</value>
+  </data>
+  <data name="multiple_start_label_text" xml:space="preserve">
+    <value>多重起動：</value>
+  </data>
+  <data name="job_run_status_delay_err" xml:space="preserve">
+    <value>遅延起動エラー</value>
+  </data>
+  <data name="job_run_status_scheduled_wait" xml:space="preserve">
+    <value>予定（完了待ち）</value>
+  </data>
+  <data name="job_run_status_skip" xml:space="preserve">
+    <value>実行スキップ</value>
+  </data>
+  <data name="multiple_start_type1" xml:space="preserve">
+    <value>あり</value>
+  </data>
+  <data name="multiple_start_type2" xml:space="preserve">
+    <value>スキップ</value>
+  </data>
+  <data name="multiple_start_type3" xml:space="preserve">
+    <value>待ち合せ</value>
+  </data>
+  <data name="delayedStart_context_menu_text" xml:space="preserve">
+    <value>遅延起動エラー再実行（_R）</value>
+  </data>
+  <data name="cooperation_get_data" xml:space="preserve">
+    <value>最新データ取得</value>
+  </data>
+  <data name="cooperation_get_stat" xml:space="preserve">
+    <value>状態取得</value>
+  </data>
+  <data name="cooperation_hostgroup_label_text" xml:space="preserve">
+    <value>ホストグループ</value>
+  </data>
+  <data name="cooperation_hostgroup_pdl_label_text" xml:space="preserve">
+    <value>ホストグループ名：</value>
+  </data>
+  <data name="cooperation_hostname_label_text" xml:space="preserve">
+    <value>ホスト</value>
+  </data>
+  <data name="cooperation_hostname_pdl_label_text" xml:space="preserve">
+    <value>ホスト名：</value>
+  </data>
+  <data name="cooperation_icon_label_text" xml:space="preserve">
+    <value>Zabbix連携</value>
+  </data>
+  <data name="cooperation_icon_screen_name" xml:space="preserve">
+    <value>Zabbix連携アイコンの設定</value>
+  </data>
+  <data name="cooperation_itemname_label_text" xml:space="preserve">
+    <value>アイテム</value>
+  </data>
+  <data name="cooperation_itemname_pdl_label_text" xml:space="preserve">
+    <value>アイテム名：</value>
+  </data>
+  <data name="cooperation_mode_disabled" xml:space="preserve">
+    <value>無効化</value>
+  </data>
+  <data name="cooperation_mode_enabled" xml:space="preserve">
+    <value>有効化</value>
+  </data>
+  <data name="cooperation_mode_label_text" xml:space="preserve">
+    <value>連携動作</value>
+  </data>
+  <data name="cooperation_Object_label_text" xml:space="preserve">
+    <value>連携対象</value>
+  </data>
+  <data name="cooperation_triggername_label_text" xml:space="preserve">
+    <value>トリガー</value>
+  </data>
+  <data name="cooperation_triggername_pdl_label_text" xml:space="preserve">
+    <value>トリガー名：</value>
+  </data>
+  <data name="ERROR_ZABBIX_LINK_001" xml:space="preserve">
+    <value>連携動作として、「最新データ取得」は選択できません。</value>
+  </data>
+  <data name="ERROR_ZABBIX_LINK_002" xml:space="preserve">
+    <value>連携動作として、「状態取得」は選択できません。</value>
+  </data>
+  <data name="ERROR_ZABBIX_LINK_003" xml:space="preserve">
+    <value>連携動作を選択し直してください。</value>
+  </data>
+  <data name="err_message_host_gropu_name" xml:space="preserve">
+    <value>ホストグループ名</value>
+  </data>
+  <data name="err_message_item_name" xml:space="preserve">
+    <value>アイテム名</value>
+  </data>
+  <data name="err_message_trigger_name" xml:space="preserve">
+    <value>トリガー名</value>
+  </data>
+  <data name="agentless_icon_label_text" xml:space="preserve">
+    <value>ｴｰｼﾞｪﾝﾄﾚｽ</value>
+  </data>
+  <data name="agentless_authentic_label_text" xml:space="preserve">
+    <value>認証方式：</value>
+  </data>
+  <data name="agentless_basicconfig_label_text" xml:space="preserve">
+    <value>基本設定</value>
+  </data>
+  <data name="agentless_command_label_text" xml:space="preserve">
+    <value>コマンド</value>
+  </data>
+  <data name="agentless_connection_label_text" xml:space="preserve">
+    <value>接続</value>
+  </data>
+  <data name="agentless_continue_label_text" xml:space="preserve">
+    <value>継続</value>
+  </data>
+  <data name="agentless_disconnect_label_text" xml:space="preserve">
+    <value>切断</value>
+  </data>
+  <data name="agentless_executemode_label_text" xml:space="preserve">
+    <value>実行モード：</value>
+  </data>
+  <data name="agentless_force_label_text" xml:space="preserve">
+    <value>強制実行：</value>
+  </data>
+  <data name="agentless_icon_screen_name" xml:space="preserve">
+    <value>エージェントレスアイコンの設定</value>
+  </data>
+  <data name="agentless_onetime_label_text" xml:space="preserve">
+    <value>ワンタイム</value>
+  </data>
+  <data name="agentless_passphrase_label_text" xml:space="preserve">
+    <value>パスフレーズ：</value>
+  </data>
+  <data name="agentless_privatekey_label_text" xml:space="preserve">
+    <value>秘密鍵：</value>
+  </data>
+  <data name="agentless_publickey_label_text" xml:space="preserve">
+    <value>公開鍵：</value>
+  </data>
+  <data name="agentless_sessionid_label_text" xml:space="preserve">
+    <value>セッションID：</value>
+  </data>
+  <data name="agentless_session_label_text" xml:space="preserve">
+    <value>セッション</value>
+  </data>
+  <data name="agentless_ssh_label_text" xml:space="preserve">
+    <value>SSH</value>
+  </data>
+  <data name="agentless_comb_passwd_text" xml:space="preserve">
+    <value>パスワード</value>
+  </data>
+  <data name="agentless_comb_publickey_text" xml:space="preserve">
+    <value>公開鍵</value>
+  </data>
+  <data name="agentless_charcode_label_text" xml:space="preserve">
+    <value>文字コード：</value>
+  </data>
+  <data name="agentless_comb_CRLF_text" xml:space="preserve">
+    <value>CRLF</value>
+  </data>
+  <data name="agentless_comb_CR_text" xml:space="preserve">
+    <value>CR</value>
+  </data>
+  <data name="agentless_comb_EUC_JP_text" xml:space="preserve">
+    <value>EUC-JP</value>
+  </data>
+  <data name="agentless_comb_interactive_text" xml:space="preserve">
+    <value>対話モード</value>
+  </data>
+  <data name="agentless_comb_LF_text" xml:space="preserve">
+    <value>LF</value>
+  </data>
+  <data name="agentless_comb_noninteractive_text" xml:space="preserve">
+    <value>非対話モード</value>
+  </data>
+  <data name="agentless_comb_SHIFT_JIS_text" xml:space="preserve">
+    <value>SHIFT_JIS</value>
+  </data>
+  <data name="agentless_comb_unspecified_text" xml:space="preserve">
+    <value>指定なし</value>
+  </data>
+  <data name="agentless_comb_UTF8_text" xml:space="preserve">
+    <value>UTF-8</value>
+  </data>
+  <data name="agentless_linefeedcode_label_text" xml:space="preserve">
+    <value>改行コード：</value>
+  </data>
+  <data name="agentless_passwd_label_text" xml:space="preserve">
+    <value>パスワード：</value>
+  </data>
+  <data name="agentless_prompt_label_text" xml:space="preserve">
+    <value>プロンプト文字列</value>
+  </data>
+  <data name="agentless_timeout_label_text" xml:space="preserve">
+    <value>タイムアウト警告(分)：</value>
+  </data>
+  <data name="err_message_session_id" xml:space="preserve">
+    <value>セッションＩＤ</value>
+  </data>
+  <data name="err_message_passphrase" xml:space="preserve">
+    <value>パスフレーズ</value>
+  </data>
+  <data name="err_message_password" xml:space="preserve">
+    <value>パスワード</value>
+  </data>
+  <data name="err_message_privatekey" xml:space="preserve">
+    <value>秘密鍵</value>
+  </data>
+  <data name="err_message_prompt" xml:space="preserve">
+    <value>プロンプト文字列</value>
+  </data>
+  <data name="err_message_publickey" xml:space="preserve">
+    <value>公開鍵</value>
+  </data>
+  <data name="cooperation_all_label_text" xml:space="preserve">
+    <value>全て</value>
+  </data>
+  <data name="err_message_charcode" xml:space="preserve">
+    <value>文字コード</value>
+  </data>
+  <data name="ERROR_BOOT_TIME_006" xml:space="preserve">
+    <value>開始時刻と終了時刻の時間幅は23時間59分以内にして下さい。</value>
+  </data>
+  <data name="ERROR_JOBNET_LOAD_002" xml:space="preserve">
+    <value>起動中のジョブネットが存在するため、実行が保留されました。</value>
+  </data>
+  <data name="ERROR_JOBNET_LOAD_003" xml:space="preserve">
+    <value>ジョブネットの実行がキャンセル（スキップ）されました。</value>
+  </data>
+  <data name="ERROR_ZABBIX_LINK_004" xml:space="preserve">
+    <value>連携動作が選択されていません。</value>
+  </data>
+  <data name="continue_label_text" xml:space="preserve">
+    <value>処理継続</value>
+  </data>
+  <data name="ERROR_JOBEDIT_014" xml:space="preserve">
+    <value>ユーザー名が不正です。</value>
+  </data>
+  <data name="ERROR_JOBEDIT_015" xml:space="preserve">
+    <value>パスワードが不正です。</value>
+  </data>
+  <data name="err_message_run_user" xml:space="preserve">
+    <value>実行ユーザー</value>
+  </data>
+  <data name="err_message_run_user_pw" xml:space="preserve">
+    <value>パスワード</value>
+  </data>
+  <data name="run_user_label_text" xml:space="preserve">
+    <value>実行ユーザー：</value>
+  </data>
+  <data name="run_user_password_label_text" xml:space="preserve">
+    <value>パスワード：</value>
+  </data>
+  <data name="running_job_name_col_head_text" xml:space="preserve">
+    <value>ジョブ名</value>
+  </data>
+  <data name="running_job_name_id_col_head_text" xml:space="preserve">
+    <value>ジョブID</value>
+  </data>
+  <data name="ERROR_SETTING_001" xml:space="preserve">
+    <value>パラメータ設定テーブルは他のユーザーによって編集中です。
+しばらくしてから、再実行してください。</value>
+  </data>
+  <data name="err_message_settings_joblog_keep_span" xml:space="preserve">
+    <value>ジョブ実行結果ログ保持期間</value>
+  </data>
+  <data name="err_message_settings_jobnet_keep_span" xml:space="preserve">
+    <value>終了済みジョブネット情報保持期間</value>
+  </data>
+  <data name="err_message_settings_jobnet_load_span" xml:space="preserve">
+    <value>予定ジョブネット事前展開開始時間</value>
+  </data>
+  <data name="err_message_settings_jobnet_view_span" xml:space="preserve">
+    <value>ジョブネット運行情報表示期間</value>
+  </data>
+  <data name="err_message_settings_zbxsnd_retry_count" xml:space="preserve">
+    <value>再送回数</value>
+  </data>
+  <data name="err_message_settings_zbxsnd_retry_interval" xml:space="preserve">
+    <value>再送インターバル</value>
+  </data>
+  <data name="err_message_settings_zbxsnd_sender" xml:space="preserve">
+    <value>Zabbix Senderコマンド</value>
+  </data>
+  <data name="err_message_settings_zbxsnd_zabbix_host" xml:space="preserve">
+    <value>メッセージ通知先Zabbixホスト</value>
+  </data>
+  <data name="err_message_settings_zbxsnd_zabbix_ip" xml:space="preserve">
+    <value>ZabbixIPアドレス</value>
+  </data>
+  <data name="err_message_settings_zbxsnd_zabbix_item" xml:space="preserve">
+    <value>アイテムキー</value>
+  </data>
+  <data name="err_message_settings_zbxsnd_zabbix_port" xml:space="preserve">
+    <value>Zabbixポート番号</value>
+  </data>
+  <data name="general_settings_tab_text" xml:space="preserve">
+    <value>一般設定</value>
+  </data>
+  <data name="redisplay_button_text" xml:space="preserve">
+    <value>再表示</value>
+  </data>
+  <data name="settings_Annotation1" xml:space="preserve">
+    <value>※1 変更後の設定値はジョブサーバの再起動後に有効となります。</value>
+  </data>
+  <data name="settings_Annotation2" xml:space="preserve">
+    <value>※2 ジョブネット運行情報表示期間はジョブマネージャの再ログイン後に有効となります。</value>
+  </data>
+  <data name="settings_JobArranger_std_time_label_text" xml:space="preserve">
+    <value>ジョブマネージャ基準時刻：</value>
+  </data>
+  <data name="settings_joblog_keep_span_label_text" xml:space="preserve">
+    <value>ジョブ実行結果ログ保持期間（分）：</value>
+  </data>
+  <data name="settings_jobnet_keep_span_label_text" xml:space="preserve">
+    <value>終了済みジョブネット情報保持期間（分）：</value>
+  </data>
+  <data name="settings_jobnet_load_span_label_text" xml:space="preserve">
+    <value>予定ジョブネット事前展開開始時間（分）：</value>
+  </data>
+  <data name="settings_jobnet_view_span_label_text" xml:space="preserve">
+    <value>ジョブネット運行情報表示期間（分）：</value>
+  </data>
+  <data name="settings_Job_Arranger_std_time0" xml:space="preserve">
+    <value>ローカルタイムを使用</value>
+  </data>
+  <data name="settings_Job_Arranger_std_time1" xml:space="preserve">
+    <value>ジョブサーバ時刻を使用</value>
+  </data>
+  <data name="settings_system_setting_label_text" xml:space="preserve">
+    <value>システム設定</value>
+  </data>
+  <data name="settings_zbxsnd_notice0" xml:space="preserve">
+    <value>なし</value>
+  </data>
+  <data name="settings_zbxsnd_notice1" xml:space="preserve">
+    <value>あり</value>
+  </data>
+  <data name="settings_zbxsnd_retry0" xml:space="preserve">
+    <value>再送なし</value>
+  </data>
+  <data name="settings_zbxsnd_retry1" xml:space="preserve">
+    <value>再送あり</value>
+  </data>
+  <data name="settings_zbxsnd_retry_count_label_text" xml:space="preserve">
+    <value>再送回数（ 0 は無制限に再送）：</value>
+  </data>
+  <data name="settings_zbxsnd_retry_interval_label_text" xml:space="preserve">
+    <value>再送インターバル（秒）：</value>
+  </data>
+  <data name="settings_zbxsnd_retry_label_text" xml:space="preserve">
+    <value>Zabbix通知再送：</value>
+  </data>
+  <data name="settings_zbxsnd_sender_label_text" xml:space="preserve">
+    <value>Zabbix Sender コマンド（フルパスで指定）：</value>
+  </data>
+  <data name="settings_zbxsnd_zabbix_host_label_text" xml:space="preserve">
+    <value>メッセージ通知先Zabbixホスト：</value>
+  </data>
+  <data name="settings_zbxsnd_zabbix_ip_label_text" xml:space="preserve">
+    <value>Zabbix IPアドレス：</value>
+  </data>
+  <data name="settings_zbxsnd_zabbix_item_label_text" xml:space="preserve">
+    <value>アイテムキー：</value>
+  </data>
+  <data name="settings_zbxsnd_zabbix_notice_label_text" xml:space="preserve">
+    <value>Zabbix 通知：</value>
+  </data>
+  <data name="settings_zbxsnd_zabbix_notice_setting_label_text" xml:space="preserve">
+    <value>Zabbix通知設定</value>
+  </data>
+  <data name="settings_zbxsnd_zabbix_port_label_text" xml:space="preserve">
+    <value>Zabbix ポート番号：</value>
+  </data>
+  <data name="update_button_text" xml:space="preserve">
+    <value>変更</value>
+  </data>
+  <data name="WINDOW_NAME_600" xml:space="preserve">
+    <value>一般設定画面</value>
+  </data>
+  <data name="ERROR_COMMON_028" xml:space="preserve">
+    <value>{0}は半角英数字と半角空白、アンダーバー（_）、ピリオド（.）、ハイフン（-）で入力してください。</value>
+  </data>
+  <data name="ERROR_COMMON_029" xml:space="preserve">
+    <value>権限ないです。 {0}</value>
+  </data>
+  <data name="ERROR_COMMON_030" xml:space="preserve">
+    <value>ジョブネット実行５分以内か、
+実行済みかをご確認ください。</value>
+  </data>
+  <data name="ERROR_END_SETTING_001" xml:space="preserve">
+    <value>終了コードが不正です。半角英数字、アンダーバー（_）、ドル記号（$）で入力してください。
+数値は0～255の間で設定してください。
+ジョブコントローラ変数は$文字からはじめて下さい。</value>
+  </data>
+  <data name="filter_id_label_text" xml:space="preserve">
+    <value>フィルターID：</value>
+  </data>
+  <data name="filter_name_label_text" xml:space="preserve">
+    <value>フィルター名：</value>
+  </data>
+  <data name="first_day_button_text" xml:space="preserve">
+    <value>月初</value>
+  </data>
+  <data name="last_day_button_text" xml:space="preserve">
+    <value>月末</value>
+  </data>
+  <data name="shift_day_node_text" xml:space="preserve">
+    <value>移動日数：</value>
+  </data>
+  <data name="base_date_node_text" xml:space="preserve">
+    <value>基準日：</value>
+  </data>
+  <data name="calendar_label_text" xml:space="preserve">
+    <value>カレンダー：</value>
+  </data>
+  <data name="designated_day_button_text" xml:space="preserve">
+    <value>指定日</value>
+  </data>
+  <data name="err_message_calendar" xml:space="preserve">
+    <value>カレンダー</value>
+  </data>
+  <data name="err_message_designated_day" xml:space="preserve">
+    <value>指定日</value>
+  </data>
+  <data name="err_message_filter_id" xml:space="preserve">
+    <value>フィルターID</value>
+  </data>
+  <data name="err_message_filter_name" xml:space="preserve">
+    <value>フィルター名</value>
+  </data>
+  <data name="err_message_shift_day" xml:space="preserve">
+    <value>移動日数</value>
+  </data>
+  <data name="private_filter_node_text" xml:space="preserve">
+    <value>プライベートフィルター</value>
+  </data>
+  <data name="public_filter_node_text" xml:space="preserve">
+    <value>公開フィルター</value>
+  </data>
+  <data name="filter_annotation" xml:space="preserve">
+    <value>※移動日数は、基準日が非稼働日の場合に移動する稼働日の日数を指定します。</value>
+  </data>
+  <data name="ERROR_SCHEDULE_005" xml:space="preserve">
+    <value>ステータスが「未実行」以外に更新されたため開始予定時刻を変更できません。</value>
+  </data>
+  <data name="ERROR_SCHEDULE_006" xml:space="preserve">
+    <value>日付が不正です。YYYY/MM/DD HH:MM で入力してください。</value>
+  </data>
+  <data name="ERROR_SCHEDULE_007" xml:space="preserve">
+    <value>過去の日時は入力できません。</value>
+  </data>
+  <data name="job_run_status_reserve" xml:space="preserve">
+    <value>起動保留</value>
+  </data>
+  <data name="PROCESS_026" xml:space="preserve">
+    <value>開始予定時刻変更処理</value>
+  </data>
+  <data name="release_context_menu_text" xml:space="preserve">
+    <value>起動保留解除（_C）</value>
+  </data>
+  <data name="reserve_context_menu_text" xml:space="preserve">
+    <value>起動保留（_S）</value>
+  </data>
+  <data name="schedule_label_text" xml:space="preserve">
+    <value>現在の開始予定時刻：</value>
+  </data>
+  <data name="time_of_day_label_text" xml:space="preserve">
+    <value>開始時刻：</value>
+  </data>
+  <data name="updt_context_menu_text" xml:space="preserve">
+    <value>開始予定時刻変更（_M）</value>
+  </data>
+  <data name="upd_schedule_screen_name" xml:space="preserve">
+    <value>開始予定時刻変更画面</value>
+  </data>
+  <data name="err_message_exit_code" xml:space="preserve">
+    <value>終了コード</value>
+  </data>
+  <data name="relatedobject_calendar" xml:space="preserve">
+    <value>[カレンダー]------------------------------------------------------------------</value>
+  </data>
+  <data name="relatedObject_del_message" xml:space="preserve">
+    <value>他のオブジェクトで使用されているため削除に失敗しました。
+以下に示す関連オブジェクトからの呼び出し、または登録を解除し、再度操作を
+お願いします。</value>
+  </data>
+  <data name="relatedobject_filter" xml:space="preserve">
+    <value>[フィルター]------------------------------------------------------------------</value>
+  </data>
+  <data name="relatedObject_invalid_message" xml:space="preserve">
+    <value>関連する他のオブジェクトが有効化されているため無効にできません。
+以下に示す関連オブジェクトの無効化を行い、再度操作をお願いします。</value>
+  </data>
+  <data name="relatedobject_jobnet" xml:space="preserve">
+    <value>[ジョブネット]----------------------------------------------------------------</value>
+  </data>
+  <data name="relatedobject_schedule" xml:space="preserve">
+    <value>[スケジュール]----------------------------------------------------------------</value>
+  </data>
+  <data name="relatedObject_Title" xml:space="preserve">
+    <value>関連オブジェクト：</value>
+  </data>
+  <data name="relatedObject_valid_message" xml:space="preserve">
+    <value>関連する他のオブジェクトが無効化されているため有効にできません。
+以下に示す関連オブジェクトの有効化を行い、再度操作をお願いします。</value>
+  </data>
+  <data name="ERROR_SETTING_002" xml:space="preserve">
+    <value>Zabbix IPアドレスが不正です。半角英数字とアンダーバー（_）、ピリオド（.）、ハイフン（-）で入力してください。
+ハイフンおよびピリオドは、先頭、最後の文字としては使用できません。
+数字のみの入力はできません。
+数字は0～255の間で設定してください。</value>
+  </data>
+  <data name="relatedObject_screen_name" xml:space="preserve">
+    <value>関連データエラー画面</value>
+  </data>
+  <data name="WINDOW_NAME_260" xml:space="preserve">
+    <value>関連データエラー画面</value>
+  </data>
+  <data name="tooltip_continue_label_text" xml:space="preserve">
+    <value>処理継続：</value>
+  </data>
+  <data name="tooltip_force_label_text" xml:space="preserve">
+    <value>強制実行：</value>
+  </data>
+  <data name="tooltip_flag_off" xml:space="preserve">
+    <value>OFF</value>
+  </data>
+  <data name="tooltip_flag_on" xml:space="preserve">
+    <value>ON</value>
+  </data>
+  <data name="tooltip_err_jobarg_message" xml:space="preserve">
+    <value>JOBARG_MESSAGE：</value>
+  </data>
+  <data name="tooltip_err_job_exit_cd" xml:space="preserve">
+    <value>JOB_EXIT_CD：</value>
+  </data>
+  <data name="tooltip_err_stderr" xml:space="preserve">
+    <value>STD_ERR：</value>
+  </data>
+  <data name="tooltip_err_stdout" xml:space="preserve">
+    <value>STD_OUT：</value>
+  </data>
+  <data name="export_menu_list_text" xml:space="preserve">
+    <value>エクスポート 個別バージョン（_E）</value>
+  </data>
+  <data name="export_menu_tree_text" xml:space="preserve">
+    <value>エクスポート オブジェクト（_E）</value>
+  </data>
+  <data name="save_button_text" xml:space="preserve">
+    <value>登録</value>
+  </data>
+  <data name="ForceRun_dialog_text" xml:space="preserve">
+    <value>処理を強制実行します。よろしいですか？</value>
+  </data>
+  <data name="force_button_text" xml:space="preserve">
+    <value>強制実行</value>
+  </data>
+  <data name="Title_Msgbox_ForceRun" xml:space="preserve">
+    <value>強制実行</value>
+  </data>
+  <data name="WINDOW_NAME_213" xml:space="preserve">
+    <value>稼働日フィルター画面</value>
+  </data>
+  <data name="variable_name_label_text" xml:space="preserve">
+    <value>変数名：</value>
+  </data>
+  <data name="calc_method_label_textToolTip" xml:space="preserve">
+    <value>計算方法：</value>
+  </data>
+  <data name="cooperation_mode_label_textToolTip" xml:space="preserve">
+    <value>連携動作：</value>
+  </data>
+  <data name="cooperation_Object_label_textToolTip" xml:space="preserve">
+    <value>連携対象：</value>
+  </data>
+  <data name="exec_label_textToolTip" xml:space="preserve">
+    <value>実行：</value>
+  </data>
+  <data name="memo_col_head_textToolTip" xml:space="preserve">
+    <value>説明：</value>
+  </data>
+  <data name="process_mode_label_textToolTip" xml:space="preserve">
+    <value>処理モード：</value>
+  </data>
+  <data name="ERROR_JOBEDIT_016" xml:space="preserve">
+    <value>並列終了アイコンを確認ください。</value>
+  </data>
+  <data name="ERROR_JOBEDIT_017" xml:space="preserve">
+    <value>並列開始アイコンを確認ください。</value>
+  </data>
+</root>

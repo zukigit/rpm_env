@@ -1,0 +1,112 @@
+﻿<!--
+/*
+** Job Arranger Manager
+** Copyright (C) 2012 FitechForce, Inc. All Rights Reserved.
+** Copyright (C) 2013 Daiwa Institute of Research Business Innovation Ltd. All Rights Reserved.
+** Copyright (C) 2021 Daiwa Institute of Research Ltd. All Rights Reserved.
+**
+** Licensed to the Apache Software Foundation (ASF) under one or more
+** contributor license agreements. See the NOTICE file distributed with
+** this work for additional information regarding copyright ownership.
+** The ASF licenses this file to you under the Apache License, Version 2.0
+** (the "License"); you may not use this file except in compliance with
+** the License. You may obtain a copy of the License at
+**
+** http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+**
+**/
+-->
+<Window x:Class="jp.co.ftf.jobcontroller.JobController.Form.JobEdit.CooperationSetting"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:src="clr-namespace:jp.co.ftf.jobcontroller.JobController"
+        Title="{x:Static src:Properties.Resources.cooperation_icon_screen_name}" Height="401" Width="425" FontSize="11" FontFamily="Meiryo"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize"  Closing="Window_Closed" xmlns:my="clr-namespace:jp.co.ftf.jobcontroller.JobController.Properties">
+    <!--  added by YAMA 2014/09/22 設定ダイアログ背景色不備対応 -->
+    <!--  Grid Background="#FFEEECE1" Width="422" Height="363" Name="GridSetting" -->
+    <Grid Background="#FFEEECE1" Name="GridSetting" Width="425">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="187" />
+            <RowDefinition Height="0" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="135*" />
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Content="{x:Static src:Properties.Resources.job_id_label_text}" Height="28" HorizontalAlignment="Left" Margin="12,3,0,0"
+               VerticalAlignment="Top" VerticalContentAlignment="Center" />
+        <TextBox Name="txtJobId" Height="23" Width="305" Margin="93,6,0,0" HorizontalAlignment="Left"
+                 VerticalAlignment="Top" VerticalContentAlignment="Center" MaxLength="32" />
+        <Label Grid.Row="1" Content="{x:Static src:Properties.Resources.job_name_label_text}" Height="28" HorizontalAlignment="Left" Margin="12,3,0,0"
+               VerticalAlignment="Top" VerticalContentAlignment="Center" />
+        <TextBox Grid.Row="1" Name="txtJobName" Height="23" Width="305" Margin="93,6,0,0" HorizontalAlignment="Left"
+                 VerticalAlignment="Top" VerticalContentAlignment="Center" MaxLength="64" />
+        <GroupBox Grid.Row="2" Header="{x:Static src:Properties.Resources.cooperation_Object_label_text}" Height="180" Width="402" Margin="7,2,0,0" Name="gbObject"
+                  VerticalAlignment="Top" HorizontalAlignment="Left">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="148*" />
+                    <ColumnDefinition Width="242*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="127" />
+                    <RowDefinition Height="6*" />
+                </Grid.RowDefinitions>
+                <RadioButton GroupName="hostGroup" Content="{x:Static src:Properties.Resources.cooperation_hostgroup_label_text}" Name="rbHostGroup" Height="16"
+                    HorizontalAlignment="Left" Margin="6,8,0,0" VerticalAlignment="Top"
+                    Checked="rbHostGroup_Checked"/>
+                <RadioButton GroupName="hostGroup" Content="{x:Static src:Properties.Resources.cooperation_hostname_label_text}" Name="rbHostName" Height="16"
+                    HorizontalAlignment="Left" Margin="118,8,0,0" VerticalAlignment="Top"
+                    Checked="rbHostName_Checked" Grid.ColumnSpan="2" />
+                <RadioButton GroupName="hostGroup" Content="{x:Static src:Properties.Resources.cooperation_itemname_label_text}" Name="rbItemName" Height="16"
+                    HorizontalAlignment="Left" Margin="49,8,0,0" VerticalAlignment="Top"
+                    Checked="rbItemName_Checked" Grid.Column="1" />
+                <RadioButton GroupName="hostGroup" Content="{x:Static src:Properties.Resources.cooperation_triggername_label_text}" Name="rbTriggerName" Height="16"
+                    HorizontalAlignment="Right" Margin="0,8,23,0" VerticalAlignment="Top"
+                    Checked="rbTriggerName_Checked" Grid.Column="1" />
+                <Label Content="{x:Static my:Resources.cooperation_hostgroup_pdl_label_text}" Height="28" HorizontalAlignment="Left" Margin="4,5,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Grid.Row="1" Width="111" />
+                <ComboBox Name="combHostGroup" Height="23" Width="270" HorizontalAlignment="Left"
+                    Margin="113,7,0,0" VerticalAlignment="Top" Grid.Row="1" Grid.ColumnSpan="2" SelectionChanged="combHostGroup_SelectionChanged">
+                </ComboBox>
+                <ComboBox Name="combHostName" Height="23" Width="270" HorizontalAlignment="Left"
+                    Margin="113,36,0,0" VerticalAlignment="Top" Grid.Row="1" Grid.ColumnSpan="2" SelectionChanged="combHostName_SelectionChanged">
+                </ComboBox>
+                <ComboBox Name="combItemName" Height="23" Width="270" HorizontalAlignment="Left"
+                    Margin="113,65,0,0" VerticalAlignment="Top" Grid.Row="1" Grid.ColumnSpan="2">
+                </ComboBox>
+                <ComboBox Name="combTriggerName" Height="23" Width="270" HorizontalAlignment="Left"
+                    Margin="113,94,0,0" VerticalAlignment="Top" Grid.Row="1" Grid.ColumnSpan="2">
+                </ComboBox>
+                <Label Content="{x:Static my:Resources.cooperation_hostname_pdl_label_text}" Height="28" HorizontalAlignment="Left" Margin="5,34,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Grid.Row="1" />
+                <Label Content="{x:Static my:Resources.cooperation_itemname_pdl_label_text}" Height="28" HorizontalAlignment="Left" Margin="5,63,0,36" VerticalContentAlignment="Center" Grid.Row="1" />
+                <Label Content="{x:Static my:Resources.cooperation_triggername_pdl_label_text}" Height="28" HorizontalAlignment="Left" Margin="4,90,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Grid.Row="1" />
+            </Grid>
+        </GroupBox>
+        <GroupBox Grid.Row="5" Name="gbCoopMode" Header="{x:Static src:Properties.Resources.cooperation_mode_label_text}" Height="50" Width="404" Margin="6,0,0,0"
+                  VerticalAlignment="Top" HorizontalAlignment="Left">
+            <Grid Width="390">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="88"/>
+                    <ColumnDefinition Width="58" />
+                    <ColumnDefinition Width="92" />
+                    <ColumnDefinition Width="18*" />
+                </Grid.ColumnDefinitions>
+                <RadioButton GroupName="modeGroup" Content="{x:Static src:Properties.Resources.cooperation_mode_enabled}" Name="rbEnabled" Height="16" HorizontalAlignment="Left" Margin="4,6,0,0" VerticalAlignment="Top" Width="86" Grid.ColumnSpan="2" />
+                <RadioButton Content="{x:Static my:Resources.cooperation_mode_disabled}" GroupName="modeGroup" Height="16" HorizontalAlignment="Left" Margin="4,6,0,0" Name="rbDisabled" VerticalAlignment="Top" Width="86" Grid.Column="1" Grid.ColumnSpan="2" />
+                <RadioButton Content="{x:Static my:Resources.cooperation_get_stat}" GroupName="modeGroup" Height="16" HorizontalAlignment="Left" Margin="38,6,0,0" Name="rbGetStat" VerticalAlignment="Top" Width="86" Grid.Column="2" Grid.ColumnSpan="2" />
+                <RadioButton Content="{x:Static my:Resources.cooperation_get_data}" GroupName="modeGroup" Height="16" HorizontalAlignment="Left" Margin="38,6,0,0" Name="rbGetData" VerticalAlignment="Top" Width="107" Grid.Column="3" />
+            </Grid>
+        </GroupBox>
+        <Button Grid.Row="5" Content="{x:Static src:Properties.Resources.regist_button_text}" Height="28" HorizontalAlignment="Left" Margin="240,76,0,0"
+                Name="btnToroku" VerticalAlignment="Top" Width="75" Click="btnToroku_Click" IsDefault="True"/>
+        <Button Grid.Row="5" Content="{x:Static src:Properties.Resources.cancel_button_text}" Height="28" HorizontalAlignment="Right" Margin="0,76,30,0"
+                Name="btnCancel" VerticalAlignment="Top" Width="75" Click="btnCancel_Click" IsCancel="True"/>
+    </Grid>
+</Window>

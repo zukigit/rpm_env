@@ -1,0 +1,79 @@
+﻿<!--
+/*
+** Job Arranger Manager
+** Copyright (C) 2012 FitechForce, Inc. All Rights Reserved.
+** Copyright (C) 2013 Daiwa Institute of Research Business Innovation Ltd. All Rights Reserved.
+** Copyright (C) 2021 Daiwa Institute of Research Ltd. All Rights Reserved.
+**
+** Licensed to the Apache Software Foundation (ASF) under one or more
+** contributor license agreements. See the NOTICE file distributed with
+** this work for additional information regarding copyright ownership.
+** The ASF licenses this file to you under the Apache License, Version 2.0
+** (the "License"); you may not use this file except in compliance with
+** the License. You may obtain a copy of the License at
+**
+** http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+**
+**/
+-->
+    <UserControl x:Class="jp.co.ftf.jobcontroller.JobController.Form.ScheduleEdit.CalendarContainer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:src="clr-namespace:jp.co.ftf.jobcontroller.JobController"
+             xmlns:design="clr-namespace:jp.co.ftf.jobcontroller.JobController.Form.CalendarEdit"
+             FontFamily="Meiryo" FontSize="11">
+    <Grid  x:Name="LayoutRoot"  Background="WhiteSmoke" ShowGridLines="False" Margin="0,0,5,0" >
+        <Grid.RowDefinitions >
+            <RowDefinition Height="30"   />
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions >
+
+        <TextBlock HorizontalAlignment="Left" Margin="5,10,0,0" Text="{x:Static src:Properties.Resources.operation_day_label_text}" Width="Auto" Grid.Row="0"/>
+        <Button Name="btnLeft" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="55,8,0,0" Width="20" Height="20" Click="left_arrow_click" BorderBrush="Transparent" BorderThickness="0" Background="Transparent"
+ Foreground="White">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <ContentPresenter Content="{TemplateBinding Content}"/>
+                </ControlTemplate>
+            </Button.Template>
+            <Image Source="../../../Resources/arrow_left.gif" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </Button>
+        <TextBox HorizontalAlignment="Left" Margin="86,7,0,0" Name="textBox_year" VerticalAlignment="Top" Text="" Width="Auto" IsReadOnly="True" />
+        <Button Name="btnRight" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="130,8,0,0" Width="20" Height="20" Click="right_arrow_click" Grid.Row="0" BorderBrush="Transparent" BorderThickness="0" Background="Transparent"
+ Foreground="White">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <ContentPresenter Content="{TemplateBinding Content}"/>
+                </ControlTemplate>
+            </Button.Template>
+            <Image Source="../../../Resources/arrow_right.gif" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </Button>
+        <TextBlock HorizontalAlignment="Left" Margin="591,11,0,3" Text="{x:Static src:Properties.Resources.last_operation_day_label_text}" VerticalAlignment="Center" Width="Auto" />
+        <TextBlock HorizontalAlignment="Left" Margin="670,10,0,0" Name="last_operation_day_value" Text="" Width="Auto" Grid.Row="0"/>
+        <Border Margin="2" Grid.Row="1" Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" BorderThickness="1" BorderBrush="Black">
+        <ScrollViewer HorizontalAlignment="Stretch"  Name="svContainer" VerticalAlignment="Stretch" HorizontalScrollBarVisibility="Visible">
+            <ScrollViewer.Content>
+                <design:ScrollViewerWindowsFormsHost x:Name="winForm" HorizontalAlignment="Left" VerticalAlignment="Stretch"/>
+            </ScrollViewer.Content>
+        </ScrollViewer>
+        </Border>
+        <Grid Height="28" HorizontalAlignment="Left" Margin="152,2,0,0" Name="grid1" VerticalAlignment="Top" Width="439">
+            <RadioButton Content="{x:Static src:Properties.Resources.rbStartTime_label_text}" Height="17" HorizontalAlignment="Left" Margin="4,7,0,0" Name="rbStartTime" VerticalAlignment="Center" Width="70" Checked="rbStartTime_Checked" />
+            <TextBox HorizontalAlignment="Left" Margin="75,5,0,0" Name="textBox_StartTime" VerticalAlignment="Top" Text="" Width="45" MaxLength="5" />
+            <RadioButton Content="{x:Static src:Properties.Resources.rbCycleStart_label_text}" Height="16" HorizontalAlignment="Right" Margin="0,7,218,0" Name="rbCycleStart" VerticalAlignment="Center" Checked="rbCycleStart_Checked" />
+            <TextBox HorizontalAlignment="Left" Margin="221,5,0,0" Name="textBox_CyclePeriodFrom" VerticalAlignment="Top" Text="" Width="45" MaxLength="5" />
+            <TextBox HorizontalAlignment="Left" Margin="284,5,0,0" Name="textBox_CyclePeriodTo" VerticalAlignment="Top" Text="" Width="45" MaxLength="5" />
+            <Label Content="～" Height="23" HorizontalAlignment="Left" Margin="263,0,0,0" Name="label1" VerticalAlignment="Center" Width="21" />
+            <TextBox HorizontalAlignment="Right" Margin="0,5,76,0" Name="textBox_CycleInterval" VerticalAlignment="Top" Text="" Width="30" MaxLength="3" />
+            <Label Content="{x:Static src:Properties.Resources.textBox_CycleInterval_label_text}" Height="23" HorizontalAlignment="Left" Margin="359,2,0,2" Name="label2" VerticalAlignment="Center" Width="59" />
+        </Grid>
+    </Grid>
+</UserControl>

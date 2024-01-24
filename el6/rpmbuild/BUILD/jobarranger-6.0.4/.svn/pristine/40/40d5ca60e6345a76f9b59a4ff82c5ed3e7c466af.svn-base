@@ -1,0 +1,98 @@
+﻿<!--
+/*
+** Job Arranger Manager
+** Copyright (C) 2012 FitechForce, Inc. All Rights Reserved.
+** Copyright (C) 2013 Daiwa Institute of Research Business Innovation Ltd. All Rights Reserved.
+** Copyright (C) 2021 Daiwa Institute of Research Ltd. All Rights Reserved.
+**
+** Licensed to the Apache Software Foundation (ASF) under one or more
+** contributor license agreements. See the NOTICE file distributed with
+** this work for additional information regarding copyright ownership.
+** The ASF licenses this file to you under the Apache License, Version 2.0
+** (the "License"); you may not use this file except in compliance with
+** the License. You may obtain a copy of the License at
+**
+** http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+**
+**/
+-->
+    <Window x:Class="jp.co.ftf.jobcontroller.JobController.Form.JobEdit.InfSetting"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:src="clr-namespace:jp.co.ftf.jobcontroller.JobController"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
+        Title="{x:Static src:Properties.Resources.info_icon_screen_name}" Height="383" Width="414" FontSize="11" FontFamily="Meiryo"
+        Closing="Window_Closed">
+    <!--  added by YAMA 2014/09/22 設定ダイアログ背景色不備対応 -->
+    <!--  Grid Background="#FFEEECE1" Name="GridSetting" Width="397" -->
+    <Grid Background="#FFEEECE1" Name="GridSetting">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="38" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="121" />
+            <RowDefinition Height="75*" />
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Content="{x:Static src:Properties.Resources.job_id_label_text}" Height="28" HorizontalAlignment="Left" Margin="12,3,0,0"
+               VerticalAlignment="Top" VerticalContentAlignment="Center" />
+        <TextBox Name="txtJobId" Height="23" Width="308" Margin="77,6,0,0" HorizontalAlignment="Left"
+                 VerticalAlignment="Top" VerticalContentAlignment="Center" MaxLength="32" />
+        <Label Grid.Row="1" Content="{x:Static src:Properties.Resources.job_name_label_text}" Height="28" HorizontalAlignment="Left" Margin="12,3,0,0"
+               VerticalAlignment="Top" VerticalContentAlignment="Center" />
+        <TextBox Grid.Row="1" Name="txtJobName" Height="23" Width="308" Margin="77,6,0,0" HorizontalAlignment="Left"
+                 VerticalAlignment="Top" VerticalContentAlignment="Center" MaxLength="64" />
+        <Label Grid.Row="2" Content="{x:Static src:Properties.Resources.information_classification_label_text}" Height="28" HorizontalAlignment="Left" Margin="12,5,0,0"
+               VerticalAlignment="Top" VerticalContentAlignment="Center" Width="170" />
+        <ComboBox Grid.Row="2" Name="combInfo" Height="23" Width="100" HorizontalAlignment="Right"
+                  Margin="0,8,134,0" VerticalAlignment="Top" SelectionChanged="combMethod_SelectionChanged">
+        </ComboBox>
+        <GroupBox Grid.Row="3" Header="{x:Static src:Properties.Resources.job_info_text}" Height="58" Margin="10,2,12,0" Name="gbJobInfo"
+                  VerticalAlignment="Top">
+            <Grid Width="360">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="55"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Content="{x:Static src:Properties.Resources.job_id_label_text}" Height="28" Margin="0,1,0,0" HorizontalAlignment="Left"
+                       VerticalAlignment="Top" VerticalContentAlignment="Center" Grid.ColumnSpan="2" Width="66" />
+                <TextBox Grid.Column="1" Name="txtJobIdInfo" Height="23" Width="282" Margin="12,4,0,0"
+                         HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center" MaxLength="1024" />
+            </Grid>
+        </GroupBox>
+        <GroupBox Grid.Row="4" Header="{x:Static src:Properties.Resources.calendar_info_text}" Height="119" Width="375" Margin="10,2,0,0" Name="gbCalendarInfo"
+                  VerticalAlignment="Top" HorizontalAlignment="Left">
+            <Grid Width="362" Height="86">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="93"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label Content="{x:Static src:Properties.Resources.calendar_id_label_text}" Height="28" HorizontalAlignment="Left" Margin="0,3,0,0"
+            VerticalAlignment="Top" VerticalContentAlignment="Center" Width="98" Grid.ColumnSpan="3" />
+                <ComboBox Grid.Column="2" Name="combCalendarId" Height="23" Width="259" HorizontalAlignment="Left"
+                    Margin="4,6,0,0" VerticalAlignment="Top" SelectionChanged="combCalendarId_SelectionChanged">
+                </ComboBox>
+                <Label Grid.Row="1" Content="{x:Static src:Properties.Resources.calendar_name_label_text}" Height="28" HorizontalAlignment="Left" Margin="0,5,0,0"
+            VerticalAlignment="Top" VerticalContentAlignment="Center" Width="98" Grid.ColumnSpan="3" />
+                <Border Grid.Column="2" BorderBrush="{x:Null}" Height="40" Margin="4,34,6,13" Grid.RowSpan="2">
+                    <TextBlock Name="tbCalendarName" Text="" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                </Border>
+            </Grid>
+        </GroupBox>
+        <Button Grid.Row="5" Content="{x:Static src:Properties.Resources.regist_button_text}" Height="28" HorizontalAlignment="Left" Margin="201,23,0,0"
+                Name="btnToroku" VerticalAlignment="Top" Width="75" Click="btnToroku_Click" IsDefault="True" />
+        <Button Grid.Row="5" Content="{x:Static src:Properties.Resources.cancel_button_text}" Height="28" HorizontalAlignment="Left" Margin="281,23,0,0"
+                Name="btnCancel" VerticalAlignment="Top" Width="75" Click="btnCancel_Click" IsCancel="True"/>
+    </Grid>
+</Window>

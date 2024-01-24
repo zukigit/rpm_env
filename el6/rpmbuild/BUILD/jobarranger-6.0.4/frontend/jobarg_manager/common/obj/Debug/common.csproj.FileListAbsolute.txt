@@ -1,0 +1,6 @@
+C:\source\jobarranger\frontend\jobarg_manager\Debug\common.dll.config
+C:\source\jobarranger\frontend\jobarg_manager\Debug\common.dll
+C:\source\jobarranger\frontend\jobarg_manager\Debug\common.pdb
+C:\source\jobarranger\frontend\jobarg_manager\common\obj\Debug\common.dll
+C:\source\jobarranger\frontend\jobarg_manager\common\obj\Debug\common.pdb
+C:\source\jobarranger\frontend\jobarg_manager\common\obj\Debug\common.csproj.CoreCompileInputs.cache

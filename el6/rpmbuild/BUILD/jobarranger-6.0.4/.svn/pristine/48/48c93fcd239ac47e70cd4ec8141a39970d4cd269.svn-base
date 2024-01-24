@@ -1,0 +1,419 @@
+# Job Arranger for ZABBIX
+# This is a configuration file for Job Arranger Server process
+
+############ ZABBIX PARAMETERS INCLUDE #################
+
+### Option: Include
+#        You may include ONLY individual file in the configuration file.
+#        Do NOT include 'all files in a directory' nor wildcard like /*.conf even in included files.
+#   
+# Mandatory: no
+# Default:
+# Include=
+
+############ GENERAL PARAMETERS #################
+
+### Option: DBHost
+#        Database host name.
+#        If set to localhost, socket is used for MySQL.
+#        If set to empty string, socket is used for PostgreSQL.
+#
+# Mandatory: no
+# Default:
+# DBHost=localhost
+
+### Option: DBName
+#        Database name.
+#
+# Mandatory: yes
+# Default:
+# DBName=
+DBName=
+
+### Option: DBUser
+#        Database user.
+#
+# Mandatory: yes
+# Default:
+# DBUser=
+DBUser=
+
+### Option: DBPassword
+#        Database password.
+#        Comment this line if no password is used.
+#
+# Mandatory: no
+# Default:
+# DBPassword=
+DBPassword=
+
+### Option: DBSocket
+#        Path to MySQL socket.
+#
+# Mandatory: no
+# Default:
+# DBSocket=/tmp/mysql.sock
+
+### Option: DBPort
+#        Database port when not using local socket.
+#
+# Mandatory: no
+# Range: 1024-65535
+# Default: 3306 (for MySQL)
+# DBPort=3306
+
+############ ADVANCED PARAMETERS ################
+
+### Option: ServerID
+#        Jobarranger Server ID.
+#
+# Mandatory: no
+# Default:
+#ServerID=1
+
+### Option: ServerIDTimeout
+#        Jobarranger Server ID request timeout between each request.
+#
+# Mandatory: no
+# Default:10
+#ServerIDTimeout=100
+
+### Option: LogSlowQueries
+#        How long a database query may take before being logged (in milli seconds)
+#        0 - don't log slow queries.
+#
+# Mandatory: no
+# Range: 0-3600000
+# Default: 0
+# LogSlowQueries=0
+
+### Option: ListenIP
+#        IP address that Trapper should listen on.
+#
+# Mandatory: no
+# Default:
+# ListenIP=0.0.0.0
+
+### Option: SourceIP
+#        Source IP address for outgoing connections.
+#
+# Mandatory: no
+# Default:
+# SourceIP=
+
+### Option: Timeout
+#        Specifies how long we wait for job agent check.
+#
+# Mandatory: no
+# Range: 1-300
+# Default: 5 (second)
+# Timeout=5
+
+### Option: DebugLevel
+#        Specifies debug level
+#        0 - no debug
+#        1 - critical information
+#        2 - error information
+#        3 - warnings
+#        4 - for debugging (produces lots of information)
+#
+# Mandatory: no
+# Range: 0-4
+# Default: 3
+# DebugLevel=3
+DebugLevel=3
+
+### Option: LogFileSize
+#        Maximum size of log file in MB.
+#        0 - disable automatic log rotation.
+#
+# Mandatory: no
+# Range: 0-1024
+# Default: 1 (MB)
+# LogFileSize=1
+LogFileSize=10
+
+### Option: LogType
+#	Specifies where log messages are written to:
+#		file    - file specified with LogFile parameter
+#		console - standard output
+#		system  - syslog file.
+#
+# Mandatory: no
+# Default:file
+LogType=file
+
+############ JOB ARRANGER SPECIFIC PARAMETERS ################
+
+
+### Option: JaLogFile
+#        Name of Job Arranger log file.
+#        If not set, syslog is used.
+#
+# Mandatory: no
+# Default:
+# JaLogFile=
+JaLogFile=/var/log/jobarranger/jobarg_server.log
+
+### Option: JaPidFile
+#        Name of PID file.
+#
+# Mandatory: no
+# Default:
+# JaPidFile=/var/run/jobarranger/jobarg_server.pid
+
+### Option: JaSelfmonInterval
+#        Jaselfmon Execution interval.
+#
+# Mandatory: no
+# Default: 1 (second)
+# JaSelfmonInterval=1
+
+### Option: JaLoaderInterval
+#        Jaloaer Execution interval.
+#
+# Mandatory: no
+# Default: 30 (second)
+# JaLoaderInterval=30
+
+### Option: JaBootInterval
+#        Jaboot Execution interval.
+#
+# Mandatory: no
+# Default: 1 (second)
+# JaBootInterval=1
+
+### Option: JaAbortInterval
+#        JaAbort process interval.
+#
+# Mandatory: no
+# Range: 1-3600
+# Default: 1 (second)
+# JaAbortInterval=1
+
+### Option: JaOldJobAbortInterval
+#        JaAbort process interval for old job kill.
+#
+# Mandatory: no
+# Range: 1-3600
+# Default: 60 (second)
+# JaOldJobAbortInterval=60
+
+### Option: JaJobKillInterval
+#        JA Job Kill request interval.
+#
+# Mandatory: no
+# Range: 1-3600000
+# Default: 250 (millisecond)
+# JaJobKillInterval=250
+
+### Option: JaJobnetInterval
+#        Jajobnet Execution interval.
+#
+# Mandatory: no
+# Default: 1 (second)
+# JaJobnetInterval=1
+
+### Option: JaJobInterval
+#        Jajob Execution interval.
+#
+# Mandatory: no
+# Default: 1 (second)
+# JaJobInterval=1
+
+### Option: JaJobTimeout
+#        Check the job icon timeout interval.
+#
+# Mandatory: no
+# Range: 0-600
+# Default: 30 (second)
+# JaJobTimeout=30
+
+### Option: JaSendRetry
+#        The number of times of a retry when a data transmitting error occurs.
+#
+# Mandatory: no
+# Range: 0-3600
+# Default: 3 (Number of times)
+# JaSendRetry=3
+JaSendRetry=3
+
+### Option: JaRunInterval
+#        Jarun Execution interval.
+#
+# Mandatory: no
+# Default: 1 (second)
+# JaRunInterval=1
+
+### Option: JaMsgsndInterval
+#        Jamsgsnd Execution interval.
+#
+# Mandatory: no
+# Default: 1 (second)
+# JaMsgsndInterval=1
+
+### Option: JaStartTrappers
+#        Number of pre-forked instances of jatrappers.
+#
+# Mandatory: no
+# Range: 0-1000
+# Default: 5
+# JaStartTrappers=5
+
+### Option: JaTrapperListenPort
+#        Listen port for jatrapper.
+#
+# Mandatory: no
+# Default: 10061
+# JaTrapperListenPort=10061
+
+### Option: JaAgentListenPort
+#        Listen port for job agent.
+#
+# Mandatory: no
+# Default: 10055
+# JaAgentListenPort=10055
+
+### Option: JaExtjobPath
+#        Directory to place an extended job.
+#
+# Mandatory: yes
+# Default:
+# JaExtjobPath=
+JaExtjobPath=/etc/jobarranger/extendedjob
+
+### Option: JaErrorCmdPath
+#        Directory to place an application error notification.
+#
+# Mandatory: yes
+# Default:
+# JaErrorCmdPath=
+JaErrorCmdPath=/etc/jobarranger/alert
+
+### Option: JaLogMessageFile
+#        Job Arranger application log message.
+#
+# Mandatory: yes
+# Default:
+# JaLogMessageFile=
+JaLogMessageFile=/etc/jobarranger/locale/logmessage_64BIT.txt
+
+### Option: JaFcopyTimeout
+#        The communication timeout value at the time of a file transfer.
+#
+# Mandatory: no
+# Range: 1-3600
+# Default: 180 (second)
+# JaFcopyTimeout=180
+
+#######################################################################################
+### Option: JaRunTimeout
+#        Timeout interval for the ja_run thread(process loop execution time).
+#
+# Mandatory: no
+# Range: 1-3600
+# Default: 1800 (second)
+# JaRunTimeout=1800
+
+### Option: JaTrapperTimeout
+#        Timeout interval for the ja_trapper thread(process loop execution time).
+#
+# Mandatory: no
+# Range: 1-3600
+# Default: 600 (second)
+# JaTrapperTimeout=600
+
+### Option: JaJobThreadTimeout
+#        Timeout interval for the ja_job thread(process loop execution time).
+#
+# Mandatory: no
+# Range: 1-3600
+# Default: 600 (second)
+# JaJobThreadTimeout=600
+
+### Option: JaJobnetTimeout
+#        Timeout interval for the ja_jobnet thread(process loop execution time).
+#
+# Mandatory: no
+# Range: 1-3600
+# Default: 600 (second)
+# JaJobnetTimeout=600
+
+### Option: JaLoaderTimeout
+#   Timeout interval for the ja_loader thread(process loop execution time).
+#
+# Mandatory: no
+# Range: 1-3600
+# Default: 600 (second)
+# JaLoaderTimeout=600
+
+### Option: JaBootTimeout
+#        Timeout interval for the ja_bboot thread(process loop execution time).
+#
+# Mandatory: no
+# Range: 1-3600
+# Default: 1800 (second)
+# JaBootTimeout=1800
+
+### Option: JaMsgsndTimeout
+#        Timeout interval for the ja_msgsend thread(process loop execution time).
+#
+# Mandatory: no
+# Range: 1-3600
+# Default: 600 (second)
+# JaMsgsndTimeout=600
+
+### Option: JaSelfmonTimeout
+#        Timeout interval for the ja_selfmon thread(process loop execution time).
+#
+# Mandatory: no
+# Range: 1-3600
+# Default: 600 (second)
+# JaSelfmonTimeout=600
+
+### Option: JaPurgeTimeout
+#       Timeout interval for the ja_purge thread(process loop execution time).
+#
+# Mandatory: no
+# Range: 1-3600
+# Default: 600 (second)
+# JaPurgeTimeout=600
+
+### Option: JaAbortTimeout
+#        Timeout interval for the ja_abort thread(process loop execution time).
+#
+# Mandatory: no
+# Range: 1-3600
+# Default: 1800 (second)
+# JaAbortTimeout=1800
+
+#######################################################################################
+### Option: JaLaunchInterval
+#        Immediate start up interval of jobnet.
+#
+# Mandatory: no
+# Default: 1 (second)
+# JaLaunchInterval=1
+
+### Option: JaZabbixMessageFile
+#        Zabbix status change message file directory.
+#
+# Mandatory: yes
+# Default:
+# JaZabbixMessageFile=
+JaZabbixMessageFile=/etc/jobarranger/locale
+
+### Option: JaExecutionUser
+#        Specify the execution user of job Arranger Server.
+#
+# Mandatory: no
+# Default: zabbix
+# JaExecutionUser=zabbix
+
+
+### Option: JaZabbixURL
+#        Zabbix URL for External I/F function commands
+#
+# Mandatory: no
+# Default: zabbix
+JaZabbixURL=http://127.0.0.1/zabbix/
