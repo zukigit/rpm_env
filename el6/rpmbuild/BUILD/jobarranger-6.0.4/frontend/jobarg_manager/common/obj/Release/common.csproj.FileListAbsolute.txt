@@ -1,4 +1,0 @@
-C:\source\jobarranger\bin\jobarg_manager\common.dll.config
-C:\source\jobarranger\bin\jobarg_manager\common.dll
-C:\source\jobarranger\frontend\jobarg_manager\common\obj\Release\common.dll
-C:\source\jobarranger\frontend\jobarg_manager\common\obj\Release\common.csproj.CoreCompileInputs.cache

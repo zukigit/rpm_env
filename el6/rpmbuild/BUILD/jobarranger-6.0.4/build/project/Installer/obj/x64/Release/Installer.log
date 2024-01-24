@@ -1,7 +1,0 @@
-﻿  Installer.cpp
-     Creating library ./bin/x64/Release/Installer.lib and object ./bin/x64/Release/Installer.exp
-  Generating code
-  Previous IPDB not found, fall back to full compilation.
-  All 5 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
-  Finished generating code
-  Installer.vcxproj -> D:\zuki\Documents\6.0.4-dev-from-6.0.3\build\project\Installer\bin\x64\Release\Installer.dll
