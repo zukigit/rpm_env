@@ -2,7 +2,7 @@ version: '3'
 
 services:
 
-  rhel7:
+  rhel6:
     image: zukidocker/oss:rhel6_rpm_env
     container_name: rhel6_rpm_env
     volumes:
