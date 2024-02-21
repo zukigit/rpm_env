@@ -1,4 +1,4 @@
-%define         version 6.0.3
+%define         version 6.0.5
 
 Name:           jobarranger
 Version:        %{version}
@@ -327,5 +327,5 @@ fi
 %attr(0644,root,root) %{_sysconfdir}/tmpfiles.d/jobarranger.conf
 
 %changelog
-* Mon Aug 18 2023 Copyright Daiwa Institute of Research Ltd. All Rights Reserved. <https://www.jobarranger.info/jaz/jaz_release_note.html> 6.0.3
+* Wed Feb 21 2024 Copyright Daiwa Institute of Research Ltd. All Rights Reserved. <https://www.jobarranger.info/jaz/jaz_release_note.html> 6.0.5
 - Lastest RPM relese
