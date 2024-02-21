@@ -1,8 +1,8 @@
 # Procedure
 
-1 -> **docker-compose up -d**(if the container is up alr, you don't need to run)<br/>
-2 -> **move jobarranger source file to rpmbuild/SOURCE and change name to jobarranger-6.x.x**<br/>
-3 -> **tar -cvzf rpmbuild/SOURCE/jobarranger-6.x.x.tar.gz rpmbuild/SOURCE/jobarranger-6.x.x** //zipped it<br/>
-4 -> **change version number, date etc.. in rpmbuild/SPECS/jobarranger8.spec**<br/>
-5 -> **./rpm_build.sh**<br/>
-6 -> **exported rpms files are under /rpmbuild/RPMS**<br/>
+1 -> **Put the jobarranger source folder under src**<br/>
+2 -> **There should be only one folder under src otherwise you won't be able to run.**<br/>
+2 -> **Enter el folder. If you want to create rpm for el8 enter el8 folder.**<br/>
+3 -> **Check the SPECS files for the version number. SPECES files are under el*/rpmbuild/SPECS/**<br/>
+4 -> **Run script file build_*.sh. Rpm files will be created under el*/rpmbuild/RPMS/**<br/>
+
