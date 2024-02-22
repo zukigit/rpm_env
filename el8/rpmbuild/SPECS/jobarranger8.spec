@@ -327,5 +327,5 @@ fi
 %attr(0644,root,root) %{_sysconfdir}/tmpfiles.d/jobarranger.conf
 
 %changelog
-* Wed Feb 21 2024 Copyright Daiwa Institute of Research Ltd. All Rights Reserved. <https://www.jobarranger.info/jaz/jaz_release_note.html> 6.0.5
+* Wed Feb 22 2024 Copyright Daiwa Institute of Research Ltd. All Rights Reserved. <https://www.jobarranger.info/jaz/jaz_release_note.html> 6.0.5
 - Lastest RPM relese
