@@ -19,7 +19,7 @@ if [ $files_count -ne 1 ]; then
     exit 1
 fi
 
-docker compose up -d
+docker-compose up -d
 if [ $? -ne 0 ]; then
     echo "[ERROR] Docker container failed to start. try again!"
     exit 1
