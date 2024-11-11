@@ -1,8 +1,6 @@
-version: '3'
-
 services:
 
-  rhel8:
+  rhel9:
     image: zukidocker/oss:pkgs_env_rhel9
     container_name: rpm_env_9
     volumes:
