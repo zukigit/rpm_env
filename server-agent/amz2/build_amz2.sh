@@ -1,8 +1,6 @@
 #!/bin/bash
 
-#!/bin/bash
-
-target_folder="../src/"
+target_folder="../../src/"
 src_folder_name="jobarranger-"
 
 if [ "$#" -ne 1 ]; then
@@ -21,7 +19,7 @@ if [ $files_count -ne 1 ]; then
     exit 1
 fi
 
-docker-compose up -d
+docker compose up -d
 if [ $? -ne 0 ]; then
     echo "[ERROR] Docker container failed to start. try again!"
     exit 1
@@ -37,5 +35,5 @@ cp -rf $target_folder ./src/$src_folder_name
 cd ./src/
 tar -cvzf ../rpmbuild/SOURCES/$src_folder_name.tar.gz $src_folder_name/
 
-docker exec -it --user root rhel7_rpm_env chown -R moon.moon /home/moon/rpmbuild/
-docker exec -it --user moon rhel7_rpm_env ./tmp/build_7.sh
+docker exec -it --user root rpm_env_amzn2 chown -R dat.dat /home/dat/rpmbuild/
+docker exec -it --user dat rpm_env_amzn2 rpmbuild -ba /home/dat/rpmbuild/SPECS/jobarranger.spec

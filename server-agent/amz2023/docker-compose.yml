@@ -1,0 +1,7 @@
+services:
+
+  amzn2023:
+    image: ikal/oss:amz2023
+    container_name: rpm_env_amzn2023
+    volumes:
+      - ./rpmbuild:/home/dat/rpmbuild

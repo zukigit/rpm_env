@@ -1,6 +1,6 @@
 #!/bin/bash
 
-target_folder="../src/"
+target_folder="../../src/"
 src_folder_name="jobarranger-"
 
 if [ "$#" -ne 1 ]; then
@@ -35,5 +35,5 @@ cp -rf $target_folder ./src/$src_folder_name
 cd ./src/
 tar -cvzf ../rpmbuild/SOURCES/$src_folder_name.tar.gz $src_folder_name/
 
-docker exec -it --user root rpm_env chown -R moon.moon /home/moon/rpmbuild/
-docker exec -it --user moon rpm_env rpmbuild -ba /home/moon/rpmbuild/SPECS/jobarranger8.spec
+docker exec -it --user root rhel7_rpm_env chown -R moon.moon /home/moon/rpmbuild/
+docker exec -it --user moon rhel7_rpm_env ./tmp/build_7.sh

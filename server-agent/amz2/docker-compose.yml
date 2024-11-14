@@ -1,0 +1,7 @@
+services:
+
+  amzn2:
+    image: ikal/oss:amzn2
+    container_name: rpm_env_amzn2
+    volumes:
+      - ./rpmbuild:/home/dat/rpmbuild
