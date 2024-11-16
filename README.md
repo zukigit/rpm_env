@@ -1,4 +1,6 @@
-# Procedure
+# Automatic rpm files creation tool for Jobarranger.
+
+## Procedure
 
 1) **Put the jobarranger source folder under src.**<br/>
 2) **There should be only source folder under src otherwise you won't be able to run.**<br/>
