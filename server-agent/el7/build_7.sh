@@ -19,7 +19,7 @@ if [ $files_count -ne 1 ]; then
     exit 1
 fi
 
-docker-compose up -d
+docker compose up -d
 if [ $? -ne 0 ]; then
     echo "[ERROR] Docker container failed to start. try again!"
     exit 1
@@ -37,3 +37,4 @@ tar -cvzf ../rpmbuild/SOURCES/$src_folder_name.tar.gz $src_folder_name/
 
 docker exec -it --user root rhel7_rpm_env chown -R moon.moon /home/moon/rpmbuild/
 docker exec -it --user moon rhel7_rpm_env ./tmp/build_7.sh
+docker kill rhel7_rpm_env

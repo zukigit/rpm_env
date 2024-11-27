@@ -37,3 +37,4 @@ tar -cvzf ../rpmbuild/SOURCES/$src_folder_name.tar.gz $src_folder_name/
 
 docker exec -it --user root rpm_env_amzn2 chown -R dat.dat /home/dat/rpmbuild/
 docker exec -it --user dat rpm_env_amzn2 rpmbuild -ba /home/dat/rpmbuild/SPECS/jobarranger.spec
+docker kill rpm_env_amzn2

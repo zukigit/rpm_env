@@ -37,3 +37,4 @@ tar -cvzf ../rpmbuild/SOURCES/$src_folder_name.tar.gz $src_folder_name/
 
 docker exec -it --user root rpm_env_9 chown -R moon /home/moon/rpmbuild/
 docker exec -it --user moon rpm_env_9 rpmbuild -ba /home/moon/rpmbuild/SPECS/jobarranger9.spec
+docker kill rpm_env_9
