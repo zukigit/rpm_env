@@ -1,32 +1,23 @@
-FROM  redhat/ubi9
+FROM  redhat/ubi9:latest
 
-COPY sleep10.sh /tmp
-COPY json-c-0.9.tar.gz /tmp
-COPY libtar-1.2.20-src-11.31.tar.gz /tmp
+COPY json-c-0.9.tar.gz libtar-1.2.20-src-11.31.tar.gz /tmp/
 COPY cent9.repo /etc/yum.repos.d/
 
-RUN dnf update -y && \
-    dnf install https://dl.fedoraproject.org/pub/epel/9/Everything/x86_64/Packages/e/epel-release-9-7.el9.noarch.rpm -y && \
-    dnf install libgomp gcc automake autoconf make -y && \
-    yum install openssl-devel -y && \
-    yum install libssh2 -y && \
-    yum install libssh2-devel -y && \
-    yum install mariadb-devel -y && \
-    yum install postgresql-devel -y && \
-    yum install rpmdevtools rpmlint -y && \
-    yum clean all && \
-    rm -rf /var/cache/yum
-
-RUN tar -xvzf /tmp/json-c-0.9.tar.gz -C /tmp/ && \
+RUN dnf install https://dl.fedoraproject.org/pub/epel/9/Everything/x86_64/Packages/e/epel-release-9-9.el9.noarch.rpm -y && \
+    dnf --enablerepo=cent9CRB install mysql-devel openssl-devel libssh2-devel postgresql-devel -y && \
+    dnf install gcc automake autoconf make -y && \
+    dnf install rpmdevtools rpmlint -y && \
+    dnf remove epel-release -y && \
+    dnf clean all && \
+    rm -rf /var/cache/yum && \
+    tar -xvzf /tmp/json-c-0.9.tar.gz -C /tmp/ && \
     tar -xvzf /tmp/libtar-1.2.20-src-11.31.tar.gz -C /tmp/ && \
-    rm -rf /tmp/*.tar.gz
-
-RUN cd /tmp/json-c-0.9/ && \
+    cd /tmp/json-c-0.9/ && \
     ./configure --with-pic &&  \
-    make && make install
-
-RUN cd /tmp/libtar-1.2.20/ && \
+    make && make install && \
+    cd /tmp/libtar-1.2.20/ && \
     ./configure --with-pic &&  \
-    make && make install
+    make && make install && \
+    rm -rf /tmp/libtar-1.2.20 /tmp/json-c-0.9  /tmp/*.tar.gz /etc/yum.repos.d/cent9.repo
 
-CMD [ "./tmp/sleep10.sh" ]
+CMD ["tail", "-f", "/dev/null"]
