@@ -19,10 +19,6 @@ RUN dnf install https://dl.fedoraproject.org/pub/epel/9/Everything/x86_64/Packag
     cd /tmp/libtar-1.2.20/ && \
     ./configure --with-pic &&  \
     make && make install && \
-    rm -rf /tmp/libtar-1.2.20 /tmp/json-c-0.9 /tmp/*.tar.gz /etc/yum.repos.d/cent9.repo && \
-    groupadd -r zuki && useradd -rg zuki zuki && \
-    mkdir -p /home/zuki/rpmbuild && chown -R zuki:zuki /home/zuki/rpmbuild
-
-USER zuki 
+    rm -rf /tmp/libtar-1.2.20 /tmp/json-c-0.9 /tmp/*.tar.gz /etc/yum.repos.d/cent9.repo
 
 CMD ["tail", "-f", "/dev/null"]

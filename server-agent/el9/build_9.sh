@@ -35,5 +35,4 @@ cp -rf $target_folder ./src/$src_folder_name
 cd ./src/
 tar -cvzf ../rpmbuild/SOURCES/$src_folder_name.tar.gz $src_folder_name/
 
-# docker exec -it --user root rhel9_pkg_env chown -R zuki:zuki /home/zuki/rpmbuild/
 docker exec -it --user root rhel9_pkg_env rpmbuild -ba /root/rpmbuild/SPECS/jobarranger9.spec

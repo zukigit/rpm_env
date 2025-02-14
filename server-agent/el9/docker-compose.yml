@@ -1,7 +1,7 @@
 services:
 
   rhel9:
-    image: zukidocker/oss:pkgs_env_rhel9
+    image: zukidocker/oss:rhel9_pkg_env
     container_name: rhel9_pkg_env
     volumes:
       - ./rpmbuild:/root/rpmbuild
