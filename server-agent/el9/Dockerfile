@@ -8,6 +8,7 @@ RUN dnf install https://dl.fedoraproject.org/pub/epel/9/Everything/x86_64/Packag
     dnf install mariadb-devel postgresql-devel libssh2-devel openssl-devel -y && \
     dnf install gcc automake autoconf make -y && \
     dnf install rpmdevtools rpmlint -y && \
+    dnf install git -y && \
     dnf remove epel-release -y && \
     dnf clean all && \
     rm -rf /var/cache/yum && \
